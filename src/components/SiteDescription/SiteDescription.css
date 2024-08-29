@@ -1,0 +1,31 @@
+/* Styles for the main section */
+.main-section {
+    background-color: #f4f4f4;
+    /* Light background color for contrast */
+    padding: 50px 0;
+    /* Vertical padding */
+    text-align: center;
+    /* Center-align text */
+}
+
+.main-section .container {
+    max-width: 800px;
+    /* Limit the width of the content */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.main-section h1 {
+    font-size: 2rem;
+    /* Adjust font size for the heading */
+    color: #333;
+    /* Dark text color for readability */
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 1.2rem;
+    /* Adjust font size for the paragraph */
+    color: #666;
+    /* Lighter text color for the paragraph */
+}

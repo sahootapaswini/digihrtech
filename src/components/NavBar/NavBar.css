@@ -1,0 +1,42 @@
+/* Custom styles for the navbar */
+.navbar {
+  background-color: #8b0548;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+  /* Ensures text color is white */
+}
+
+.dropdown-item {
+  color: #807f7f !important;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Adjust dropdown menu styles */
+.dropdown-menu {
+  /*background-color: #8b0548; /* Match dropdown background with navbar */
+  background-color: #fff;
+}
+
+.dropdown-item:hover {
+  background-color: #6b0438;
+  color: #fff !important;
+  /* Slightly different color for hover effect */
+}
+
+.btn-light {
+  background-color: #f8f9fa;
+  /* Light background color for button */
+  border-color: #8b0548;
+  /* Border color for button */
+}
+
+.btn-light:hover {
+  background-color: #e2e6ea;
+  /* Hover background color for button */
+}
