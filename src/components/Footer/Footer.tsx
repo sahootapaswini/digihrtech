@@ -3,19 +3,117 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Footer.css";
 
 const Footer: React.FC = () => {
+  // Data for the footer sections
+  const implementationLinks = [
+    { name: "SuccessFactors Implementation", url: "#" },
+    { name: "Employee Central", url: "#" },
+    { name: "Payroll", url: "#" },
+    { name: "Time Management", url: "#" },
+    { name: "Recruiting", url: "#" },
+    { name: "Onboarding", url: "#" },
+    { name: "Performance and Goals", url: "#" },
+    { name: "Succession and Development", url: "#" },
+    { name: "Learning", url: "#" },
+    { name: "Workforce Analytics", url: "#" },
+    { name: "Compensation", url: "#" },
+  ];
+  const hrprocessLinks = [
+    { name: "HR Process Implementation ", url: "#" },
+    { name: "Payroll", url: "#" },
+    { name: "Workforce Management", url: "#" },
+    { name: "Analytics, Insights & Engagement", url: "#" },
+  ];
+  const servicesLinks = [
+    { name: "SAP SuccessFactors Implementation", url: "#" },
+    { name: "HR Process Implementation", url: "#" },
+    { name: "Change Management", url: "#" },
+    { name: "Test Management", url: "#" },
+    { name: "Integration Services", url: "#" },
+    { name: "Support Services", url: "#" },
+    { name: "Data Migration", url: "#" },
+    { name: "Training", url: "#" },
+    { name: "SAP Talent Intelligence Hub", url: "#" },
+  ];
+
+  const socialLinks = [
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/company/example",
+      iconClass: "fab fa-linkedin",
+    },
+    {
+      name: "Twitter",
+      url: "https://twitter.com/example",
+      iconClass: "fab fa-twitter",
+    },
+    {
+      name: "Facebook",
+      url: "https://www.facebook.com/example",
+      iconClass: "fab fa-facebook-f",
+    },
+  ];
+
   return (
-    <footer className="footer bg-dark text-white py-4">
+    <footer className="footer bg-dark text-white">
       <div className="container">
-        <div className="row text-center">
-          <div className="col-md-4">
-            <h5>About Us</h5>
+        <div className="row text-left bbwhite pt-5">
+          {/* SAP SuccessFactors Implementation Section */}
+          <div className="col-md-4 px-5">
+            <h5>SAP SuccessFactors Implementation</h5>
             <p>
-              We are a leading provider of HR solutions and SAP SuccessFactors
-              implementation services. Our expert team helps organizations
-              streamline their HR processes and achieve their business goals.
+              With over 20 years of experience, we are the world leading experts
+              in SuccessFactors implementation:
             </p>
+            <div className="footer-links">
+              <ul className="list-unstyled">
+                {implementationLinks.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.url} className="text-white">
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 px-5">
+            <h5>HR Processes</h5>
+            <p>
+              See how we help implement solutions for specific HR processes:
+            </p>
+            <div className="footer-links">
+              <ul className="list-unstyled">
+                {hrprocessLinks.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.url} className="text-white">
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="col-md-4 px-5">
+            <h5>Services</h5>
+            <p>
+              Effective People deliver a range of services to supplement your
+              SAP SuccessFactors solution:
+            </p>
+            <div className="footer-links">
+              <ul className="list-unstyled">
+                {servicesLinks.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.url} className="text-white">
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="row pt-3">
+          <div className="col-md-4 px-5">
             <h5>Contact Us</h5>
             <ul className="list-unstyled">
               <li>
@@ -29,47 +127,40 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>Corniche, Tower A, Abu Dhabi, UAE, 20054</li>
-            </ul>
-          </div>
-          <div className="col-md-4">
-            <h5>Follow Us</h5>
-            <ul className="list-unstyled d-flex justify-content-center">
-              <li className="me-3">
-                <a
-                  href="https://www.linkedin.com/company/example"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white">
-                  <i className="fab fa-linkedin fa-2x"></i>
-                </a>
-              </li>
-              <li className="me-3">
-                <a
-                  href="https://twitter.com/example"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white">
-                  <i className="fab fa-twitter fa-2x"></i>
-                </a>
-              </li>
               <li>
                 <a
-                  href="https://www.facebook.com/example"
+                  href="https://maps.google.com/?q=Corniche,+Tower+A,+Abu+Dhabi,+UAE"
+                  className="text-white"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white">
-                  <i className="fab fa-facebook-f fa-2x"></i>
+                  rel="noopener noreferrer">
+                  View on Google Maps
                 </a>
               </li>
+            </ul>
+          </div>
+
+          <div className="col-md-4"></div>
+          <div className="col-md-4 px-5">
+            <h5>Follow Us</h5>
+            <ul className="list-unstyled d-flex justify-content-left">
+              {socialLinks.map((social, index) => (
+                <li key={index} className="me-3">
+                  <a
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white">
+                    <i className={`${social.iconClass} fa-2x`}></i>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
+        {/* Footer Copyright Section */}
         <div className="row">
-          <div className="col-12 text-center mt-4">
-            <p>
-              &copy; {new Date().getFullYear()} Digital HR Technology. All
-              rights reserved.
-            </p>
+          <div className="col-12 text-end mt-1">
+            <p>&copy; 2024 Digital HR Technology. All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -1,70 +1,75 @@
 /* Styles for the hero section */
 .hero-section {
     background-color: #fff;
-    /* Light background color */
+    border-radius: 10px;
 }
 
 .heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px dotted #ccc;
     border-radius: 10%;
-
+    height: 100%;
 }
 
 .icon-container {
     font-size: 3rem;
-    /* Adjust the size of the icon */
-    color: #8b0548;
-    /* Color of the icon */
+    color: #863552;
     margin: 0 auto;
-    /* Center the icon horizontally */
 }
 
 .logo {
     max-width: 150px;
-    /* Adjust the size of the logo */
     margin: 0 auto;
-    /* Center the logo horizontally */
+}
+
+/* Styles for the hero section */
+.hero-section {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.icon-container {
+    font-size: 3rem;
+    color: #863552;
+    margin: 0 auto;
 }
 
 .subheader {
     font-size: 0.8rem;
-    /* Size of the subheader */
     color: #666;
-    /* Color of the subheader */
 }
 
 .header {
     font-size: 2rem;
-    /* Size of the header */
-    color: #8b0548;
-    /* Color of the header */
+    color: #863552;
 }
 
 .description {
     font-size: 0.8rem;
-    /* Size of the description */
     color: #666;
-    /* Color of the description */
 }
 
+.button-container {
+    margin-top: auto;
+    /* Push button to the bottom */
+}
+
+
 .btn-primary {
-    background-color: #8b0548;
-    /* Background color for the button */
-    border-color: #8b0548;
-    /* Border color for the button */
+    background-color: #863552;
+    border-color: #863552;
 }
 
 .btn-primary:hover {
     background-color: #6b0438;
-    /* Darker color on hover */
     border-color: #6b0438;
-    /* Darker border color on hover */
 }
 
 /* Ensure proper spacing in each column */
 @media (min-width: 992px) {
     .col-lg-4 {
         padding: 0 15px;
-        /* Horizontal padding for columns on large screens */
     }
 }

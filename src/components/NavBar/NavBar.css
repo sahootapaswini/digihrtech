@@ -1,15 +1,36 @@
 /* Custom styles for the navbar */
 .navbar {
-  background-color: #8b0548;
+  background-color: #13020a61;
   top: 0;
   width: 100%;
+  position: sticky;
   z-index: 9999;
+  transition: background-color 0.3s;
 }
 
-.navbar-brand,
+.navbar.scrolled {
+  background-color: #fff;
+  color: #1c1b1b;
+  border: 1px dotted #6b0438;
+}
+
+.navbar-brand {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  background: url('/src/assets/images/dhtlogonewb.png') center / cover no-repeat;
+}
+
+.navbar.scrolled .navbar-brand {
+  background: url('/src/assets/images/dhtlogo-newp.png') center / cover no-repeat;
+}
+
 .nav-link {
-  color: white !important;
-  /* Ensures text color is white */
+  color: #fff;
+}
+
+.navbar.scrolled .nav-link {
+  color: #000;
 }
 
 .dropdown-item {
@@ -19,24 +40,19 @@
 
 /* Adjust dropdown menu styles */
 .dropdown-menu {
-  /*background-color: #8b0548; /* Match dropdown background with navbar */
   background-color: #fff;
 }
 
 .dropdown-item:hover {
   background-color: #6b0438;
   color: #fff !important;
-  /* Slightly different color for hover effect */
 }
 
 .btn-light {
   background-color: #f8f9fa;
-  /* Light background color for button */
   border-color: #8b0548;
-  /* Border color for button */
 }
 
 .btn-light:hover {
   background-color: #e2e6ea;
-  /* Hover background color for button */
 }

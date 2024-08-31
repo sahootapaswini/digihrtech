@@ -1,50 +1,38 @@
 .contact-form-section {
     background-color: #f8f9fa;
-    width: 70%;
-    max-width: 800px;
-    /* Optional: Add a max-width to ensure it doesn't get too wide on large screens */
+    width: 80%;
+    max-width: 1024px;
     margin: 0 auto;
-    /* Horizontally center the element */
     padding: 2rem;
-    /* Optional: Add padding to the section for better spacing */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     color: #333;
-    /* Header color */
 }
 
 p {
     color: #666;
-    /* Description color */
 }
 
 .btn-primary {
     background-color: #8b0548;
-    /* Button background color */
     border-color: #8b0548;
-    /* Button border color */
 }
 
 .btn-primary:hover {
     background-color: #6b0438;
-    /* Darker color on hover */
     border-color: #6b0438;
-    /* Darker border color on hover */
 }
 
 .form-label {
     font-weight: 600;
-    /* Bold labels */
 }
 
 .form-control {
     border-radius: 0.25rem;
-    /* Rounded input fields */
 }
 
 textarea.form-control {
     resize: none;
-    /* Disable resizing for textarea */
 }
