@@ -13,17 +13,20 @@ const links: LinkProps[] = [
   {
     name: "Solutions",
     sublinks: [
-      { name: "Employee Central", path: "/employee-central" },
-      { name: "Payroll", path: "/payroll" },
-      { name: "Time Management", path: "/time-management" },
-      { name: "Recruiting", path: "/recruiting" },
-      { name: "Onboarding", path: "/onboarding" },
-      { name: "Performance and Goals", path: "/performance-goals" },
-      { name: "Succession and Development", path: "/succession-development" },
-      { name: "Learning", path: "/learning" },
-      { name: "Workforce Analytics", path: "/workforce-analytics" },
-      { name: "Compensation", path: "/compensation" },
-      { name: "Business AI for HR", path: "/business-ai-hr" },
+      { name: "Employee Central", path: "solutions/employee-central" },
+      { name: "Payroll", path: "solutions/payroll" },
+      { name: "Time Management", path: "solutions/time-management" },
+      { name: "Recruiting", path: "solutions/recruiting" },
+      { name: "Onboarding", path: "solutions/onboarding" },
+      { name: "Performance and Goals", path: "solutions/performance-goals" },
+      {
+        name: "Succession and Development",
+        path: "solutions/succession-development",
+      },
+      { name: "Learning", path: "solutions/learning" },
+      { name: "Workforce Analytics", path: "solutions/workforce-analytics" },
+      { name: "Compensation", path: "solutions/compensation" },
+      { name: "Business AI for HR", path: "solutions/business-ai-hr" },
     ],
   },
   {
@@ -97,9 +100,7 @@ const NavBar: React.FC = () => {
         scrolled ? "scrolled" : ""
       }`}>
       <div className="container">
-        <Link className="navbar-brand" to="/">
-          Brand
-        </Link>
+        <Link className="navbar-brand" to="/"></Link>
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
             {links.slice(0, -1).map((link, index) => (
