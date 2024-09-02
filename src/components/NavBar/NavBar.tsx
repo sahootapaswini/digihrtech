@@ -4,73 +4,82 @@ import "./NavBar.css";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 interface LinkProps {
-  name: string;
+  label: string;
   path?: string; // Add a path property for routing
-  sublinks?: { name: string; path: string }[]; // Update sublinks to include path
+  sublinks?: { label: string; path: string }[]; // Update sublinks to include path
 }
 
 const links: LinkProps[] = [
   {
-    name: "Solutions",
+    label: "Solutions",
     sublinks: [
-      { name: "Employee Central", path: "solutions/employee-central" },
-      { name: "Payroll", path: "solutions/payroll" },
-      { name: "Time Management", path: "solutions/time-management" },
-      { name: "Recruiting", path: "solutions/recruiting" },
-      { name: "Onboarding", path: "solutions/onboarding" },
-      { name: "Performance and Goals", path: "solutions/performance-goals" },
+      { label: "Employee Central", path: "solutions/employee-central" },
+      { label: "Payroll", path: "solutions/payroll" },
+      { label: "Time Management", path: "solutions/time-management" },
+      { label: "Recruiting", path: "solutions/recruiting" },
+      { label: "Onboarding", path: "solutions/onboarding" },
+      { label: "Performance and Goals", path: "solutions/performance-goals" },
       {
-        name: "Succession and Development",
+        label: "Succession and Development",
         path: "solutions/succession-development",
       },
-      { name: "Learning", path: "solutions/learning" },
-      { name: "Workforce Analytics", path: "solutions/workforce-analytics" },
-      { name: "Compensation", path: "solutions/compensation" },
-      { name: "Business AI for HR", path: "solutions/business-ai-hr" },
+      { label: "Learning", path: "solutions/learning" },
+      { label: "Workforce Analytics", path: "solutions/workforce-analytics" },
+      { label: "Compensation", path: "solutions/compensation" },
+      { label: "Business AI for HR", path: "solutions/business-ai-hr" },
     ],
   },
   {
-    name: "Services",
+    label: "Services",
     sublinks: [
       {
-        name: "SAP SuccessFactors Implementation",
+        label: "SAP SuccessFactors Implementation",
         path: "/sap-successfactors",
       },
       {
-        name: "SAP Payroll Cloud & On Premise Implementation",
+        label: "SAP Payroll Cloud & On Premise Implementation",
         path: "/sap-payroll",
       },
-      { name: "SAP ERP HCM/ Hybrid", path: "/sap-erp-hcm" },
-      { name: "HR Process Implementation", path: "/hr-process-implementation" },
-      { name: "HR Roadmap Transformation", path: "/hr-roadmap-transformation" },
+      { label: "SAP ERP HCM/ Hybrid", path: "/sap-erp-hcm" },
       {
-        name: "Solution Architecture Advisory",
+        label: "HR Process Implementation",
+        path: "/hr-process-implementation",
+      },
+      {
+        label: "HR Roadmap Transformation",
+        path: "/hr-roadmap-transformation",
+      },
+      {
+        label: "Solution Architecture Advisory",
         path: "/solution-architecture",
       },
-      { name: "Change Management", path: "/change-management" },
-      { name: "Test Management", path: "/test-management" },
-      { name: "Integration Services", path: "/integration-services" },
-      { name: "Application Support", path: "/application-support" },
-      { name: "Data Migration", path: "/data-migration" },
-      { name: "Training", path: "/training" },
-      { name: "HR Scopping", path: "/hr-scopping" },
-      { name: "SAP Talent Intelligence Hub", path: "/sap-talent-intelligence" },
+      { label: "Change Management", path: "/change-management" },
+      { label: "Test Management", path: "/test-management" },
+      { label: "Integration Services", path: "/integration-services" },
+      { label: "Application Support", path: "/application-support" },
+      { label: "Data Migration", path: "/data-migration" },
+      { label: "Training", path: "/training" },
+      { label: "HR Scopping", path: "/hr-scopping" },
+      {
+        label: "SAP Talent Intelligence Hub",
+        path: "/sap-talent-intelligence",
+      },
     ],
   },
   {
-    name: "Products",
-    sublinks: [{ name: "Lift and Shift Tool", path: "/lift-and-shift" }],
+    label: "Products",
+    sublinks: [{ label: "Lift and Shift Tool", path: "/lift-and-shift" }],
   },
-  { name: "About US", path: "/about-us" },
+  { label: "About US", path: "/about-us" },
   {
-    name: "Resources",
+    label: "Resources",
     sublinks: [
-      { name: "Blogs", path: "/blogs" },
-      { name: "News", path: "/news" },
-      { name: "Events", path: "/events" },
+      { label: "Blogs", path: "/blogs" },
+      { label: "News", path: "/news" },
+      { label: "Events", path: "/events" },
     ],
   },
-  { name: "Contact Us", path: "/contact-us" },
+  { label: "Contact Us", path: "/contact-us" },
 ];
 
 const NavBar: React.FC = () => {
@@ -114,7 +123,7 @@ const NavBar: React.FC = () => {
                   to={link.path || "#"}
                   role="button"
                   aria-expanded={activeIndex === index ? "true" : "false"}>
-                  {link.name}
+                  {link.label}
                 </Link>
                 <div
                   className={`dropdown-menu${
@@ -125,7 +134,7 @@ const NavBar: React.FC = () => {
                       key={subIndex}
                       className="dropdown-item"
                       to={sublink.path}>
-                      {sublink.name}
+                      {sublink.label}
                     </Link>
                   ))}
                 </div>

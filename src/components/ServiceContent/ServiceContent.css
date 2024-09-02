@@ -3,33 +3,28 @@
     background: #fff;
 }
 
+/* Add your CSS styles */
 .solutions .nav-container {
-    overflow-x: auto;
-    /* Enable horizontal scrolling if needed */
-    white-space: nowrap;
-    /* Prevent line breaks */
-}
-
-.solutions .nav-wrapper {
-    display: flex;
-    /* Align links horizontally */
-    flex-wrap: nowrap;
-    /* Prevent wrapping */
+    padding: 1rem;
+    background-color: #f8f9fa;
+    /* Light background for navigation */
 }
 
 .solutions .nav-link {
-    display: inline-block;
-    padding: 10px 15px;
+    display: block;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     color: #007bff;
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    margin-right: 5px;
+    /* Bootstrap primary color */
 }
 
 .solutions .nav-link:hover {
-    background-color: #e2e6ea;
-    /* Background color on hover */
+    background-color: #e9ecef;
+    /* Light hover background */
+}
+
+.solutions .content-container {
+    padding: 1rem;
 }
 
 .solutions .content-container {
