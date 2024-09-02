@@ -11,6 +11,7 @@ import {
   BsGraphUp,
   BsLightbulb,
   BsPieChart,
+  BsCurrencyDollar,
 } from "react-icons/bs"; // Import other icons if needed
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./HeroSection.css"; // Custom CSS for additional styling if needed
@@ -93,6 +94,24 @@ const HeroSection: React.FC = () => {
       icon: <BsPieChart />, // Example icon for the third column
       subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
       header: "Workforce Analytics",
+      description:
+        "Make better decisions with workforce analytics–we’ll help you get started!",
+      buttonText: "Find out more",
+      buttonLink: "#",
+    },
+    {
+      icon: <BsCurrencyDollar />, // Example icon for the third column
+      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
+      header: "Payroll",
+      description:
+        "Make better decisions with workforce analytics–we’ll help you get started!",
+      buttonText: "Find out more",
+      buttonLink: "#",
+    },
+    {
+      icon: <BsCurrencyDollar />, // Example icon for the third column
+      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
+      header: "Business AI for HR",
       description:
         "Make better decisions with workforce analytics–we’ll help you get started!",
       buttonText: "Find out more",

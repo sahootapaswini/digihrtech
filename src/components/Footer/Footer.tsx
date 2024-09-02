@@ -96,8 +96,8 @@ const Footer: React.FC = () => {
           <div className="col-md-4 px-5">
             <h5>Services</h5>
             <p>
-              Effective People deliver a range of services to supplement your
-              SAP SuccessFactors solution:
+              DHR Technology deliver a range of services to supplement your SAP
+              SuccessFactors solution:
             </p>
             <div className="footer-links">
               <ul className="list-unstyled">

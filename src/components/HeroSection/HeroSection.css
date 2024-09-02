@@ -1,7 +1,6 @@
 /* Styles for the hero section */
 .hero-section {
     background-color: #fff;
-    border-radius: 10px;
 }
 
 .heroContent {
@@ -21,18 +20,6 @@
 
 .logo {
     max-width: 150px;
-    margin: 0 auto;
-}
-
-/* Styles for the hero section */
-.hero-section {
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-.icon-container {
-    font-size: 3rem;
-    color: #863552;
     margin: 0 auto;
 }
 

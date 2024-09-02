@@ -1,0 +1,39 @@
+/* Ensure the container takes full width */
+.solutions-list {
+    background: #fff;
+}
+
+.solutions .nav-container {
+    overflow-x: auto;
+    /* Enable horizontal scrolling if needed */
+    white-space: nowrap;
+    /* Prevent line breaks */
+}
+
+.solutions .nav-wrapper {
+    display: flex;
+    /* Align links horizontally */
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+}
+
+.solutions .nav-link {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    margin-right: 5px;
+}
+
+.solutions .nav-link:hover {
+    background-color: #e2e6ea;
+    /* Background color on hover */
+}
+
+.solutions .content-container {
+    padding: 15px;
+    background-color: #ffffff;
+    /* Background color for content area */
+}

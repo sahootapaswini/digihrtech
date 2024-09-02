@@ -16,13 +16,13 @@
 
 .navbar-brand {
   display: inline-block;
-  width: 150px;
-  height: 50px;
-  background: url('/src/assets/images/dhtlogonewb.png') center / cover no-repeat;
+  width: 200px;
+  height: 59px;
+  background: url('/src/assets/images/dhr-logo-white.png') center / cover no-repeat;
 }
 
 .navbar.scrolled .navbar-brand {
-  background: url('/src/assets/images/dhtlogo-newp.png') center / cover no-repeat;
+  background: url('/src/assets/images/dhr-logo-black.png') center / cover no-repeat;
 }
 
 .nav-link {
