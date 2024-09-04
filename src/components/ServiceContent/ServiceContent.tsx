@@ -15,6 +15,8 @@ import {
   BsLightbulb,
   BsPieChart,
   BsCurrencyDollar,
+  BsPeople,
+  BsClock,
 } from "react-icons/bs"; // Import other icons if needed
 import "./ServiceContent.css";
 import EmployeeCentral from "./components/EmployeeCentral/EmployeeCentral";
@@ -32,55 +34,55 @@ import { IconBase } from "react-icons";
 
 const links = [
   {
-    icon: <BsFillPeopleFill />,
+    icon: <BsPeople />,
     label: "Employee Central",
     path: "employee-central",
     componentName: <EmployeeCentral />,
   },
   {
-    icon: <BsFillPeopleFill />,
+    icon: <BsCash />,
     label: "Payroll",
     path: "payroll",
     componentName: <Payroll />,
   },
   {
-    icon: <BsFillPeopleFill />,
+    icon: <BsClock />,
     label: "Time Management",
     path: "time-management",
     componentName: <TimeManagement />,
   },
   {
-    icon: <BsFillPeopleFill />,
+    icon: <BsSearch />,
     label: "Recruiting",
     path: "recruiting",
     componentName: <Recruiting />,
   },
   {
-    icon: <BsFillPeopleFill />,
+    icon: <BsClipboard />,
     label: "Onboarding",
     path: "onboarding",
     componentName: <Onboarding />,
   },
   {
-    icon: <BsFillPeopleFill />,
+    icon: <BsBarChart />,
     label: "Performance and Goals",
     path: "performance-goals",
     componentName: <PerformanceGoals />,
   },
   {
-    icon: <BsFillPeopleFill />,
+    icon: <BsGraphUp />,
     label: "Succession and Development",
     path: "succession-development",
     componentName: <SuccessionDevelopment />,
   },
   {
-    icon: <BsFillPeopleFill />,
+    icon: <BsLightbulb />,
     label: "Learning",
     path: "learning",
     componentName: <Learning />,
   },
   {
-    icon: <BsFillPeopleFill />,
+    icon: <BsPieChart />,
     label: "Workforce Analytics",
     path: "workforce-analytics",
     componentName: <WorkforceAnalytics />,
@@ -120,15 +122,19 @@ const ServiceContent = () => {
               {links.map((link) => (
                 <Link key={link.path} to={link.path} className="nav-link p-3">
                   <div className="row">
-                    <div className="col-auto">{link.icon}</div>
-                    <div className="col">{link.label}</div>
+                    <div className="col-auto solutions-link-icon">
+                      {link.icon}
+                    </div>
+                    <div className="col d-flex align-items-center">
+                      {link.label}
+                    </div>
                   </div>
                 </Link>
               ))}
             </div>
           </Col>
           {/* Right Column for Content */}
-          <Col xs={12} md={9} className="content-container pt-3">
+          <Col xs={12} md={9} className="content-container py-3">
             <Routes>
               {links.map((link) => (
                 <Route

@@ -43,3 +43,9 @@
   background-color: #d36c1f;
   color: #fff !important;
 }
+
+.sub-icon-orange svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  color: #d36c1f;
+}

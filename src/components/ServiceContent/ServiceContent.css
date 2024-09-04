@@ -24,3 +24,9 @@
 .solutions .nav-link:hover {
     background-color: #d5d9dbc9;
 }
+
+.solutions .solutions-link-icon svg {
+    width: 2rem;
+    height: 2rem;
+    color: #d36c1f;
+}
