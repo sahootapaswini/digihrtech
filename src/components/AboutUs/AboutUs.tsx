@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./AboutUs.module.css";
+import "./AboutUs.module.css";
 
 const AboutUs: React.FC = () => {
   return (
-    <div className="bg-light">
+    <div className="bg-white AboutUs">
       <div className="container py-5">
         {/* Centering the content with a row */}
         <div className="row justify-content-center">
@@ -58,6 +58,85 @@ const AboutUs: React.FC = () => {
                 <a href="/sap-successfactors">Services</a> section.
               </p>
             </section>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-md-10">
+            <h2 className="text-danger text-center py-3">Our Values</h2>
+            <div className="row card-deck">
+              <div className="col-md-3 ">
+                <div className="card border-0">
+                  <img
+                    src="/src/assets/images/card.jpg"
+                    className="card-img-top"
+                    alt="Image"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">Agile</h5>
+                    <p className="card-text">
+                      We Adapt quickly to changes and evolving needs within the
+                      HR landscape and client environments by maintaining the
+                      highest quality in services, solutions, and client
+                      interactions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="card border-0">
+                  <img
+                    src="/src/assets/images/card.jpg"
+                    className="card-img-top"
+                    alt="Image"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">Integrity</h5>
+                    <p className="card-text">
+                      We uphold transparency, honesty, and ethical practices in
+                      every interaction and solution. This is being reflected on
+                      every solutions we implement and services being provided
+                      to customer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-3 ">
+                <div className="card border-0">
+                  <img
+                    src="/src/assets/images/card.jpg"
+                    className="card-img-top"
+                    alt="Image"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">Innovation</h5>
+                    <p className="card-text">
+                      Innovation is an integral part of who we are. We embrace
+                      innovation as the key to unlocking new possibilities and
+                      creative solutions to drive HR processes forward.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3 ">
+                <div className="card border-0">
+                  <img
+                    src="/src/assets/images/card.jpg"
+                    className="card-img-top"
+                    alt="Image"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">Compliant</h5>
+                    <p className="card-text">
+                      We are committed to follow strict compliance in all of our
+                      implementation with the utmost precision in line with the
+                      country's labor laws. We tailored the HR solution based on
+                      customer need keeping legal compliance in mind.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,1 +1,14 @@
-.AboutUs { /* Add your component styles here */ }
+.AboutUs {
+    /* Add your component styles here */
+}
+
+.AboutUs .container {
+    border: 2px solid #ddd;
+    /* Add border to container */
+    padding: 20px;
+    /* Optional: Add padding inside the container */
+    border-radius: 8px;
+    /* Optional: Add rounded corners to the border */
+    margin-top: 20px;
+    /* Optional: Add margin on top */
+}
