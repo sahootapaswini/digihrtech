@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BsClockFill,
   BsFillPeopleFill,
@@ -107,8 +108,10 @@ const ServiceContent = () => {
             <div className="nav-wrapper">
               {links.map((link) => (
                 <Link key={link.path} to={link.path} className="nav-link">
-                  <div className="mx-1">{link.icon}</div>
-                  {link.label}
+                  <div className="row">
+                    <div className="col-auto">{link.icon}</div>
+                    <div className="col">{link.label}</div>
+                  </div>
                 </Link>
               ))}
             </div>
