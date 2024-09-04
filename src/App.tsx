@@ -9,6 +9,7 @@ import HomeCombined from "./components/HomeCombined/HomeCombined";
 import ServiceContent from "./components/ServiceContent/ServiceContent";
 import BlogList from "./components/BlogList/BlogList";
 import WorkforceManagement from "./components/BlogList/components/WorkforceManagement/WorkforceManagement";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeCombined />} />
           <Route path="/solutions/*" element={<ServiceContent />} />
+          <Route path="/about-us/*" element={<AboutUs />} />
           <Route path="/blogs/*" element={<BlogList />} />
         </Routes>
       </main>

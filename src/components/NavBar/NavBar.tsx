@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./NavBar.css";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";
 
 interface LinkProps {
   label: string;
-  path?: string; // Add a path property for routing
-  sublinks?: { label: string; path: string }[]; // Update sublinks to include path
+  path?: string;
+  sublinks?: { label: string; path: string }[];
 }
 
 const links: LinkProps[] = [
@@ -79,7 +79,6 @@ const links: LinkProps[] = [
       { label: "Events", path: "/events" },
     ],
   },
-  { label: "Contact Us", path: "/contact-us" },
 ];
 
 const NavBar: React.FC = () => {
@@ -97,7 +96,6 @@ const NavBar: React.FC = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -110,34 +108,56 @@ const NavBar: React.FC = () => {
       }`}>
       <div className="container">
         <Link className="navbar-brand" to="/"></Link>
-        <div className="collapse navbar-collapse">
-          <ul className="navbar-nav ms-auto">
-            {links.slice(0, -1).map((link, index) => (
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            {links.map((link, index) => (
               <li
                 key={index}
-                className="nav-item dropdown mx-4"
-                onMouseEnter={() => setActiveIndex(index)}
-                onMouseLeave={() => setActiveIndex(null)}>
+                className={`nav-item${link.sublinks ? " dropdown" : ""} mx-4`}
+                onMouseEnter={() => link.sublinks && setActiveIndex(index)}
+                onMouseLeave={() => link.sublinks && setActiveIndex(null)}>
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className={`nav-link${
+                    link.sublinks ? " dropdown-toggle" : ""
+                  }`}
                   to={link.path || "#"}
                   role="button"
-                  aria-expanded={activeIndex === index ? "true" : "false"}>
+                  aria-expanded={
+                    link.sublinks
+                      ? activeIndex === index
+                        ? "true"
+                        : "false"
+                      : undefined
+                  }>
                   {link.label}
                 </Link>
-                <div
-                  className={`dropdown-menu${
-                    activeIndex === index ? " show" : ""
-                  }`}>
-                  {link.sublinks?.map((sublink, subIndex) => (
-                    <Link
-                      key={subIndex}
-                      className="dropdown-item"
-                      to={sublink.path}>
-                      {sublink.label}
-                    </Link>
-                  ))}
-                </div>
+                {link.sublinks && (
+                  <div
+                    className={`dropdown-menu${
+                      activeIndex === index ? " show" : ""
+                    }`}>
+                    {link.sublinks.map((sublink, subIndex) => (
+                      <Link
+                        key={subIndex}
+                        className="dropdown-item"
+                        to={sublink.path}>
+                        {sublink.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </li>
             ))}
             <li className="nav-item mx-3">

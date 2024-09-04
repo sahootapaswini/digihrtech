@@ -37,6 +37,27 @@ const BlogList: React.FC = () => {
       link: "/blogs/workforce-management",
       componentName: <WorkforceManagement />,
     },
+    {
+      title: "WORKFORCE",
+      text: "Mastering EU Time Tracking Regulations with SAP SuccessFactors: A Guide for Employers",
+      imgSrc: "/src/assets/images/card.jpg",
+      link: "/blogs/workforce-management",
+      componentName: <WorkforceManagement />,
+    },
+    {
+      title: "WORKFORCE",
+      text: "Mastering EU Time Tracking Regulations with SAP SuccessFactors: A Guide for Employers",
+      imgSrc: "/src/assets/images/card.jpg",
+      link: "/blogs/workforce-management",
+      componentName: <WorkforceManagement />,
+    },
+    {
+      title: "WORKFORCE",
+      text: "Mastering EU Time Tracking Regulations with SAP SuccessFactors: A Guide for Employers",
+      imgSrc: "/src/assets/images/card.jpg",
+      link: "/blogs/workforce-management",
+      componentName: <WorkforceManagement />,
+    },
   ];
   const handleCardClick = (link: string) => {
     setSelectedCard(link);
