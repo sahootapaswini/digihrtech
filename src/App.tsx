@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import HomeCombined from "./components/HomeCombined/HomeCombined";
 import ServiceContent from "./components/ServiceContent/ServiceContent";
 import BlogList from "./components/BlogList/BlogList";
+import WorkforceManagement from "./components/BlogList/components/WorkforceManagement/WorkforceManagement";
 
 function App() {
   const [count, setCount] = useState(0);

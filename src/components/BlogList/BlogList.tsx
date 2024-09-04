@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./BlogList.module.css";
 import Card from "../ReusableComponents/Card";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import WorkforceManagement from "./components/WorkforceManagement/WorkforceManagement";
 // Define the type for the card data
 interface CardData {
@@ -12,6 +13,8 @@ interface CardData {
   componentName: any;
 }
 const BlogList: React.FC = () => {
+  const [selectedCard, setSelectedCard] = useState<string | null>(null);
+  const navigate = useNavigate();
   const cardData: CardData[] = [
     {
       title: "WORKFORCE",
@@ -34,28 +37,11 @@ const BlogList: React.FC = () => {
       link: "/blogs/workforce-management",
       componentName: <WorkforceManagement />,
     },
-    {
-      title: "WORKFORCE",
-      text: "Mastering EU Time Tracking Regulations with SAP SuccessFactors: A Guide for Employers",
-      imgSrc: "/src/assets/images/card.jpg",
-      link: "/blogs/workforce-management",
-      componentName: <WorkforceManagement />,
-    },
-    {
-      title: "WORKFORCE",
-      text: "Mastering EU Time Tracking Regulations with SAP SuccessFactors: A Guide for Employers",
-      imgSrc: "/src/assets/images/card.jpg",
-      link: "/blogs/workforce-management",
-      componentName: <WorkforceManagement />,
-    },
-    {
-      title: "WORKFORCE",
-      text: "Mastering EU Time Tracking Regulations with SAP SuccessFactors: A Guide for Employers",
-      imgSrc: "/src/assets/images/card.jpg",
-      link: "/blogs/workforce-management",
-      componentName: <WorkforceManagement />,
-    },
   ];
+  const handleCardClick = (link: string) => {
+    setSelectedCard(link);
+    navigate(link);
+  };
   return (
     <div className="BlogList">
       <div className="blog-content-wrapper">
@@ -71,18 +57,35 @@ const BlogList: React.FC = () => {
               </p>
             </div>
             <div className="row">
-              {cardData.map((card, index) => (
-                <div
-                  className="col-md-3 col-lg-3 mb-4 px-4 border-none"
-                  key={index}>
-                  <Card
-                    title={card.title}
-                    text={card.text}
-                    imgSrc={card.imgSrc}
-                    link={card.link}
-                  />
+              <div className="col-md-3">
+                <div className="row">
+                  {cardData.map((card, index) => (
+                    <div className="mb-4 px-4 border-none" key={index}>
+                      <Card
+                        title={card.title}
+                        text={card.text}
+                        imgSrc={card.imgSrc}
+                        link={card.link}
+                      />
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+              <div className="col-md-9">
+                <Routes>
+                  {cardData.map((card) => (
+                    <Route
+                      key={card.link}
+                      path={`/${card.link}`}
+                      element={card.componentName}
+                    />
+                  ))}
+                  <Route
+                    path="*"
+                    element={<div>{<WorkforceManagement />}</div>}
+                  />
+                </Routes>
+              </div>
             </div>
           </div>
         </div>
