@@ -1,27 +1,8 @@
 .contact-form-section {
-    background-color: #f8f9fa;
+    background-color: #e7eaed;
     margin: 0 auto;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form-section h1 {
-    color: #333;
-    font-size: 2rem;
-}
-
-p {
-    color: #666;
-}
-
-.btn-primary {
-    background-color: #8b0548;
-    border-color: #8b0548;
-}
-
-.btn-primary:hover {
-    background-color: #6b0438;
-    border-color: #6b0438;
 }
 
 .form-label {

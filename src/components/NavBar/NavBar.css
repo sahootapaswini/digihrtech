@@ -1,11 +1,12 @@
 /* Custom styles for the navbar */
 .navbar {
-  background-color: #13020a61;
+  background-color: #fff;
   top: 0;
   width: 100%;
   position: sticky;
   z-index: 9999;
   transition: background-color 0.3s;
+  border-bottom: 1px solid #ccc;
 }
 
 .navbar.scrolled {
@@ -18,15 +19,15 @@
   display: inline-block;
   width: 200px;
   height: 59px;
-  background: url('/src/assets/images/dhr-logo-white.png') center / cover no-repeat;
-}
-
-.navbar.scrolled .navbar-brand {
   background: url('/src/assets/images/dhr-logo-black.png') center / cover no-repeat;
 }
 
 .nav-link {
-  color: #fff;
+  color: #000;
+}
+
+.nav-link:hover {
+  color: #000;
 }
 
 .navbar.scrolled .nav-link {
@@ -34,25 +35,11 @@
 }
 
 .dropdown-item {
-  color: #807f7f !important;
   transition: opacity 0.2s ease-in-out;
 }
 
-/* Adjust dropdown menu styles */
-.dropdown-menu {
-  background-color: #fff;
-}
 
 .dropdown-item:hover {
-  background-color: #6b0438;
+  background-color: #d36c1f;
   color: #fff !important;
-}
-
-.btn-light {
-  background-color: #f8f9fa;
-  border-color: #8b0548;
-}
-
-.btn-light:hover {
-  background-color: #e2e6ea;
 }

@@ -69,7 +69,7 @@ const BlogList: React.FC = () => {
         <div className="jumbotron jumbotron-fluid bg-light">
           <div className="container">
             <div className="row py-5">
-              <h1 className="display-4 text-danger ">Digital HR Blogs</h1>
+              <h1 className="display-5">Digital HR Blogs</h1>
               <p className="lead">
                 Read about technical know-how, industry insights, and the latest
                 buzz about all things SAP SuccessFactors.Stay updated with

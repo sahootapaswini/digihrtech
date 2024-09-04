@@ -6,7 +6,7 @@
     height: 100vh;
 }
 
-/* Background image styling */
+/* Background image styling 
 #root::before {
     content: "";
     position: absolute;
@@ -21,4 +21,34 @@
     opacity: 0.9;
     filter: blur(2px);
     z-index: -1;
+}*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #d36c1f !important;
+}
+
+.btn-primary {
+    background-color: #d36c1f !important;
+    border-color: #d36c1f !important;
+}
+
+.btn-primary:hover {
+    background-color: #d36c1f !important;
+    border-color: #d36c1f !important;
+}
+
+.bg-orange {
+    background-color: #d36c1f;
+}
+
+.bg-lightgrey {
+    background-color: #d5d9dbc9;
+}
+
+.bt-orange {
+    border-bottom: 2px dotted #d36c1f
 }

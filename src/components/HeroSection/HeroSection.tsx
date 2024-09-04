@@ -1,8 +1,8 @@
 import React from "react";
 import {
-  BsClockFill,
-  BsFillPeopleFill,
-  BsFillCalendarFill,
+  BsClock,
+  BsPeople,
+  BsCalendar,
   BsWallet,
   BsCash,
   BsSearch,
@@ -19,7 +19,7 @@ import "./HeroSection.css"; // Custom CSS for additional styling if needed
 const HeroSection: React.FC = () => {
   const columns = [
     {
-      icon: <BsFillPeopleFill />, // Use the icon component directly
+      icon: <BsPeople />, // Use the icon component directly
       subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
       header: "Employee Central",
       description:
@@ -37,7 +37,7 @@ const HeroSection: React.FC = () => {
       buttonLink: "#",
     },
     {
-      icon: <BsClockFill />, // Example icon for the third column
+      icon: <BsClock />, // Example icon for the third column
       subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
       header: "Time Management",
       description:

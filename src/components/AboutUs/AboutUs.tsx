@@ -10,7 +10,7 @@ const AboutUs: React.FC = () => {
           {/* Setting the column width to 70% (approx. 8 out of 12) */}
           <div className="col-12 col-md-10">
             <section className="px-5">
-              <h1 className="text-center text-danger pb-2">
+              <h1 className="text-center pb-2">
                 Welcome to DHR Technology Consulting & Advisory
               </h1>
               <p>
@@ -32,25 +32,25 @@ const AboutUs: React.FC = () => {
               </p>
             </section>
             <section className="px-5">
-              <h2 className="text-danger text-center">Our Mission</h2>
+              <h2 className="text-center">Our Mission</h2>
               <p>
-                We are one global team dedicated to guiding customers through
+                "We are one global team dedicated to guiding customers through
                 each phase of their digital people experience journey, combining
-                local expertise with global reach.
+                local expertise with global reach"
               </p>
               <p>
-                People are at the heart of our business. We support both our
-                employees and customers in achieving their highest performance.
+                "People are at the heart of our business. We support both our
+                employees and customers in achieving their highest performance"
               </p>
             </section>
             <section className="px-5">
-              <h2 className="text-danger text-center">What We Do</h2>
+              <h2 className="text-center">What We Do</h2>
               <p>
                 We offer comprehensive SuccessFactors solution implementation
                 across all modules, including Employee Central Payroll, S4 HANA
                 Payroll, business consulting, solution architecture advisory,
                 health checks, and Application Management Services (AMS) for all
-                SuccessFactors HR applications and payroll.
+                SuccessFactors HR applications and multi country payroll.
               </p>
               <p>
                 For more details, please visit our{" "}
@@ -62,7 +62,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className="row justify-content-center">
           <div className="col-md-10">
-            <h2 className="text-danger text-center py-3">Our Values</h2>
+            <h2 className="text-center py-3">Our Values</h2>
             <div className="row card-deck">
               <div className="col-md-3 ">
                 <div className="card border-0">

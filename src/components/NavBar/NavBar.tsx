@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 interface LinkProps {
   label: string;
+  link: string;
   path?: string;
   sublinks?: { label: string; path: string }[];
 }
@@ -12,6 +13,7 @@ interface LinkProps {
 const links: LinkProps[] = [
   {
     label: "Solutions",
+    link: "/solutions",
     sublinks: [
       { label: "Employee Central", path: "solutions/employee-central" },
       { label: "Payroll", path: "solutions/payroll" },
@@ -31,6 +33,7 @@ const links: LinkProps[] = [
   },
   {
     label: "Services",
+    link: "/services",
     sublinks: [
       {
         label: "SAP SuccessFactors Implementation",
@@ -68,11 +71,13 @@ const links: LinkProps[] = [
   },
   {
     label: "Products",
+    link: "/products",
     sublinks: [{ label: "Lift and Shift Tool", path: "/lift-and-shift" }],
   },
-  { label: "About US", path: "/about-us" },
+  { label: "About US", link: "/about-us", path: "/about-us" },
   {
     label: "Resources",
+    link: "/Services",
     sublinks: [
       { label: "Blogs", path: "/blogs" },
       { label: "News", path: "/news" },

@@ -34,7 +34,7 @@ const links = [
   {
     icon: <BsFillPeopleFill />,
     label: "Employee Central",
-    path: "solutions/employee-central",
+    path: "employee-central",
     componentName: <EmployeeCentral />,
   },
   {
@@ -102,12 +102,23 @@ const links = [
 const ServiceContent = () => {
   return (
     <section className="solutions-list">
-      <Container>
+      <Container className="">
+        <Row className="justify-content-left pt-5 bt-orange">
+          <Col md={8}>
+            <h1 className="bg-orange text-white p-3">
+              SAP SuccessFactors Compensation
+            </h1>
+            <p className="bg-lightgrey p-2">
+              Effective People can help you quickly and easily implement a
+              powerful pay-for-performance strategy.
+            </p>
+          </Col>
+        </Row>
         <Row className="solutions">
-          <Col xs={12} md={3} className="nav-container">
+          <Col xs={12} md={3} className="nav-container pt-2 px-0">
             <div className="nav-wrapper">
               {links.map((link) => (
-                <Link key={link.path} to={link.path} className="nav-link">
+                <Link key={link.path} to={link.path} className="nav-link p-3">
                   <div className="row">
                     <div className="col-auto">{link.icon}</div>
                     <div className="col">{link.label}</div>
@@ -117,7 +128,7 @@ const ServiceContent = () => {
             </div>
           </Col>
           {/* Right Column for Content */}
-          <Col xs={12} md={9} className="content-container">
+          <Col xs={12} md={9} className="content-container pt-3">
             <Routes>
               {links.map((link) => (
                 <Route

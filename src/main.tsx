@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"; /* import bootstrap */
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 // Get the root element
 const rootElement = document.getElementById("root");
