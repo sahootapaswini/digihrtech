@@ -17,8 +17,8 @@
 
 .navbar-brand {
   display: inline-block;
-  width: 200px;
-  height: 59px;
+  width: 220px;
+  height: 64px;
   background: url('/src/assets/images/dhr-logo-black.png') center / cover no-repeat;
 }
 
@@ -27,7 +27,10 @@
 }
 
 .nav-link:hover {
-  color: #000;
+  color: #fff;
+  background: #d36c1f;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .navbar.scrolled .nav-link {
@@ -48,4 +51,10 @@
   width: 1.2rem;
   height: 1.2rem;
   color: #d36c1f;
+}
+
+.dropdown-item:hover .sub-icon-orange svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  color: #fff;
 }

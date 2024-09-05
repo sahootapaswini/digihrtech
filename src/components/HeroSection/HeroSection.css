@@ -10,10 +10,6 @@
     opacity: 0.7;
 }
 
-.hero-section {
-    background-color: #fff;
-}
-
 .heroContent {
     display: flex;
     flex-direction: column;

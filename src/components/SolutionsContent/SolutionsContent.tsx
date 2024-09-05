@@ -18,7 +18,7 @@ import {
   BsPeople,
   BsClock,
 } from "react-icons/bs"; // Import other icons if needed
-import "./ServiceContent.css";
+import "./SolutionsContent.css";
 import EmployeeCentral from "./components/EmployeeCentral/EmployeeCentral";
 import Payroll from "./components/Payroll/Payroll";
 import TimeManagement from "./components/TimeManagement/TimeManagement";
@@ -101,7 +101,7 @@ const links = [
   },
 ];
 
-const ServiceContent = () => {
+const SolutionsContent = () => {
   return (
     <section className="solutions-list">
       <Container className="">
@@ -134,7 +134,7 @@ const ServiceContent = () => {
             </div>
           </Col>
           {/* Right Column for Content */}
-          <Col xs={12} md={9} className="content-container py-3">
+          <Col xs={12} md={9} className="content-container py-3 px-4">
             <Routes>
               {links.map((link) => (
                 <Route
@@ -152,4 +152,4 @@ const ServiceContent = () => {
   );
 };
 
-export default ServiceContent;
+export default SolutionsContent;

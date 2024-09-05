@@ -194,7 +194,7 @@ const NavBar: React.FC = () => {
             {links.map((link, index) => (
               <li
                 key={index}
-                className={`nav-item${link.sublinks ? " dropdown" : ""} mx-4`}
+                className={`nav-item${link.sublinks ? " dropdown" : ""} mx-2`}
                 onMouseEnter={() => link.sublinks && setActiveIndex(index)}
                 onMouseLeave={() => link.sublinks && setActiveIndex(null)}>
                 <Link
