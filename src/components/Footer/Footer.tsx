@@ -18,24 +18,18 @@ const Footer: React.FC = () => {
       name: "SuccessFactors Implementation",
       url: "services/sap-successfactors",
     },
-    { name: "Payroll", url: "solutions/payroll" },
+    { name: "S4 HANA/Employee Central Payroll", url: "solutions/payroll" },
     { name: "S4 HANA HCM/Hybrid", url: "#" },
     { name: "Reporting & Analytics", url: "solutions/workforce-analytics" },
     { name: "Business AI For HR", url: "solutions/business-ai-hr" },
-  ];
+    ];
   const servicesLink1 = [
-    {
-      name: "SuccessFactors Implementation",
-      url: "services/sap-successfactors",
-    },
-    { name: "Payroll Implementation", url: "services/sap-payroll" },
-    { name: "S4 HANA HCM/Hybrid Implementation", url: "#" },
-    {
-      name: "HR Process Implementation",
+       {
+      name: "HR Business Process Implementation",
       url: "services/hr-process-implementation",
     },
     {
-      name: "HR Roadmap Transformation",
+      name: "HR Technology Roadmap Transformation",
       url: "services/hr-roadmap-transformation",
     },
     {
@@ -43,13 +37,13 @@ const Footer: React.FC = () => {
       url: "services/solution-architecture",
     },
     { name: "Health Check", url: "#" },
+    { name: "Support Services", url: "#" },
   ];
   const servicesLink2 = [
     { name: "Change Management", url: "services/change-management" },
     { name: "Test Management", url: "services/test-management" },
     { name: "Integration Services", url: "services/integration-services" },
-    { name: "Support Services", url: "#" },
-    { name: "Data Migration", url: "services/data-migration" },
+     { name: "Data Migration", url: "services/data-migration" },
     { name: "Training", url: "services/training" },
     {
       name: "Talent Intelligence Hub",
@@ -79,7 +73,6 @@ const Footer: React.FC = () => {
     <footer className="footer bg-dark text-white">
       <div className="container">
         <div className="row text-left bbwhite pt-5">
-          {/* SAP SuccessFactors Implementation Section */}
           <div className="col-md-2 px-5">
             <h5>Important Links</h5>
             <div className="footer-links">
@@ -95,10 +88,10 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <div className="col-md-4 px-5">
-            <h5>SAP SuccessFactors Implementation</h5>
+            <h5>Implementation Services</h5>
             <p>
               With over 20 years of experience, we are the world leading experts
-              in SuccessFactors implementation:
+              in SuccessFactors & Multi Country payroll implementation:
             </p>
             <div className="footer-links">
               <ul className="list-unstyled">
@@ -113,10 +106,10 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <div className="col-md-6 px-5">
-            <h5>Services</h5>
+            <h5>Value Add Services</h5>
             <p>
-              DHR Technology deliver a range of services to supplement your SAP
-              SuccessFactors solution:
+              DHR Technology deliver a range of value add services to supplement your SAP
+              SuccessFactors and payroll solution:
             </p>
             <div className="row">
               <div className="col">
