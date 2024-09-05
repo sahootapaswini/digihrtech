@@ -1,5 +1,5 @@
-.services-list {
-    /* Add your component styles here */
+.services-list .container {
+    background-image: url("/assets/images/hero/hero-orange.png");
 }
 
 .services-list .nav-link.active {

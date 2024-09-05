@@ -67,7 +67,7 @@ const AboutUs: React.FC = () => {
               <div className="col-md-3 ">
                 <div className="card border-0">
                   <img
-                    src="/src/assets/images/cards/card.jpg"
+                    src="/assets/images/cards/card.jpg"
                     className="card-img-top"
                     alt="Image"
                   />
@@ -85,7 +85,7 @@ const AboutUs: React.FC = () => {
               <div className="col-md-3">
                 <div className="card border-0">
                   <img
-                    src="/src/assets/images/cards/card.jpg"
+                    src="/assets/images/cards/card.jpg"
                     className="card-img-top"
                     alt="Image"
                   />
@@ -104,7 +104,7 @@ const AboutUs: React.FC = () => {
               <div className="col-md-3 ">
                 <div className="card border-0">
                   <img
-                    src="/src/assets/images/cards/card.jpg"
+                    src="/assets/images/cards/card.jpg"
                     className="card-img-top"
                     alt="Image"
                   />
@@ -121,7 +121,7 @@ const AboutUs: React.FC = () => {
               <div className="col-md-3 ">
                 <div className="card border-0">
                   <img
-                    src="/src/assets/images/cards/card.jpg"
+                    src="/assets/images/cards/card.jpg"
                     className="card-img-top"
                     alt="Image"
                   />

@@ -13,7 +13,7 @@
   display: inline-block;
   width: 250px;
   height: 80px;
-  background: url('/src/assets/images/logo/dhr-logo5.png') center / cover no-repeat;
+  background: url('/assets/images/logo/dhr-logo5.png') center / cover no-repeat;
 }
 
 .nav-link {

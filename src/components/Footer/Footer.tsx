@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Footer.css";
 
@@ -16,38 +17,38 @@ const Footer: React.FC = () => {
   const implementationLinks = [
     {
       name: "SuccessFactors Implementation",
-      url: "services/sap-successfactors",
+      url: "/solutions/sap-successfactors",
     },
-    { name: "S4 HANA/Employee Central Payroll", url: "solutions/payroll" },
+    { name: "S4 HANA/Employee Central Payroll", url: "/solutions/payroll" },
     { name: "S4 HANA HCM/Hybrid", url: "#" },
-    { name: "Reporting and Analytics", url: "solutions/workforce-analytics" },
-    { name: "Business AI For HR", url: "solutions/business-ai-hr" },
-    ];
+    { name: "Reporting and Analytics", url: "/solutions/workforce-analytics" },
+    { name: "Business AI For HR", url: "/solutions/business-ai-hr" },
+  ];
   const servicesLink1 = [
-       {
+    {
       name: "HR Business Process Implementation",
-      url: "services/hr-process-implementation",
+      url: "/services/hr-process-implementation",
     },
     {
       name: "HR Technology Roadmap Transformation",
-      url: "services/hr-roadmap-transformation",
+      url: "/services/hr-roadmap-transformation",
     },
     {
       name: "Solution Architecture Advisory",
-      url: "services/solution-architecture",
+      url: "/services/solution-architecture",
     },
     { name: "Health Check", url: "#" },
     { name: "Support Services", url: "#" },
   ];
   const servicesLink2 = [
-    { name: "Change Management", url: "services/change-management" },
-    { name: "Test Management", url: "services/test-management" },
-    { name: "Integration Services", url: "services/integration-services" },
-     { name: "Data Migration", url: "services/data-migration" },
-    { name: "Training", url: "services/training" },
+    { name: "Change Management", url: "/services/change-management" },
+    { name: "Test Management", url: "/services/test-management" },
+    { name: "Integration Services", url: "/services/integration-services" },
+    { name: "Data Migration", url: "/services/data-migration" },
+    { name: "Training", url: "/services/training" },
     {
       name: "Talent Intelligence Hub",
-      url: "services/sap-talent-intelligence",
+      url: "/services/sap-talent-intelligence",
     },
   ];
 
@@ -79,9 +80,9 @@ const Footer: React.FC = () => {
               <ul className="list-unstyled">
                 {dthLinks.map((link, index) => (
                   <li key={index}>
-                    <a href={link.url} className="text-white">
+                    <Link to={link.url} className="text-white">
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -97,9 +98,9 @@ const Footer: React.FC = () => {
               <ul className="list-unstyled">
                 {implementationLinks.map((link, index) => (
                   <li key={index}>
-                    <a href={link.url} className="text-white">
+                    <Link to={link.url} className="text-white">
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -108,8 +109,8 @@ const Footer: React.FC = () => {
           <div className="col-md-6 px-5">
             <h5>Value Add Services</h5>
             <p>
-              DHR Technology deliver a range of value add services to supplement your SAP
-              SuccessFactors and payroll solution:
+              DHR Technology deliver a range of value add services to supplement
+              your SAP SuccessFactors and payroll solution:
             </p>
             <div className="row">
               <div className="col">
@@ -117,9 +118,9 @@ const Footer: React.FC = () => {
                   <ul className="list-unstyled">
                     {servicesLink1.map((link, index) => (
                       <li key={index}>
-                        <a href={link.url} className="text-white">
+                        <Link to={link.url} className="text-white">
                           {link.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -130,9 +131,9 @@ const Footer: React.FC = () => {
                   <ul className="list-unstyled">
                     {servicesLink2.map((link, index) => (
                       <li key={index}>
-                        <a href={link.url} className="text-white">
+                        <Link to={link.url} className="text-white">
                           {link.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

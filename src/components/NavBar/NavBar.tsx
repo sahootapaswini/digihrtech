@@ -142,7 +142,7 @@ const links: LinkProps[] = [
       {
         label: "Lift and Shift Tool",
         path: "/lift-and-shift",
-        icon: " ",
+        icon: "",
       },
     ],
   },

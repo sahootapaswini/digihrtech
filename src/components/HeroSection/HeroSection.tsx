@@ -20,7 +20,7 @@ import "./HeroSection.css"; // Custom CSS for additional styling if needed
 const HeroSection: React.FC = () => {
   const columns = [
     {
-      icon: "/src/assets/images/icons/dhr-ec-icon.jpg", // Use the icon component directly
+      icon: "/assets/images/icons/dhr-ec-icon.jpg", // Use the icon component directly
       header: "Employee Central",
       description:
         "Consolidate and standardize global HR processes. We have extensive experience helping companies implement the SAP SuccessFactors Employee Central module.",
@@ -28,7 +28,7 @@ const HeroSection: React.FC = () => {
       buttonLink: "solutions/employee-central",
     },
     {
-      icon: "/src/assets/images/icons/dhr-compensation-icon.png",
+      icon: "/assets/images/icons/dhr-compensation-icon.png",
       header: "Compensation",
       description:
         "Whether you’re just starting out with SuccessFactors or are starting from scratch, DHR Technology can help you quickly and easily implement a powerful pay-for-performance strategy.",
@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
       buttonLink: "solutions/compensation",
     },
     {
-      icon: "/src/assets/images/icons/dhr-time-icon.png", // Example icon for the third column
+      icon: "/assets/images/icons/dhr-time-icon.png", // Example icon for the third column
       header: "Time Management",
       description:
         "DHR Technology can help you implement SAP SuccessFactors’ time management module to track, approve and put in time off requests. Get error-free timesheets.",
@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
       buttonLink: "solutions/time-management",
     },
     {
-      icon: "/src/assets/images/icons/dhr-recruiting-icon.jpg", // Example icon for the third column
+      icon: "/assets/images/icons/dhr-recruiting-icon.jpg", // Example icon for the third column
       header: "Recruiting",
       description:
         "Hire the right people for your business when you partner with DHR Technology to help you implement the SAP SuccessFactors Recruiting module.",
@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
       buttonLink: "solutions/recruiting",
     },
     {
-      icon: "/src/assets/images/icons/dhr-onboard-icon.jpg", // Example icon for the third column
+      icon: "/assets/images/icons/dhr-onboard-icon.jpg", // Example icon for the third column
       header: "Onboarding",
       description:
         "Onboard with ease by implementing SAP SuccessFactors Onboarding. We’ll help you get going.",
@@ -60,7 +60,7 @@ const HeroSection: React.FC = () => {
       buttonLink: "solutions/onboarding",
     },
     {
-      icon: "/src/assets/images/icons/dhr-performance-icon.jpg", // Example icon for the third column
+      icon: "/assets/images/icons/dhr-performance-icon.jpg", // Example icon for the third column
       header: "Performance and Goals",
       description:
         "Create a successful business with the help of SAP SuccessFactors Performance and Goals Management—we’ll ensure your implementation happens quickly and smoothly!",
@@ -68,7 +68,7 @@ const HeroSection: React.FC = () => {
       buttonLink: "solutions/performance-goals",
     },
     {
-      icon: "/src/assets/images/icons/dhr-suc-dev-icon.png", // Example icon for the third column
+      icon: "/assets/images/icons/dhr-suc-dev-icon.png", // Example icon for the third column
 
       header: "Succession and Development",
       description:
@@ -77,7 +77,7 @@ const HeroSection: React.FC = () => {
       buttonLink: "solutions/succession-development",
     },
     {
-      icon: "/src/assets/images/icons/dhr-learn-icon2.png", // Example icon for the third column
+      icon: "/assets/images/icons/dhr-learn-icon2.png", // Example icon for the third column
       header: "Learning",
       description:
         "To stay competitive, you need an engaged and highly skilled workforce. With SAP SuccessFactors Learning Management System, you can track, train, and hone your employees’ skills within one unified, cloud-based system.",
@@ -85,7 +85,7 @@ const HeroSection: React.FC = () => {
       buttonLink: "solutions/learning",
     },
     {
-      icon: "/src/assets/images/icons/dhr-report-icon.png", // Example icon for the third column
+      icon: "/assets/images/icons/dhr-report-icon.png", // Example icon for the third column
       header: "Reporting and Analytics",
       description:
         "Make better decisions with SAP Analytics Cloud and SuccessFactors People Analytics Reports –we’ll help you get started!",
@@ -93,7 +93,7 @@ const HeroSection: React.FC = () => {
       buttonLink: "solutions/workforce-analytics",
     },
     {
-      icon: "/src/assets/images/icons/dhr-payroll-icon.png", // Example icon for the third column
+      icon: "/assets/images/icons/dhr-payroll-icon.png", // Example icon for the third column
       header: "Payroll",
       description:
         "Pay the employee with confidence in error free payroll.We have extensive experience helping companies implement Employee Central Payroll & S4 HANA Payroll",
@@ -101,7 +101,7 @@ const HeroSection: React.FC = () => {
       buttonLink: "solutions/payroll",
     },
     {
-      icon: "/src/assets/images/icons/dhr-ai-icon.jpg", // Example icon for the third column
+      icon: "/assets/images/icons/dhr-ai-icon.jpg", // Example icon for the third column
       header: "Business AI for HR",
       description:
         "Make work easier with SAP Business AI. It helps employees,manager,recruiter & HR  do their jobs better",
