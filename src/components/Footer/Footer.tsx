@@ -4,35 +4,39 @@ import "./Footer.css";
 
 const Footer: React.FC = () => {
   // Data for the footer sections
+  const dthLinks = [
+    { name: "About Us", url: "#" },
+    { name: "Current Opening", url: "#" },
+    { name: "Blogs", url: "#" },
+    { name: "News", url: "#" },
+    { name: "Privacy Policy", url: "#" },
+    { name: "Disclaimer", url: "#" },
+    { name: "Term Of Use", url: "#" },
+  ];
   const implementationLinks = [
     { name: "SuccessFactors Implementation", url: "#" },
-    { name: "Employee Central", url: "#" },
     { name: "Payroll", url: "#" },
-    { name: "Time Management", url: "#" },
-    { name: "Recruiting", url: "#" },
-    { name: "Onboarding", url: "#" },
-    { name: "Performance and Goals", url: "#" },
-    { name: "Succession and Development", url: "#" },
-    { name: "Learning", url: "#" },
-    { name: "Workforce Analytics", url: "#" },
-    { name: "Compensation", url: "#" },
+    { name: "S4 HANA HCM/Hybrid", url: "#" },
+    { name: "Reporting & Analytics", url: "#" },
+    { name: "Business AI For HR", url: "#" },
   ];
-  const hrprocessLinks = [
-    { name: "HR Process Implementation ", url: "#" },
-    { name: "Payroll", url: "#" },
-    { name: "Workforce Management", url: "#" },
-    { name: "Analytics, Insights & Engagement", url: "#" },
-  ];
-  const servicesLinks = [
-    { name: "SAP SuccessFactors Implementation", url: "#" },
+  const servicesLink1 = [
+    { name: "SuccessFactors Implementation", url: "#" },
+    { name: "Payroll Implementation", url: "#" },
+    { name: "S4 HANA HCM/Hybrid Implementation", url: "#" },
     { name: "HR Process Implementation", url: "#" },
+    { name: "HR Roadmap Transformation", url: "#" },
+    { name: "Solution Architecture Advisory", url: "#" },
+    { name: "Health Check", url: "#" },
+  ];
+  const servicesLink2 = [
     { name: "Change Management", url: "#" },
     { name: "Test Management", url: "#" },
     { name: "Integration Services", url: "#" },
     { name: "Support Services", url: "#" },
     { name: "Data Migration", url: "#" },
     { name: "Training", url: "#" },
-    { name: "SAP Talent Intelligence Hub", url: "#" },
+    { name: "Talent Intelligence Hub", url: "#" },
   ];
 
   const socialLinks = [
@@ -58,7 +62,21 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className="row text-left bbwhite pt-5">
           {/* SAP SuccessFactors Implementation Section */}
-          <div className="col-md-4 px-5">
+          <div className="col-md-3 px-5">
+            <h5>Important Links</h5>
+            <div className="footer-links">
+              <ul className="list-unstyled">
+                {dthLinks.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.url} className="text-white">
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="col-md-3 px-5">
             <h5>SAP SuccessFactors Implementation</h5>
             <p>
               With over 20 years of experience, we are the world leading experts
@@ -76,39 +94,39 @@ const Footer: React.FC = () => {
               </ul>
             </div>
           </div>
-          <div className="col-md-4 px-5">
-            <h5>HR Processes</h5>
-            <p>
-              See how we help implement solutions for specific HR processes:
-            </p>
-            <div className="footer-links">
-              <ul className="list-unstyled">
-                {hrprocessLinks.map((link, index) => (
-                  <li key={index}>
-                    <a href={link.url} className="text-white">
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="col-md-4 px-5">
+          <div className="col-md-6 px-5">
             <h5>Services</h5>
             <p>
               DHR Technology deliver a range of services to supplement your SAP
               SuccessFactors solution:
             </p>
-            <div className="footer-links">
-              <ul className="list-unstyled">
-                {servicesLinks.map((link, index) => (
-                  <li key={index}>
-                    <a href={link.url} className="text-white">
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+            <div className="row">
+              <div className="col">
+                <div className="footer-links">
+                  <ul className="list-unstyled">
+                    {servicesLink1.map((link, index) => (
+                      <li key={index}>
+                        <a href={link.url} className="text-white">
+                          {link.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="col">
+                <div className="footer-links">
+                  <ul className="list-unstyled">
+                    {servicesLink2.map((link, index) => (
+                      <li key={index}>
+                        <a href={link.url} className="text-white">
+                          {link.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -132,7 +150,8 @@ const Footer: React.FC = () => {
                   href="https://maps.google.com/?q=Corniche,+Tower+A,+Abu+Dhabi,+UAE"
                   className="text-white"
                   target="_blank"
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                >
                   View on Google Maps
                 </a>
               </li>
@@ -149,7 +168,8 @@ const Footer: React.FC = () => {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white">
+                    className="text-white"
+                  >
                     <i className={`${social.iconClass} fa-2x`}></i>
                   </a>
                 </li>
