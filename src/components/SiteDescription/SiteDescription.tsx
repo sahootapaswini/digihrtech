@@ -17,7 +17,7 @@ const SiteDescription: React.FC = () => {
     <Carousel
       controls
       indicators
-      interval={1000}
+      interval={3000}
       className="carousel-container mx-auto d-flex align-items-center p-5">
       {paragraphs.map((text, index) => (
         <Carousel.Item key={index}>
