@@ -11,9 +11,9 @@
 
 .navbar-brand {
   display: inline-block;
-  width: 220px;
-  height: 64px;
-  background: url('/src/assets/images/dhr-logo-black.png') center / cover no-repeat;
+  width: 250px;
+  height: 80px;
+  background: url('/src/assets/images/dhr-logo5.png') center / cover no-repeat;
 }
 
 .nav-link {

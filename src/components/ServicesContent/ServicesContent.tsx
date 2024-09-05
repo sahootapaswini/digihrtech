@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BsCash, BsClockFill, BsPeople } from "react-icons/bs"; // Import other icons if needed
 import "./ServicesContent.module.css";
 import SapSuccessfactor from "./components/SapSuccessfactor/SapSuccessfactor";
-import BreadcrumbsContainer from "../ReusableComponents/BreadCrumbs";
+import BreadcrumbsContainer from "../ReusableComponents/BreadCrumbs/BreadCrumbs";
 
 const links = [
   {

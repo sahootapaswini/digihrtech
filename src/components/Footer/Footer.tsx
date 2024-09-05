@@ -5,38 +5,56 @@ import "./Footer.css";
 const Footer: React.FC = () => {
   // Data for the footer sections
   const dthLinks = [
-    { name: "About Us", url: "#" },
+    { name: "About Us", url: "/about-us" },
     { name: "Current Opening", url: "#" },
-    { name: "Blogs", url: "#" },
-    { name: "News", url: "#" },
-    { name: "Privacy Policy", url: "#" },
-    { name: "Disclaimer", url: "#" },
-    { name: "Term Of Use", url: "#" },
+    { name: "Blogs", url: "/blogs" },
+    { name: "News", url: "/news" },
+    { name: "Privacy Policy", url: "/privacy-policy" },
+    { name: "Disclaimer", url: "/disclaimer" },
+    { name: "Term Of Use", url: "/termsofuse" },
   ];
   const implementationLinks = [
-    { name: "SuccessFactors Implementation", url: "#" },
-    { name: "Payroll", url: "#" },
+    {
+      name: "SuccessFactors Implementation",
+      url: "services/sap-successfactors",
+    },
+    { name: "Payroll", url: "solutions/payroll" },
     { name: "S4 HANA HCM/Hybrid", url: "#" },
-    { name: "Reporting & Analytics", url: "#" },
-    { name: "Business AI For HR", url: "#" },
+    { name: "Reporting & Analytics", url: "solutions/workforce-analytics" },
+    { name: "Business AI For HR", url: "solutions/business-ai-hr" },
   ];
   const servicesLink1 = [
-    { name: "SuccessFactors Implementation", url: "#" },
-    { name: "Payroll Implementation", url: "#" },
+    {
+      name: "SuccessFactors Implementation",
+      url: "services/sap-successfactors",
+    },
+    { name: "Payroll Implementation", url: "services/sap-payroll" },
     { name: "S4 HANA HCM/Hybrid Implementation", url: "#" },
-    { name: "HR Process Implementation", url: "#" },
-    { name: "HR Roadmap Transformation", url: "#" },
-    { name: "Solution Architecture Advisory", url: "#" },
+    {
+      name: "HR Process Implementation",
+      url: "services/hr-process-implementation",
+    },
+    {
+      name: "HR Roadmap Transformation",
+      url: "services/hr-roadmap-transformation",
+    },
+    {
+      name: "Solution Architecture Advisory",
+      url: "services/solution-architecture",
+    },
     { name: "Health Check", url: "#" },
   ];
   const servicesLink2 = [
-    { name: "Change Management", url: "#" },
-    { name: "Test Management", url: "#" },
-    { name: "Integration Services", url: "#" },
+    { name: "Change Management", url: "services/change-management" },
+    { name: "Test Management", url: "services/test-management" },
+    { name: "Integration Services", url: "services/integration-services" },
     { name: "Support Services", url: "#" },
-    { name: "Data Migration", url: "#" },
-    { name: "Training", url: "#" },
-    { name: "Talent Intelligence Hub", url: "#" },
+    { name: "Data Migration", url: "services/data-migration" },
+    { name: "Training", url: "services/training" },
+    {
+      name: "Talent Intelligence Hub",
+      url: "services/sap-talent-intelligence",
+    },
   ];
 
   const socialLinks = [

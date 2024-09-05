@@ -26,7 +26,7 @@ import Learning from "./components/Learning/Learning";
 import WorkforceAnalytics from "./components/WorkforceAnalytics/WorkforceAnalytics";
 import Compensation from "./components/Compensation/Compensation";
 import BusinessAIForHR from "./components/BusinessAIForHR/BusinessAIForHR";
-import BreadcrumbsContainer from "../ReusableComponents/BreadCrumbs";
+import BreadcrumbsContainer from "../ReusableComponents/BreadCrumbs/BreadCrumbs";
 import useScrollToTop from "../ReusableComponents/useScrollToTop";
 
 interface BreadcrumbItem {

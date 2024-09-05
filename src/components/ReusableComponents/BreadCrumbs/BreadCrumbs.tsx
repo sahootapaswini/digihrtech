@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./BreadCrumbs.module.css";
 
 // Define the type for a single breadcrumb item
 interface BreadcrumbItem {
