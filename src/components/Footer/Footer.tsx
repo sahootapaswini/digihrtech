@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className="row text-left bbwhite pt-5">
           {/* SAP SuccessFactors Implementation Section */}
-          <div className="col-md-3 px-5">
+          <div className="col-md-2 px-5">
             <h5>Important Links</h5>
             <div className="footer-links">
               <ul className="list-unstyled">
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
               </ul>
             </div>
           </div>
-          <div className="col-md-3 px-5">
+          <div className="col-md-4 px-5">
             <h5>SAP SuccessFactors Implementation</h5>
             <p>
               With over 20 years of experience, we are the world leading experts
@@ -150,8 +150,7 @@ const Footer: React.FC = () => {
                   href="https://maps.google.com/?q=Corniche,+Tower+A,+Abu+Dhabi,+UAE"
                   className="text-white"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
                   View on Google Maps
                 </a>
               </li>
@@ -168,8 +167,7 @@ const Footer: React.FC = () => {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white"
-                  >
+                    className="text-white">
                     <i className={`${social.iconClass} fa-2x`}></i>
                   </a>
                 </li>

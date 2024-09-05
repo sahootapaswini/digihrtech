@@ -77,53 +77,61 @@ const links: LinkProps[] = [
     sublinks: [
       {
         label: "SAP SuccessFactors Implementation",
-        path: "/sap-successfactors",
-        icon: <BsCash />,
+        path: "services/sap-successfactors",
+        icon: "",
       },
       {
         label: "SAP Payroll Cloud & On Premise Implementation",
-        path: "/sap-payroll",
-        icon: <BsCash />,
+        path: "services/sap-payroll",
+        icon: "",
       },
-      { label: "SAP ERP HCM/ Hybrid", path: "/sap-erp-hcm", icon: <BsCash /> },
+      {
+        label: "SAP ERP HCM/ Hybrid",
+        path: "services/sap-erp-hcm",
+        icon: "",
+      },
       {
         label: "HR Process Implementation",
-        path: "/hr-process-implementation",
-        icon: <BsCash />,
+        path: "services/hr-process-implementation",
+        icon: "",
       },
       {
         label: "HR Roadmap Transformation",
-        path: "/hr-roadmap-transformation",
-        icon: <BsCash />,
+        path: "services/hr-roadmap-transformation",
+        icon: "",
       },
       {
         label: "Solution Architecture Advisory",
-        path: "/solution-architecture",
-        icon: <BsCash />,
+        path: "services/solution-architecture",
+        icon: "",
       },
       {
         label: "Change Management",
-        path: "/change-management",
-        icon: <BsCash />,
+        path: "services/change-management",
+        icon: "",
       },
-      { label: "Test Management", path: "/test-management", icon: <BsCash /> },
+      { label: "Test Management", path: "services/test-management", icon: "" },
       {
         label: "Integration Services",
-        path: "/integration-services",
-        icon: <BsCash />,
+        path: "services/integration-services",
+        icon: "",
       },
       {
         label: "Application Support",
-        path: "/application-support",
-        icon: <BsCash />,
+        path: "services/application-support",
+        icon: "",
       },
-      { label: "Data Migration", path: "/data-migration", icon: <BsCash /> },
-      { label: "Training", path: "/training", icon: <BsCash /> },
-      { label: "HR Scopping", path: "/hr-scopping", icon: <BsCash /> },
+      {
+        label: "Data Migration",
+        path: "services/data-migration",
+        icon: "",
+      },
+      { label: "Training", path: "services/training", icon: "" },
+      { label: "HR Scopping", path: "services/hr-scopping", icon: "" },
       {
         label: "SAP Talent Intelligence Hub",
-        path: "/sap-talent-intelligence",
-        icon: <BsCash />,
+        path: "services/sap-talent-intelligence",
+        icon: "",
       },
     ],
   },
@@ -134,7 +142,7 @@ const links: LinkProps[] = [
       {
         label: "Lift and Shift Tool",
         path: "/lift-and-shift",
-        icon: <BsCash />,
+        icon: " ",
       },
     ],
   },
@@ -143,9 +151,9 @@ const links: LinkProps[] = [
     label: "Resources",
     link: "/Services",
     sublinks: [
-      { label: "Blogs", path: "/blogs", icon: <BsCash /> },
-      { label: "News", path: "/news", icon: <BsCash /> },
-      { label: "Events", path: "/events", icon: <BsCash /> },
+      { label: "Blogs", path: "/blogs", icon: "" },
+      { label: "News", path: "/news", icon: "" },
+      { label: "Events", path: "/events", icon: "" },
     ],
   },
 ];
@@ -222,9 +230,11 @@ const NavBar: React.FC = () => {
                         key={subIndex}
                         className="dropdown-item"
                         to={sublink.path}>
-                        <span className="sub-icon-orange px-2">
-                          {sublink.icon}
-                        </span>
+                        {sublink.icon && (
+                          <span className="sub-icon-orange px-2">
+                            {sublink.icon}
+                          </span>
+                        )}
                         <span className="align-items-center  ">
                           {sublink.label}
                         </span>

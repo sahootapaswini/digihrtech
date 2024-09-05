@@ -16,7 +16,8 @@
     color: #000 !important;
 }
 
-.solutions .nav-link:hover {
+.solutions .nav-link.active {
+    background-color: #d5d9dbc9;
     border-right: 1rem solid #d36c1f;
     margin-right: -.5rem;
 }

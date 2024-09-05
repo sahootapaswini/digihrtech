@@ -1,12 +1,9 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
-  BsClockFill,
   BsFillPeopleFill,
-  BsFillCalendarFill,
-  BsWallet,
   BsCash,
   BsSearch,
   BsClipboard,
@@ -14,7 +11,6 @@ import {
   BsGraphUp,
   BsLightbulb,
   BsPieChart,
-  BsCurrencyDollar,
   BsPeople,
   BsClock,
 } from "react-icons/bs"; // Import other icons if needed
@@ -30,7 +26,13 @@ import Learning from "./components/Learning/Learning";
 import WorkforceAnalytics from "./components/WorkforceAnalytics/WorkforceAnalytics";
 import Compensation from "./components/Compensation/Compensation";
 import BusinessAIForHR from "./components/BusinessAIForHR/BusinessAIForHR";
-import { IconBase } from "react-icons";
+import BreadcrumbsContainer from "../ReusableComponents/BreadCrumbs";
+import useScrollToTop from "../ReusableComponents/useScrollToTop";
+
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
 
 const links = [
   {
@@ -102,11 +104,13 @@ const links = [
 ];
 
 const SolutionsContent = () => {
+  useScrollToTop(); // Call the hook to enable scrolling to top
   return (
     <section className="solutions-list">
       <Container className="">
         <Row className="justify-content-left pt-5 bt-orange">
-          <Col md={8}>
+          <Col md={8} className="p-0">
+            <BreadcrumbsContainer />
             <h1 className="bg-orange text-white p-3">
               SAP SuccessFactors Compensation
             </h1>
@@ -120,7 +124,12 @@ const SolutionsContent = () => {
           <Col xs={12} md={3} className="nav-container pt-2 px-0">
             <div className="nav-wrapper">
               {links.map((link) => (
-                <Link key={link.path} to={link.path} className="nav-link p-3">
+                <NavLink
+                  key={link.path}
+                  to={link.path}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link p-3 active" : "nav-link p-3"
+                  }>
                   <div className="row">
                     <div className="col-auto solutions-link-icon">
                       {link.icon}
@@ -129,7 +138,7 @@ const SolutionsContent = () => {
                       {link.label}
                     </div>
                   </div>
-                </Link>
+                </NavLink>
               ))}
             </div>
           </Col>
