@@ -6,8 +6,7 @@ const WorkforceAnalytics = () => {
     <Container>
       <Row className="mb-4">
         <Col>
-          <h1>SAP SuccessFactors Workforce Analytics</h1>
-          <p>
+            <p>
             You don’t have to be a data scientist to benefit from people
             analytics! With SAP SuccessFactors Workforce Analytics, you’ll gain
             a reliable view of your workforce and how every employee impacts

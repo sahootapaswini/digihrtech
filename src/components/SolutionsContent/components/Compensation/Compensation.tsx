@@ -6,7 +6,6 @@ const Compensation = () => {
     <Container>
       <Row className="mb-4">
         <Col>
-          <h1>SAP SuccessFactors Compensation</h1>
           <p>
             The SAP SuccessFactors Compensation module helps you build and
             manage strategic compensation programs that align with the needs of

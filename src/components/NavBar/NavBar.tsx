@@ -55,7 +55,7 @@ const links: LinkProps[] = [
       },
       { label: "Learning", path: "solutions/learning", icon: <BsLightbulb /> },
       {
-        label: "Workforce Analytics",
+        label: "Reporting And Analytics",
         path: "solutions/workforce-analytics",
         icon: <BsPieChart />,
       },
@@ -127,9 +127,9 @@ const links: LinkProps[] = [
         icon: "",
       },
       { label: "Training", path: "services/training", icon: "" },
-      { label: "HR Scopping", path: "services/hr-scopping", icon: "" },
+      { label: "Health Check", path: "services/hr-scopping", icon: "" },
       {
-        label: "SAP Talent Intelligence Hub",
+        label: "Talent Intelligence Hub",
         path: "services/sap-talent-intelligence",
         icon: "",
       },

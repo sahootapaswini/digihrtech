@@ -115,7 +115,7 @@ const SolutionsContent = () => {
               SAP SuccessFactors Compensation
             </h1>
             <p className="bg-lightgrey p-2">
-              Effective People can help you quickly and easily implement a
+              DHR Technology can help you quickly and easily implement a
               powerful pay-for-performance strategy.
             </p>
           </Col>

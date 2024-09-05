@@ -6,7 +6,6 @@ const SuccessionDevelopment = () => {
     <Container>
       <Row className="mb-4">
         <Col>
-          <h1>Succession & Development with SAP SuccessFactors</h1>
           <p>
             In uncertain times, future-proofing your business is a top
             priority—and that starts from within. Succession planning is a
@@ -60,23 +59,6 @@ const SuccessionDevelopment = () => {
               conversations with managers and executives.
             </li>
           </ul>
-        </Col>
-      </Row>
-
-      <Row className="mb-4">
-        <Col>
-          <Card>
-            <Card.Body>
-              <Card.Title>Customer Testimonial</Card.Title>
-              <Card.Text>
-                “With the SAP SuccessFactors solutions we can now break down
-                what employees do on the job and drive their behavior in the
-                right direction, in line with the company’s strategic goals.”
-                <br />
-                <strong>Steen Wung-Sung | Head of HR Technology</strong>
-              </Card.Text>
-            </Card.Body>
-          </Card>
         </Col>
       </Row>
 

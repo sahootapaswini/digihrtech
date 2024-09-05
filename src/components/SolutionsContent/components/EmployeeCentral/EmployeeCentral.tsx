@@ -6,7 +6,6 @@ const EmployeeCentral = () => {
     <Container>
       <Row className="mb-4">
         <Col>
-          <h1>Employee Central (EC)</h1>
           <p>
             Employee Central (EC) is a flexible, core HR functionality that
             allows you to consolidate and standardize HR processes on a global
@@ -71,26 +70,6 @@ const EmployeeCentral = () => {
               data and benefits processes.
             </li>
           </ul>
-        </Col>
-      </Row>
-
-      <Row className="mb-4">
-        <Col>
-          <Card>
-            <Card.Body>
-              <Card.Title>Customer Testimonial</Card.Title>
-              <Card.Text>
-                “Thanks to the support of Effective People, we managed to
-                painlessly move our heavily customized on premise SAP to a
-                modern, digital and user-friendly Employee Central solution.
-                This was achieved in only 7 months from kick-off to go-live.”
-                <br />
-                <strong>
-                  Olivier Durand | HRIS & HR Processes Director, Danfoss
-                </strong>
-              </Card.Text>
-            </Card.Body>
-          </Card>
         </Col>
       </Row>
     </Container>

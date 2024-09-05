@@ -6,7 +6,6 @@ const TimeManagement = () => {
     <Container>
       <Row className="mb-4">
         <Col>
-          <h1>Time Management Module</h1>
           <p>
             The Time Management module within SAP SuccessFactors is a
             cloud-based application that provides capabilities across three
@@ -49,24 +48,6 @@ const TimeManagement = () => {
         </Col>
       </Row>
 
-      <Row className="mb-4">
-        <Col>
-          <Card>
-            <Card.Body>
-              <Card.Title>Customer Testimonial</Card.Title>
-              <Card.Text>
-                “Partnering with Effective People has been key for our HR
-                transformation. Their expertise and support have been very
-                valuable to us.”
-                <br />
-                <strong>
-                  Gustaf Rössner | Head of HR Digitalization at Coor
-                </strong>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
 
       <Row>
         <Col>

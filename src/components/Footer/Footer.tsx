@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
     },
     { name: "S4 HANA/Employee Central Payroll", url: "solutions/payroll" },
     { name: "S4 HANA HCM/Hybrid", url: "#" },
-    { name: "Reporting & Analytics", url: "solutions/workforce-analytics" },
+    { name: "Reporting and Analytics", url: "solutions/workforce-analytics" },
     { name: "Business AI For HR", url: "solutions/business-ai-hr" },
     ];
   const servicesLink1 = [

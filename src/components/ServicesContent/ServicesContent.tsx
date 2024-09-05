@@ -54,9 +54,9 @@ const links = [
     path: "data-migration",
   },
   { label: "Training", path: "training", icon: <BsCash /> },
-  { label: "HR Scopping", path: "hr-scopping", icon: <BsCash /> },
+  { label: "Health Check", path: "hr-scopping", icon: <BsCash /> },
   {
-    label: "SAP Talent Intelligence Hub",
+    label: "Talent Intelligence Hub",
     path: "sap-talent-intelligence",
   },
 ];
@@ -72,7 +72,7 @@ const ServicesContent = () => {
               SAP SuccessFactors Implementation
             </h1>
             <p className="bg-lightgrey p-2">
-              Effective People can help you quickly and easily implement a
+              DHR Technology can help you quickly and easily implement a
               powerful pay-for-performance strategy.
             </p>
           </Col>

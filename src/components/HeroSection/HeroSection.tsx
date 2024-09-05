@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
       icon: "/src/assets/images/icons/dhr-compensation-icon.png",
       header: "Compensation",
       description:
-        "Whether you’re just starting out with SuccessFactors or are starting from scratch, Effective People can help you quickly and easily implement a powerful pay-for-performance strategy.",
+        "Whether you’re just starting out with SuccessFactors or are starting from scratch, DHR Technology can help you quickly and easily implement a powerful pay-for-performance strategy.",
       buttonText: "Find out more",
       buttonLink: "solutions/compensation",
     },
@@ -39,7 +39,7 @@ const HeroSection: React.FC = () => {
       icon: "/src/assets/images/icons/dhr-time-icon.png", // Example icon for the third column
       header: "Time Management",
       description:
-        "Effective People can help you implement SAP SuccessFactors’ time management module to track, approve and put in time off requests. Get error-free timesheets.",
+        "DHR Technology can help you implement SAP SuccessFactors’ time management module to track, approve and put in time off requests. Get error-free timesheets.",
       buttonText: "Find out more",
       buttonLink: "solutions/time-management",
     },
@@ -47,7 +47,7 @@ const HeroSection: React.FC = () => {
       icon: "/src/assets/images/icons/dhr-recruiting-icon.jpg", // Example icon for the third column
       header: "Recruiting",
       description:
-        "Hire the right people for your business when you partner with Effective People to help you implement the SAP SuccessFactors Recruiting module.",
+        "Hire the right people for your business when you partner with DHR Technology to help you implement the SAP SuccessFactors Recruiting module.",
       buttonText: "Find out more",
       buttonLink: "solutions/recruiting",
     },
@@ -72,7 +72,7 @@ const HeroSection: React.FC = () => {
 
       header: "Succession and Development",
       description:
-        "Don’t let resignations or retirements slow your business growth. Partner with Effective People to ensure implementation with ease.",
+        "Don’t let resignations or retirements slow your business growth. Partner with DHR Technology to ensure implementation with ease.",
       buttonText: "Find out more",
       buttonLink: "solutions/succession-development",
     },
@@ -86,9 +86,9 @@ const HeroSection: React.FC = () => {
     },
     {
       icon: "/src/assets/images/icons/dhr-report-icon.png", // Example icon for the third column
-      header: "Workforce Analytics",
+      header: "Reporting and Analytics",
       description:
-        "Make better decisions with workforce analytics–we’ll help you get started!",
+        "Make better decisions with SAP Analytics Cloud and SuccessFactors People Analytics Reports –we’ll help you get started!",
       buttonText: "Find out more",
       buttonLink: "solutions/workforce-analytics",
     },
@@ -96,7 +96,7 @@ const HeroSection: React.FC = () => {
       icon: "/src/assets/images/icons/dhr-payroll-icon.png", // Example icon for the third column
       header: "Payroll",
       description:
-        "Make better decisions with workforce analytics–we’ll help you get started!",
+        "Pay the employee with confidence in error free payroll.We have extensive experience helping companies implement Employee Central Payroll & S4 HANA Payroll",
       buttonText: "Find out more",
       buttonLink: "solutions/payroll",
     },
@@ -104,7 +104,7 @@ const HeroSection: React.FC = () => {
       icon: "/src/assets/images/icons/dhr-ai-icon.jpg", // Example icon for the third column
       header: "Business AI for HR",
       description:
-        "Make better decisions with workforce analytics–we’ll help you get started!",
+        "Make work easier with SAP Business AI. It helps employees,manager,recruiter & HR  do their jobs better",
       buttonText: "Find out more",
       buttonLink: "solutions/business-ai-hr",
     },

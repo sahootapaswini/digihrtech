@@ -6,7 +6,6 @@ const Onboarding = () => {
     <Container>
       <Row className="mb-4">
         <Col>
-          <h1>Streamlined Onboarding with SAP SuccessFactors</h1>
           <p>
             Onboarding gets new hires in the door and contributing quickly to
             your company’s business goals. It’s a critical part of a strategic
@@ -62,27 +61,6 @@ const Onboarding = () => {
               automatic task triggers and new-hire reminders.
             </li>
           </ul>
-        </Col>
-      </Row>
-
-      <Row className="mb-4">
-        <Col>
-          <Card>
-            <Card.Body>
-              <Card.Title>Customer Testimonial</Card.Title>
-              <Card.Text>
-                “With the support of Effective People, we implemented SAP
-                SuccessFactors full suite within 21 months. Our entire HR setup
-                is now improved, with a strengthened focus on recruiting and
-                onboarding processes in particular.”
-                <br />
-                <strong>
-                  Pia Munk-Nielsen | HR System and Process Manager, Kemp &
-                  Lauritzen
-                </strong>
-              </Card.Text>
-            </Card.Body>
-          </Card>
         </Col>
       </Row>
 
