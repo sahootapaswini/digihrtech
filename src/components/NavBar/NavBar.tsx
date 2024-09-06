@@ -160,29 +160,27 @@ const links: LinkProps[] = [
 
 const NavBar: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const [scrolled, setScrolled] = useState(false);
 
-  const handleScroll = () => {
-    if (window.scrollY > 0.1) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    const handleResize = () => setIsMobile(window.innerWidth < 992);
+
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
+  const handleClick = (index: number) => {
+    if (isMobile) {
+      setActiveIndex(activeIndex === index ? null : index);
+    }
+  };
+
   return (
-    <nav
-      className={`navbar navbar-expand-lg navbar-dark p-4 ${
-        scrolled ? "scrolled" : ""
-      }`}>
+    <nav className={`navbar navbar-expand-lg navbar-dark p-md-4   `}>
       <div className="container">
         <Link className="navbar-brand" to="/"></Link>
         <button
@@ -203,8 +201,7 @@ const NavBar: React.FC = () => {
               <li
                 key={index}
                 className={`nav-item${link.sublinks ? " dropdown" : ""} mx-2`}
-                onMouseEnter={() => link.sublinks && setActiveIndex(index)}
-                onMouseLeave={() => link.sublinks && setActiveIndex(null)}>
+                onClick={() => link.sublinks && handleClick(index)}>
                 <Link
                   className={`nav-link${
                     link.sublinks ? " dropdown-toggle" : ""

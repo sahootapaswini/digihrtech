@@ -1,4 +1,10 @@
 /* Custom styles for the navbar */
+:root {
+  --logo-large: url('/assets/images/logo/dhr-logo5.png');
+  --logo-small: url('/assets/images/logo/dhr-logo5.png');
+  --menu-icon: url('/assets/images/icons/dhr-menu-icon.webp');
+}
+
 .navbar {
   background-color: #fff;
   top: 0;
@@ -9,11 +15,53 @@
   border-bottom: 1px solid #ccc;
 }
 
+.navbar .navbar-toggler-icon {
+  background: var(--menu-icon) no-repeat center;
+  background-size: contain;
+  height: 43px;
+  width: 70px;
+}
+
 .navbar-brand {
   display: inline-block;
   width: 250px;
   height: 80px;
-  background: url('/assets/images/logo/dhr-logo5.png') center / cover no-repeat;
+  background: var(--logo-large) center / cover no-repeat;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    background: var(--logo-small) center / cover no-repeat;
+    width: 200px;
+    height: 60px;
+  }
+}
+
+/* For mobile screens, dropdowns should toggle on click */
+@media (max-width: 767px) {
+  .navbar-nav .nav-item {
+    position: relative;
+    border-bottom: 1px dotted #d36c1f;
+  }
+
+  .navbar-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item .dropdown-menu.show {
+    display: block;
+  }
+}
+
+/* Ensure dropdowns are shown on hover for larger screens */
+@media (min-width: 768px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
 
 .nav-link {

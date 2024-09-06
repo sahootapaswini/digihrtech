@@ -1,19 +1,6 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import {
-  BsClock,
-  BsPeople,
-  BsCalendar,
-  BsWallet,
-  BsCash,
-  BsSearch,
-  BsClipboard,
-  BsBarChart,
-  BsGraphUp,
-  BsLightbulb,
-  BsPieChart,
-  BsCurrencyDollar,
-} from "react-icons/bs"; // Import other icons if needed
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./HeroSection.css"; // Custom CSS for additional styling if needed
 
@@ -123,9 +110,11 @@ const HeroSection: React.FC = () => {
                 <h1 className="header mb-4">{col.header}</h1>
                 <p className="description mb-4 px-2">{col.description}</p>
                 <div className="button-container mt-auto mb-3">
-                  <a href={col.buttonLink} className="btn btn-primary">
+                  <Link
+                    to={col.buttonLink}
+                    className="text-white btn btn-primary">
                     {col.buttonText}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

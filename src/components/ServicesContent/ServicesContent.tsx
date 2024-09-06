@@ -2,9 +2,8 @@ import React from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./ServicesContent.module.css";
-import { BsCash, BsClockFill, BsPeople } from "react-icons/bs"; // Import other icons if needed
-import "./ServicesContent.module.css";
+import "./ServicesContent.css";
+import { BsCash } from "react-icons/bs";
 import SapSuccessfactor from "./components/SapSuccessfactor/SapSuccessfactor";
 import BreadcrumbsContainer from "../ReusableComponents/BreadCrumbs/BreadCrumbs";
 import SapPayroll from "./components/SapPayroll/SapPayroll";
@@ -88,8 +87,8 @@ const ServicesContent = () => {
   return (
     <section className="services-list">
       <Container className="">
-        <Row className="justify-content-center pt-5 bt-orange main-content-top">
-          <Col md={8} className="p-5 bg-lightgrey">
+        <Row className="justify-content-center bt-orange main-content-top">
+          <Col md={10} className="bcpage-section">
             <BreadcrumbsContainer />
             <h1 className="bg-orange text-white p-3">
               SAP SuccessFactors Implementation

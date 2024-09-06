@@ -108,8 +108,8 @@ const SolutionsContent = () => {
   return (
     <section className="solutions-list">
       <Container className="">
-        <Row className="justify-content-left pt-5 bt-orange">
-          <Col md={8} className="p-0">
+        <Row className="justify-content-center bt-orange main-content-top">
+          <Col md={10} className="bcpage-section">
             <BreadcrumbsContainer />
             <h1 className="bg-orange text-white p-3">
               SAP SuccessFactors Compensation

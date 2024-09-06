@@ -31,9 +31,9 @@ const ContactForm: React.FC = () => {
 
   return (
     <section className="contact-form-section">
-      <div className="container">
+      <div className="container py-3">
         <div className="row justify-content-center">
-          <div className="col-10">
+          <div className="col-md-10">
             <h1 className="text-center mb-4">Get in Touch</h1>
             <p className="text-center mb-4">
               Need assistance implementing SAP SuccessFactors? Whether you’re a
