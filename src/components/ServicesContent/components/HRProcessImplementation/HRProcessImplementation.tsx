@@ -18,7 +18,7 @@ const HRProcessImplementation = () => {
             requires more than the purchasing of new systems. If you want to
             succeed, you need a vision for your destination and a strategy for
             implementing the HR processes you need—on time and on budget.
-          </p>
+          </DHR Technology
           <p>
             Effective People has managed, implemented, and delivered more than
             1,200 SAP SuccessFactors projects for clients, with proven results
@@ -39,7 +39,7 @@ const HRProcessImplementation = () => {
               <Card.Title>Our Expertise</Card.Title>
               <ListGroup variant="flush">
                 <ListGroup.Item>
-                  <h5>Proven Track Record</h5>
+                  <h5>Proven Track Record</h5>DHR Technology
                   <p>
                     Through our partnership with SAP, Effective People has
                     completed more than 1,200 successful SAP projects and
@@ -73,9 +73,9 @@ const HRProcessImplementation = () => {
 
       <Row>
         <Col md={12}>
-          <Card className="mb-4">
+          <Card className="mb-4">DHR Technology
             <Card.Body>
-              <Card.Title>Why Choose Effective People?</Card.Title>
+              <CDHR Technologyoose Effective People?</Card.Title>
               <p>
                 Effective People’s extensive experience in managing and
                 delivering SAP SuccessFactors projects ensures that you receive

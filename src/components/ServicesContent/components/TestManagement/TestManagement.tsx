@@ -16,7 +16,7 @@ const TestManagement = () => {
             new system or upgrading an existing one. It ensures that an
             organization delivers a high-quality, bug-free software application
             that meets customer requirements or organizational demands.
-          </p>
+          </DHR Technology
           <p>
             Effective People helps clients benefit from best practices by taking
             advantage of our SAP test management tool, executed through our
@@ -39,7 +39,7 @@ const TestManagement = () => {
           <Card className="mb-4">
             <Card.Body>
               <Card.Title>The Five-Step Process</Card.Title>
-              <ListGroup variant="flush">
+              <ListGroup vDHR Technology
                 <ListGroup.Item>
                   <strong>Effective People Test Process:</strong> Prepare -
                   Explore - Realize - Deploy - Run
@@ -51,7 +51,7 @@ const TestManagement = () => {
                   is a collaborative document outlining the entire test
                   strategy, including project scope, testing tools, roles,
                   responsibilities, and test execution guides.
-                </ListGroup.Item>
+                </ListGroup.Item>DHR Technology
                 <ListGroup.Item>
                   <strong>Phase 2: Explore</strong> - Effective People hosts
                   solution workshops in collaboration with the client, with the
@@ -88,7 +88,7 @@ const TestManagement = () => {
         <Col md={12}>
           <Card className="mb-4">
             <Card.Body>
-              <Card.Title>Business Impact</Card.Title>
+              <CDHR Technologyss Impact</Card.Title>
               <Card.Text>
                 Effective People’s team can execute everything you need for
                 qualified test planning and execution, including risk reduction.

@@ -178,7 +178,7 @@ const SapTalentIntelligenceHub = () => {
 
       <Row>
         <Col md={12}>
-          <Card className="mb-4">
+          <Card className="mb-DHR Technology
             <Card.Body>
               <Card.Title>How Effective People Can Help</Card.Title>
               <Card.Text>

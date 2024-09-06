@@ -16,12 +16,9 @@ const AboutUs: React.FC = () => {
                 Welcome to DHR Technology Consulting & Advisory
               </h1>
               <p>
-                We are a premium SAP HR Consulting Company founded by team
-                experts from SAP, Accenture, Deloitte, and IBM with vast
-                experience in implementing and managing SuccessFactors and
-                multi-country payroll solutions across all industries over the
-                last 20 years.
+              We are a premier SAP HR consulting firm, founded by experts from SAP, Accenture, Deloitte, and IBM. With over 20 years of experience, we specialize in implementing and managing SuccessFactors and multi-country payroll solutions across diverse industries.
               </p>
+              <p>The world’s first ERP company to offer an online effort estimation tool for implementation and support, delivering transparency into efforts, costs, and timelines without the need for a formal RFP (Proposal). For More details please Visit our Tools Section on the website.</p>
               <p>
                 We help our clients plan and execute successful HR digital
                 transformation journeys while offering continued support and
@@ -50,9 +47,9 @@ const AboutUs: React.FC = () => {
               <p>
                 We offer comprehensive SuccessFactors solution implementation
                 across all modules, including Employee Central Payroll, S4 HANA
-                Payroll, business consulting, solution architecture advisory,
-                health checks, and Application Management Services (AMS) for all
-                SuccessFactors HR applications and multi country payroll.
+                Payroll, business consulting, solution architecture advisory, System Health Checks,
+                HR Technology Roadmap transformation, and Application Management Services (AMS) for all
+                SuccessFactors HR applications and multi country payroll. 
               </p>
               <p>
                 For more details, please visit our{" "}

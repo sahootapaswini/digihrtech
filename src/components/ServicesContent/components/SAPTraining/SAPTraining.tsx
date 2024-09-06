@@ -16,7 +16,7 @@ const SAPTraining = () => {
             varying technical skills within HR teams, it can be particularly
             challenging to maintain the necessary level of expertise across all
             users.
-          </p>
+          </DHR Technology
           <p>
             Effective People provides admin training tailored to improve your HR
             admins’ technical knowledge. Our training sessions are interactive
@@ -68,7 +68,7 @@ const SAPTraining = () => {
 
       <Row>
         <Col md={12}>
-          <Card className="mb-4">
+          <Card className="mb-4">DHR Technology
             <Card.Body>
               <Card.Title>Why Work with Effective People?</Card.Title>
               <p>

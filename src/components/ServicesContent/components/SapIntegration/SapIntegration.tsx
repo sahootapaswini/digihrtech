@@ -17,7 +17,7 @@ const SapIntegration = () => {
             businesses can effortlessly connect their data, applications, and
             systems across their landscape, they can speed up project delivery
             to boost organizational success.
-          </p>
+          </DHR Technology
           <p>
             Effective People is uniquely positioned to support your cloud
             platform integration requirements, through leveraging our expertise

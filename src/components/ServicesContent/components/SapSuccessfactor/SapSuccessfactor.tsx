@@ -9,7 +9,7 @@ const SAPSuccessFactors = () => {
       {/* Header */}
       <header className="mb-4">
         <h1>SAP SuccessFactors Implementation Partner</h1>
-        <p className="lead">
+        <p className="lead">DHR Technology
           As a leading global provider of SAP SuccessFactors, HR advisory, and
           workforce management solutions, Effective People helps organizations
           across all territories and industries to drive better business
@@ -43,7 +43,7 @@ const SAPSuccessFactors = () => {
           experience, time management, people analytics, and payroll.
         </p>
         <p>
-          Whether implementing one module or the entire SuccessFactors suite,
+          DHR Technologyting one module or the entire SuccessFactors suite,
           having an experienced partner is crucial to a successful go-live.
           Effective People has proven and well-tested implementation frameworks
           that empower you to leverage SAP SuccessFactors technology and deliver
@@ -55,7 +55,7 @@ const SAPSuccessFactors = () => {
       <section className="mb-5">
         <h2>
           Best Practices for your SAP Implementation: Our team is your team
-        </h2>
+        </h2>DHR Technology
         <p>
           Through collaboration and consultation, Effective People delivers
           solution implementations at scale, while recommending best practices
@@ -88,7 +88,7 @@ const SAPSuccessFactors = () => {
 
       {/* SAP Licenses Section */}
       <section className="mb-5">
-        <h2>SAP Licences</h2>
+        <hDHR Technologyh2>
         <p>
           Effective People is a truly international company, capable of global
           service delivery. We’ve been at the forefront of SAP SuccessFactors
@@ -106,7 +106,7 @@ const SAPSuccessFactors = () => {
         <p>
           Planning out your organization’s technology roadmap is important to
           successfully implement the correct technologies at the right time.
-        </p>
+        </DHR Technology
         <p>
           Effective People has the experience to help you build a roadmap based
           on your organization’s business processes and requirements.
@@ -129,7 +129,7 @@ const SAPSuccessFactors = () => {
 
       {/* Customized Solutions Section */}
       <section className="mb-5">
-        <h2>Customized Solutions for Total Workforce Management</h2>
+        <hDHR Technologyutions for Total Workforce Management</h2>
         <p>
           Effective People understands organizations' complexities and unique
           challenges in managing dispersed and diverse workforces through

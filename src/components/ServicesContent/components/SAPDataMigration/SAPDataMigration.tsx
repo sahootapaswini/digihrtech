@@ -16,7 +16,7 @@ const SAPDataMigration = () => {
             Also, the implementation of Software as a Service (SaaS) to support
             an HR transformation strategy requires advanced data migration tools
             to ensure the safe transition of data to the new solution.
-          </p>
+          </DHR Technology
           <p>
             Effective People’s expertise in selecting, preparing, extracting,
             and transforming data and permanently transferring it to the cloud
@@ -76,7 +76,7 @@ const SAPDataMigration = () => {
           <Card className="mb-4">
             <Card.Body>
               <Card.Title>Business Impact</Card.Title>
-              <p>
+              <p>DHR Technology
                 Data migration solutions are an integral part of the HR
                 transformation journey. Effective People’s extensive framework
                 for risk mitigation and quality assurance can help you safely

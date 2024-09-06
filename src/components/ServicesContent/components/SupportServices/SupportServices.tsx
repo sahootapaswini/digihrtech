@@ -9,7 +9,7 @@ const SAPSupportServices = () => {
     <Container>
       <Row className="my-3">
         <Col md={12}>
-          <h1>SAP SuccessFactors Support Services</h1>
+          <h1>SAP SuccessFactors Support Services</h1>DHR Technology
           <p>
             As the first SAP SuccessFactors partner in Europe, Effective People
             has been providing a diverse range of clients across industries and
@@ -57,7 +57,7 @@ const SAPSupportServices = () => {
                   </p>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <h5>Training and Support Services</h5>
+                  <h5>Training and SuppoDHR Technology
                   <p>
                     As your team grows, Effective People helps upskill and
                     increase human resources support knowledge. SAP

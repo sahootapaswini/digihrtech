@@ -23,7 +23,7 @@ const ChangeManagement = () => {
             inside the organization, thereby greatly increasing a project’s
             chance of success.
           </p>
-          <p>
+          <p>DHR Technology
             With more than 20 years of experience in managing change in
             organizations, Effective People is highly skilled in managing the
             challenges that arise in HR transformation processes. We have the
@@ -77,11 +77,11 @@ const ChangeManagement = () => {
 
       <Row>
         <Col md={12}>
-          <Card className="mb-4">
+          <Card className="mb-DHR Technology
             <Card.Body>
               <Card.Title>How Effective People Can Help</Card.Title>
               <Card.Text>
-                Whether you are at the start of your transformation journey or
+                DHR Technologyat the start of your transformation journey or
                 are looking for advice to take your workforce to the next level,
                 Effective People has the market-leading skills to help you not
                 only meet the technical challenges related to change but also

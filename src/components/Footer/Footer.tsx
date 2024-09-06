@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/company/example",
+      url: "https://www.linkedin.com/company/digital-hr-technology",
       iconClass: "fab fa-linkedin",
     },
     {
