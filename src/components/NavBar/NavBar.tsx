@@ -140,8 +140,29 @@ const links: LinkProps[] = [
     link: "/products",
     sublinks: [
       {
-        label: "Lift and Shift Tool",
-        path: "/lift-and-shift",
+        label: "DHR Easy Move",
+        path: "/dhr-easy-move",
+        icon: "",
+      },
+    ],
+  },
+  {
+    label: "Tools",
+    link: "/tools",
+    sublinks: [
+      {
+        label: "DHR Estimator Implementation",
+        path: "/dhr-estimator-implementation",
+        icon: "",
+      },
+      {
+        label: "DHR Estimator Services",
+        path: "/dhr-estimator-services",
+        icon: "",
+      },
+      {
+        label: "DHR Estimator AMS",
+        path: "/dhr-estimator-ams",
         icon: "",
       },
     ],
