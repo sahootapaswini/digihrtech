@@ -1,7 +1,9 @@
 import React from "react";
 import "./AboutUs.module.css";
+import useScrollToTop from "../ReusableComponents/useScrollToTop";
 
 const AboutUs: React.FC = () => {
+  useScrollToTop();
   return (
     <div className="bg-white AboutUs">
       <div className="container py-5">

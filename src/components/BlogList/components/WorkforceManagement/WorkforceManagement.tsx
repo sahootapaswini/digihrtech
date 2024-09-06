@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./WorkforceManagement.module.css";
+import useScrollToTop from "../../../ReusableComponents/useScrollToTop";
 const WorkforceManagement: React.FC = () => {
+  useScrollToTop();
   return (
     <main className="container content-section">
       <div className="row">

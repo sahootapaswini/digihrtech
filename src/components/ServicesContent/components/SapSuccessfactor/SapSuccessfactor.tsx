@@ -1,7 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import useScrollToTop from "../../../ReusableComponents/useScrollToTop";
 
 const SAPSuccessFactors = () => {
+  useScrollToTop();
   return (
     <div className="container mt-5">
       {/* Header */}

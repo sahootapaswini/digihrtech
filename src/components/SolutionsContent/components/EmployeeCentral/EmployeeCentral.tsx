@@ -1,7 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import useScrollToTop from "../../../ReusableComponents/useScrollToTop";
 
 const EmployeeCentral = () => {
+  useScrollToTop();
   return (
     <Container>
       <Row className="mb-4">

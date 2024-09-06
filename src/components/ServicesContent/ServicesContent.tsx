@@ -15,6 +15,7 @@ import SAPSupportServices from "./components/SupportServices/SupportServices";
 import SAPDataMigration from "./components/SAPDataMigration/SAPDataMigration";
 import SAPTraining from "./components/SAPTraining/SAPTraining";
 import HRProcessImplementation from "./components/HRProcessImplementation/HRProcessImplementation";
+import useScrollToTop from "../ReusableComponents/useScrollToTop";
 
 const links = [
   {
@@ -84,6 +85,7 @@ const links = [
 ];
 
 const ServicesContent = () => {
+  useScrollToTop();
   return (
     <section className="services-list">
       <Container className="">

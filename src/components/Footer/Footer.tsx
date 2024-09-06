@@ -2,8 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Footer.css";
+import useScrollToTop from "../ReusableComponents/useScrollToTop";
 
 const Footer: React.FC = () => {
+  useScrollToTop();
   // Data for the footer sections
   const dthLinks = [
     { name: "About Us", url: "/about-us" },

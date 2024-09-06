@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ContactForm.css"; // Custom CSS for additional styling if needed
+import useScrollToTop from "../ReusableComponents/useScrollToTop";
 
 const ContactForm: React.FC = () => {
+  useScrollToTop();
   // Form state management
   const [formData, setFormData] = useState({
     firstName: "",
