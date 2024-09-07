@@ -80,10 +80,10 @@ const BlogList: React.FC = () => {
               </p>
             </div>
             <div className="row">
-              <div className="col-md-3">
-                <div className="row">
+              <div className="col-12">
+                <div className="card-container">
                   {cardData.map((card, index) => (
-                    <div className="mb-4 px-4 border-none" key={index}>
+                    <div className="col-md-4 mb-4 px-4 border-none" key={index}>
                       <Card
                         title={card.title}
                         text={card.text}
@@ -94,7 +94,9 @@ const BlogList: React.FC = () => {
                   ))}
                 </div>
               </div>
-              <div className="col-md-9">
+            </div>
+            <div className="row">
+              <div className="col-md-12">
                 <Routes>
                   {cardData.map((card) => (
                     <Route

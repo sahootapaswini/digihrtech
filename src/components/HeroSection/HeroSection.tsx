@@ -107,7 +107,7 @@ const HeroSection: React.FC = () => {
                 <div className="icon-container mb-1 py-2">
                   <Image src={col.icon} alt={col.header} fluid />
                 </div>
-                <h1 className="header mb-4">{col.header}</h1>
+                <h3 className="header mb-4">{col.header}</h3>
                 <p className="description mb-4 px-2">{col.description}</p>
                 <div className="button-container mt-auto mb-3">
                   <Link
