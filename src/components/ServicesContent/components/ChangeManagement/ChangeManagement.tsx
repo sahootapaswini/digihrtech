@@ -25,7 +25,7 @@ const ChangeManagement = () => {
           </p>
           <p>
             With more than 20 years of experience in managing change in
-            organizations, Effective People is highly skilled in managing the
+            organizations, DHR Technology is highly skilled in managing the
             challenges that arise in HR transformation processes. We have the
             expertise to help identify, mitigate, and manage any potential
             employee resistance. Through a tried-and-trusted enabling framework
@@ -79,11 +79,11 @@ const ChangeManagement = () => {
         <Col md={12}>
           <Card className="mb-4">
             <Card.Body>
-              <Card.Title>How Effective People Can Help</Card.Title>
+              <Card.Title>How DHR Technology Can Help</Card.Title>
               <Card.Text>
                 Whether you are at the start of your transformation journey or
                 are looking for advice to take your workforce to the next level,
-                Effective People has the market-leading skills to help you not
+                DHR Technology has the market-leading skills to help you not
                 only meet the technical challenges related to change but also
                 the people-focused expertise to steer you safely through the
                 people side of the organizational change you need to make.

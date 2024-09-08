@@ -18,7 +18,7 @@ const TestManagement = () => {
             that meets customer requirements or organizational demands.
           </p>
           <p>
-            Effective People helps clients benefit from best practices by taking
+            DHR Technology helps clients benefit from best practices by taking
             advantage of our SAP test management tool, executed through our
             Quality Assurance (QA) program, which provides a flexible and
             tailored approach to managed testing, verification, and validation
@@ -41,7 +41,7 @@ const TestManagement = () => {
               <Card.Title>The Five-Step Process</Card.Title>
               <ListGroup variant="flush">
                 <ListGroup.Item>
-                  <strong>Effective People Test Process:</strong> Prepare -
+                  <strong>DHR Technology Test Process:</strong> Prepare -
                   Explore - Realize - Deploy - Run
                 </ListGroup.Item>
                 <ListGroup.Item>
@@ -53,7 +53,7 @@ const TestManagement = () => {
                   responsibilities, and test execution guides.
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <strong>Phase 2: Explore</strong> - Effective People hosts
+                  <strong>Phase 2: Explore</strong> - DHR Technology hosts
                   solution workshops in collaboration with the client, with the
                   goal of validating the chosen solution and determining
                   configuration values. In collaboration with the client, our
@@ -90,7 +90,7 @@ const TestManagement = () => {
             <Card.Body>
               <Card.Title>Business Impact</Card.Title>
               <Card.Text>
-                Effective People’s team can execute everything you need for
+                DHR Technology’s team can execute everything you need for
                 qualified test planning and execution, including risk reduction.
               </Card.Text>
             </Card.Body>

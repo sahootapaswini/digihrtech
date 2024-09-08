@@ -13,7 +13,7 @@ const TermsOfUse = () => {
             using any of the Services, you accept these Terms.
           </p>
 
-          <h2>Changes</h2>
+          <h3>Changes</h3>
           <p>
             We may occasionally change these Terms, so we encourage you to
             review the Terms periodically. The most current version of the Terms
@@ -22,7 +22,7 @@ const TermsOfUse = () => {
             Terms, you accept all changes.
           </p>
 
-          <h2>Privacy Policy; Additional Terms</h2>
+          <h3>Privacy Policy; Additional Terms</h3>
           <p>
             Our Privacy Policy describes our practices concerning data that you
             provide or that we may collect about you through the Services, and
@@ -44,7 +44,7 @@ const TermsOfUse = () => {
             complying with these rules and requirements.
           </p>
 
-          <h2>Registration and Access Controls</h2>
+          <h3>Registration and Access Controls</h3>
           <p>
             You are responsible for maintaining the confidentiality of your
             login names and passwords and you accept responsibility for all
@@ -61,7 +61,7 @@ const TermsOfUse = () => {
             Services unless you are above the required age.
           </p>
 
-          <h2>Intellectual Property; License</h2>
+          <h3>Intellectual Property; License</h3>
           <p>
             The content, information, data, designs, code, and materials
             associated with the Services (“Content”) are protected by
@@ -78,7 +78,7 @@ const TermsOfUse = () => {
             You also may not transfer or sublicense this limited right to use
             the Services or resell the Services.
           </p>
-          <h3>a. Viral Distribution</h3>
+          <h4>a. Viral Distribution</h4>
           <p>
             We may expressly authorize you to redistribute certain Content for
             personal, non-commercial use. We will identify the Content that you
@@ -88,21 +88,21 @@ const TermsOfUse = () => {
             publicly posted Content and you must edit or delete it promptly upon
             our request.
           </p>
-          <h3>b. Commercial Licenses</h3>
+          <h4>b. Commercial Licenses</h4>
           <p>
             You must obtain our written permission for commercial use of the
             Content or the Services. If you wish to license Content from the
             Services, please contact us.
           </p>
 
-          <h2>Legal Complaints</h2>
+          <h3>Legal Complaints</h3>
           <p>
             DHR Technology respects intellectual property rights. If you believe
             that Content on the Services infringes your copyright, please follow
             our procedures for making a copyright infringement claim.
           </p>
 
-          <h2>User Submissions</h2>
+          <h3>User Submissions</h3>
           <p>
             Some of the Services may allow you to submit or transmit audio,
             video, text, or other materials (collectively, “User Submissions”)
@@ -157,7 +157,7 @@ const TermsOfUse = () => {
             privacy), or violate applicable law.
           </p>
 
-          <h2>Third-Party Content</h2>
+          <h3>Third-Party Content</h3>
           <p>
             We occasionally provide third party content or link to third party
             websites on the Services. We do not necessarily endorse or evaluate
@@ -167,7 +167,7 @@ const TermsOfUse = () => {
             use their services.
           </p>
 
-          <h2>Acceptable Use</h2>
+          <h3>Acceptable Use</h3>
           <p>
             The Services have been designed to present Content in a unique
             format and appearance. Unless we give you permission, you agree not
@@ -238,7 +238,7 @@ const TermsOfUse = () => {
             </li>
           </ul>
 
-          <h2>Site Access Account Deletion</h2>
+          <h3>Site Access Account Deletion</h3>
           <p>
             We may take any of the following actions in our sole discretion at
             any time and for any reason without giving you prior notice:
@@ -276,7 +276,7 @@ const TermsOfUse = () => {
             voluntarily discontinue your use.
           </p>
 
-          <h2>Indemnification</h2>
+          <h3>Indemnification</h3>
           <p>
             You will defend, indemnify, and hold harmless DHR Technology, its
             parent, subsidiaries, affiliates, and the directors, officers,
@@ -293,7 +293,7 @@ const TermsOfUse = () => {
             you agree to cooperate with us to defend such claim.
           </p>
 
-          <h2>Governing Law, Venue, and Jurisdiction</h2>
+          <h3>Governing Law, Venue, and Jurisdiction</h3>
           <p>
             These Terms and all claims arising from or related to your use of
             the Services will be governed by and construed in accordance with
@@ -313,7 +313,7 @@ const TermsOfUse = () => {
             waive the claim or action.
           </p>
 
-          <h2>Arbitration</h2>
+          <h3>Arbitration</h3>
           <p>
             We may elect to resolve any controversy or claim arising out of or
             relating to these Terms or the Services by binding arbitration in
@@ -323,7 +323,7 @@ const TermsOfUse = () => {
             in any court of competent jurisdiction.
           </p>
 
-          <h2>Miscellaneous</h2>
+          <h3>Miscellaneous</h3>
           <p>
             We may be required by state or federal law to notify you of certain
             events. You hereby acknowledge and agree that such notices will be

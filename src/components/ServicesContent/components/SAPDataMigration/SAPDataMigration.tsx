@@ -18,7 +18,7 @@ const SAPDataMigration = () => {
             to ensure the safe transition of data to the new solution.
           </p>
           <p>
-            Effective People’s expertise in selecting, preparing, extracting,
+            DHR Technology’s expertise in selecting, preparing, extracting,
             and transforming data and permanently transferring it to the cloud
             is based on proven migration methods and tools, combined with our
             experience in managing more than 1,200 successfully completed data
@@ -78,7 +78,7 @@ const SAPDataMigration = () => {
               <Card.Title>Business Impact</Card.Title>
               <p>
                 Data migration solutions are an integral part of the HR
-                transformation journey. Effective People’s extensive framework
+                transformation journey. DHR Technology’s extensive framework
                 for risk mitigation and quality assurance can help you safely
                 navigate your way through the complexities involved.
               </p>
