@@ -22,8 +22,12 @@
     filter: blur(2px);
     z-index: -1;
 }*/
+h1 {
+    background: #ca6803f0;
+    padding: 10px;
+    color: #fff !important;
+}
 
-h1,
 h2,
 h3,
 h4,

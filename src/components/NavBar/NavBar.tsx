@@ -173,8 +173,9 @@ const links: LinkProps[] = [
     link: "/Services",
     sublinks: [
       { label: "Blogs", path: "/blogs", icon: "" },
-      { label: "News", path: "/news", icon: "" },
-      { label: "Events", path: "/events", icon: "" },
+      { label: "How We Deliver", path: "/how-we-deliver", icon: "" },
+      /*{ label: "News", path: "/news", icon: "" },
+      { label: "Events", path: "/events", icon: "" },*/
     ],
   },
 ];
