@@ -1,6 +1,29 @@
 import React from "react";
-import "./AboutUs.module.css";
+import "./AboutUs.css";
 import useScrollToTop from "../ReusableComponents/useScrollToTop";
+
+const cardData = [
+  {
+    image: "/assets/images/agile.png",
+    title: "Agile",
+    text: "We adapt quickly to changes and evolving needs within the HR landscape and client environments by maintaining the highest quality in services, solutions, and client interactions.",
+  },
+  {
+    image: "/assets/images/integrity.png",
+    title: "Integrity",
+    text: "We uphold transparency, honesty, and ethical practices in every interaction and solution. This is reflected in every solution we implement and service we provide to our customers.",
+  },
+  {
+    image: "/assets/images/innovation.png",
+    title: "Innovation",
+    text: "Innovation is an integral part of who we are. We embrace innovation as the key to unlocking new possibilities and creative solutions to drive HR processes forward.",
+  },
+  {
+    image: "/assets/images/compliance.png",
+    title: "Compliant",
+    text: "We are committed to following strict compliance in all of our implementations with the utmost precision in line with the country's labor laws. We tailor the HR solution based on customer needs while keeping legal compliance in mind.",
+  },
+];
 
 const AboutUs: React.FC = () => {
   useScrollToTop();
@@ -52,7 +75,7 @@ const AboutUs: React.FC = () => {
                 across all modules, including Employee Central Payroll, S4 HANA
                 Payroll, business consulting, solution architecture advisory,
                 health checks, and Application Management Services (AMS) for all
-                SuccessFactors HR applications and multi country payroll.
+                SuccessFactors HR applications and multi-country payroll.
               </p>
               <p>
                 For more details, please visit our{" "}
@@ -66,78 +89,21 @@ const AboutUs: React.FC = () => {
           <div className="col-md-10">
             <h2 className="text-center py-3">Our Values</h2>
             <div className="row card-deck">
-              <div className="col-md-3 ">
-                <div className="card border-0">
-                  <img
-                    src="/assets/images/cards/card.jpg"
-                    className="card-img-top"
-                    alt="Image"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">Agile</h5>
-                    <p className="card-text">
-                      We Adapt quickly to changes and evolving needs within the
-                      HR landscape and client environments by maintaining the
-                      highest quality in services, solutions, and client
-                      interactions.
-                    </p>
+              {cardData.map((card, index) => (
+                <div key={index} className="col-md-3 mb-4">
+                  <div className="card border-0">
+                    <img
+                      src={card.image}
+                      className="card-img-top"
+                      alt={card.title}
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">{card.title}</h5>
+                      <p className="card-text">{card.text}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-md-3">
-                <div className="card border-0">
-                  <img
-                    src="/assets/images/cards/card.jpg"
-                    className="card-img-top"
-                    alt="Image"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">Integrity</h5>
-                    <p className="card-text">
-                      We uphold transparency, honesty, and ethical practices in
-                      every interaction and solution. This is being reflected on
-                      every solutions we implement and services being provided
-                      to customer.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-3 ">
-                <div className="card border-0">
-                  <img
-                    src="/assets/images/cards/card.jpg"
-                    className="card-img-top"
-                    alt="Image"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">Innovation</h5>
-                    <p className="card-text">
-                      Innovation is an integral part of who we are. We embrace
-                      innovation as the key to unlocking new possibilities and
-                      creative solutions to drive HR processes forward.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 ">
-                <div className="card border-0">
-                  <img
-                    src="/assets/images/cards/card.jpg"
-                    className="card-img-top"
-                    alt="Image"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">Compliant</h5>
-                    <p className="card-text">
-                      We are committed to follow strict compliance in all of our
-                      implementation with the utmost precision in line with the
-                      country's labor laws. We tailored the HR solution based on
-                      customer need keeping legal compliance in mind.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

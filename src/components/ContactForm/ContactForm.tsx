@@ -40,9 +40,9 @@ const ContactForm: React.FC = () => {
               Need assistance implementing SAP SuccessFactors & Payroll?
             </h2>
             <p className="text-center mb-4">
-              Need assistance implementing SAP SuccessFactors? Whether you’re a
-              new user or are looking to build solutions from the ground up,
-              we’d love to help. Get in touch with one of our experts for more.
+              Whether you’re a new user or are looking to build solutions from
+              the ground up, we’d love to help. Get in touch with one of our
+              experts for more.
             </p>
             <form onSubmit={handleSubmit}>
               <div className="row">

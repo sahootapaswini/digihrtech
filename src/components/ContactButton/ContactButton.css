@@ -1,0 +1,43 @@
+.fixedContant {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.contact-button {
+    border-radius: 5px 0 0 5px;
+    padding: 10px 25px;
+    background-color: #008080 !important;
+}
+
+.contactPopup {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 2rem !important;
+}
+
+.popup-header {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.close-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.close-button:hover {
+    color: #f00;
+}

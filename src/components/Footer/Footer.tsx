@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/company/example",
+      url: "https://www.linkedin.com/company/digital-hr-technology",
       iconClass: "fab fa-linkedin",
     },
     {
@@ -155,10 +155,15 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="tel:+1234567890" className="text-white">
-                  +971 (050) 750-6389
+                  Phone:+971 588278127
                 </a>
               </li>
-              <li>Corniche, Tower A, Abu Dhabi, UAE, 20054</li>
+              <li>
+                <a href="tel:+1234567890" className="text-white">
+                  Landline:+971 26736594
+                </a>
+              </li>
+              <li>Corniche Tower A, Al Bateen,Abu Dhabi, UAE, 20028</li>
               <li>
                 <a
                   href="https://maps.google.com/?q=Corniche,+Tower+A,+Abu+Dhabi,+UAE"

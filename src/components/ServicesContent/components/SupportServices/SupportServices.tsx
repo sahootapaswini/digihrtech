@@ -79,7 +79,6 @@ const SAPSupportServices = () => {
                       </p>
                     </Col>
                     <Col>
-                      {" "}
                       <h5>Preferred</h5>
                       <p>
                         A comprehensive support offering for larger customers

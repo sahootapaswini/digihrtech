@@ -14,6 +14,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 import Disclaimer from "./components/Disclaimer/Disclaimer";
 import TermsofUse from "./components/TermsofUse/TermsofUse";
 import HowWeDeliver from "./components/HowWeDeliver/HowWeDeliver";
+import ContactButton from "./components/ContactButton/ContactButton";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -34,6 +35,7 @@ function App() {
           <Route path="/how-we-deliver/*" element={<HowWeDeliver />} />
         </Routes>
       </main>
+      <ContactButton />
       <ContactForm />
       <Footer />
     </div>
