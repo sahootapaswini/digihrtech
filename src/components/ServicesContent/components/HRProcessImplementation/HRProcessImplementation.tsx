@@ -20,7 +20,7 @@ const HRProcessImplementation = () => {
             implementing the HR processes you need—on time and on budget.
           </p>
           <p>
-            Effective People has managed, implemented, and delivered more than
+            DHR Technology has managed, implemented, and delivered more than
             1,200 SAP SuccessFactors projects for clients, with proven results
             in leveraging technology for HR process improvement. With a wide
             range of SAP consulting services available, including HR strategy
@@ -41,7 +41,7 @@ const HRProcessImplementation = () => {
                 <ListGroup.Item>
                   <h5>Proven Track Record</h5>
                   <p>
-                    Through our partnership with SAP, Effective People has
+                    Through our partnership with SAP, DHR Technology has
                     completed more than 1,200 successful SAP projects and
                     supported more than 150 clients. Our proven approaches and
                     frameworks enable your employees to leverage SAP technology
@@ -75,9 +75,9 @@ const HRProcessImplementation = () => {
         <Col md={12}>
           <Card className="mb-4">
             <Card.Body>
-              <Card.Title>Why Choose Effective People?</Card.Title>
+              <Card.Title>Why Choose DHR Technology?</Card.Title>
               <p>
-                Effective People’s extensive experience in managing and
+                DHR Technology’s extensive experience in managing and
                 delivering SAP SuccessFactors projects ensures that you receive
                 expert guidance and support throughout your HR process
                 implementation. Our proven methods and commitment to achieving

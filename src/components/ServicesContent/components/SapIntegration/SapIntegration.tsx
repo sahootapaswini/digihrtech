@@ -19,7 +19,7 @@ const SapIntegration = () => {
             to boost organizational success.
           </p>
           <p>
-            Effective People is uniquely positioned to support your cloud
+            DHR Technology is uniquely positioned to support your cloud
             platform integration requirements, through leveraging our expertise
             within the SAP SuccessFactors suite, combined with our team’s
             technical competencies in developing standard SuccessFactors

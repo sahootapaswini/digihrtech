@@ -180,7 +180,7 @@ const SapTalentIntelligenceHub = () => {
         <Col md={12}>
           <Card className="mb-4">
             <Card.Body>
-              <Card.Title>How Effective People Can Help</Card.Title>
+              <Card.Title>How DHR Technology Can Help</Card.Title>
               <Card.Text>
                 We offer a comprehensive approach that includes valuable
                 insights and optimal configuration to facilitate your

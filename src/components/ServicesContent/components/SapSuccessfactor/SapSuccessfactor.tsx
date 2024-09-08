@@ -11,7 +11,7 @@ const SAPSuccessFactors = () => {
         <h1>SAP SuccessFactors Implementation Partner</h1>
         <p className="lead">
           As a leading global provider of SAP SuccessFactors, HR advisory, and
-          workforce management solutions, Effective People helps organizations
+          workforce management solutions, DHR Technology helps organizations
           across all territories and industries to drive better business
           outcomes, improve HR effectiveness, streamline payroll processes, and
           create great employee experiences.
@@ -45,7 +45,7 @@ const SAPSuccessFactors = () => {
         <p>
           Whether implementing one module or the entire SuccessFactors suite,
           having an experienced partner is crucial to a successful go-live.
-          Effective People has proven and well-tested implementation frameworks
+          DHR Technology has proven and well-tested implementation frameworks
           that empower you to leverage SAP SuccessFactors technology and deliver
           key business outcomes.
         </p>
@@ -57,7 +57,7 @@ const SAPSuccessFactors = () => {
           Best Practices for your SAP Implementation: Our team is your team
         </h2>
         <p>
-          Through collaboration and consultation, Effective People delivers
+          Through collaboration and consultation, DHR Technology delivers
           solution implementations at scale, while recommending best practices
           and aligning with system design principles and project charters.
         </p>
@@ -90,7 +90,7 @@ const SAPSuccessFactors = () => {
       <section className="mb-5">
         <h2>SAP Licences</h2>
         <p>
-          Effective People is a truly international company, capable of global
+          DHR Technology is a truly international company, capable of global
           service delivery. We’ve been at the forefront of SAP SuccessFactors
           for almost 20 years, working closely together with our customers to
           implement SAP SuccessFactors on a global scale. We have SAP licence
@@ -108,7 +108,7 @@ const SAPSuccessFactors = () => {
           successfully implement the correct technologies at the right time.
         </p>
         <p>
-          Effective People has the experience to help you build a roadmap based
+          DHR Technology has the experience to help you build a roadmap based
           on your organization’s business processes and requirements.
         </p>
       </section>
@@ -131,7 +131,7 @@ const SAPSuccessFactors = () => {
       <section className="mb-5">
         <h2>Customized Solutions for Total Workforce Management</h2>
         <p>
-          Effective People understands organizations' complexities and unique
+          DHR Technology understands organizations' complexities and unique
           challenges in managing dispersed and diverse workforces through
           platforms like SAP SuccessFactors. With years of experience in the
           field, we are helping organizations navigate the intricacies of total

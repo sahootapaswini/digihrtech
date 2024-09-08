@@ -18,7 +18,7 @@ const SAPTraining = () => {
             users.
           </p>
           <p>
-            Effective People provides admin training tailored to improve your HR
+            DHR Technology provides admin training tailored to improve your HR
             admins’ technical knowledge. Our training sessions are interactive
             and practical, focusing on real-world applications to ensure your
             team can confidently apply their new skills.
@@ -70,7 +70,7 @@ const SAPTraining = () => {
         <Col md={12}>
           <Card className="mb-4">
             <Card.Body>
-              <Card.Title>Why Work with Effective People?</Card.Title>
+              <Card.Title>Why Work with DHR Technology?</Card.Title>
               <p>
                 After a successful go-live, your system and processes need
                 continuous support and maintenance. Our team of certified
