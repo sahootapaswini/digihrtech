@@ -62,7 +62,7 @@ const links = [
     componentName: <SapIntegration />,
   },
   {
-    label: "Application Support",
+    label: "Application Management Support",
     path: "application-support",
     componentName: <SAPSupportServices />,
   },
