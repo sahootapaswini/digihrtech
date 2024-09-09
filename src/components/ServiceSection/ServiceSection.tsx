@@ -6,22 +6,23 @@ import "./ServiceSection.css";
 // Define the data structure
 const serviceData = [
   {
-    title: "Project Management",
-    description: `Experienced project managers with a proven track record of guiding
-    clients from project inception to successful completion. We excel
-    in overseeing timelines, budgets, and requirements to ensure
-    efficient execution. At DHR Technology, we work as trusted
-    advisors in achieving success for your journey.`,
+    title: " Consulting Services",
+    description: `Our consulting services evaluate issues and challenges before implementing 
+    SAP SuccessFactors in your organization. Our goal is to facilitate a smoother and more 
+    successful implementation of your company's SAP HR information system and payroll software. 
+    In this phase, we also uncover broader opportunities to enhance your HR operating model. 
+    We offer a range of services, including HR Process Implementation, HR Technology Roadmap 
+    Transformation, Change Management, Test Management, and Health Checks.`,
   },
   {
-    title: "Consulting & Advisory",
+    title: "Implementation Services",
     description: `We are specializing in tailor the solutions to fit your business
     needs, from greenfield and brownfield implementations to
     operational enhancements and ongoing support. Our team of
     certified and experienced consultants is dedicated to your success
-    at every stage. We offer a range of advisory services, including
-    Solution Architecture Advisory, Health Checks, HR Business
-    Transformation, and HR Technological Roadmap Transformation`,
+    at every stage. Along with Sucessfactors & Payroll implementaion we do some specialized
+    services such as Integration, data migration,implemenation for business AI for HR and Talent
+    intelligent hub.`,
   },
   {
     title: "Staff Augmentation",
@@ -40,11 +41,12 @@ const serviceData = [
     solution..`,
   },
   {
-    title: "Value Add Services",
-    description: `We deliver a range of value-add services to supplement your SAP
-    SuccessFactors and payroll solution: Some of them are Test
-    management, Organizational Change Management (OCM), Integration
-    Services, Data Migration`,
+    title: "Value Assurance Services(VAS)",
+    description: `We offer a variety of value-added services under the umbrella of 
+    Value Assurance to enhance your SAP SuccessFactors and payroll solution. 
+    Our proactive team members will work alongside your current implementation team, 
+    guiding the deployment roadmap and helping to mitigate project risks..`,
+
   },
   {
     title: "Application Management Services (AMS)",
