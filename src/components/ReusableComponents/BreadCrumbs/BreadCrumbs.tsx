@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./BreadCrumbs.module.css";
+import "./BreadCrumbs.css";
 
 // Define the type for a single breadcrumb item
 interface BreadcrumbItem {
@@ -26,7 +26,11 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
             }`}
             aria-current={index === items.length - 1 ? "page" : undefined}>
             {index < items.length - 1 ? (
-              <a href={item.href || "#"}>{item.label}</a>
+              <a
+                className="text-white text-decoration-none"
+                href={item.href || "#"}>
+                {item.label}
+              </a>
             ) : (
               item.label
             )}

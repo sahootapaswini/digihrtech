@@ -1,3 +1,4 @@
 .breadcrumb-item.active {
     font-weight: bold !important;
+    color: #fff !important;
 }

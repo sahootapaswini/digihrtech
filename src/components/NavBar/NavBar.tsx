@@ -151,7 +151,8 @@ const links: LinkProps[] = [
       },
     ],
   },
-  {
+  /*This code is commented because Tools are going to be available only for admin in future .*/
+  /*{
     label: "Tools",
     link: "/tools",
     sublinks: [
@@ -171,7 +172,7 @@ const links: LinkProps[] = [
         icon: "",
       },
     ],
-  },
+  },*/
   { label: "About US", link: "/about-us", path: "/about-us" },
   {
     label: "Resources",

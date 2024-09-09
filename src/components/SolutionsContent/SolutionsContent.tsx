@@ -105,14 +105,19 @@ const links = [
 
 const SolutionsContent = () => {
   useScrollToTop(); // Call the hook to enable scrolling to top
+  // Determine the current path and corresponding breadcrumb item
+  const currentPath = location.pathname.split("/").pop();
+  const currentLink = links.find((link) => link.path === currentPath);
+
   return (
     <section className="solutions-list">
       <Container className="">
-        <Row className="justify-content-center bt-orange main-content-top">
+        <Row className="justify-content-center bt-teal main-content-top">
           <Col md={10} className="bcpage-section">
             <BreadcrumbsContainer />
-            <h1 className="bg-orange text-white p-3">
-              SAP SuccessFactors Compensation
+            <h1 className="bg-teal text-white p-3">
+              <span className="mx-2">Success Factor</span>
+              {currentLink ? currentLink.label : ""}
             </h1>
             <p className="bg-lightgrey p-2">
               DHR Technology can help you quickly and easily implement a
@@ -122,28 +127,30 @@ const SolutionsContent = () => {
         </Row>
         <Row className="solutions">
           <Col xs={12} md={3} className="nav-container pt-2 px-0">
-            <div className="nav-wrapper">
+            <div className="nav-wrapper row">
               {links.map((link) => (
-                <NavLink
-                  key={link.path}
-                  to={link.path}
-                  className={({ isActive }) =>
-                    isActive ? "nav-link p-3 active" : "nav-link p-3"
-                  }>
-                  <div className="row">
-                    <div className="col-auto solutions-link-icon">
-                      {link.icon}
+                <div className="col-6 col-md-12">
+                  <NavLink
+                    key={link.path}
+                    to={link.path}
+                    className={({ isActive }) =>
+                      isActive ? "nav-link p-3 active" : "nav-link p-3"
+                    }>
+                    <div className="row">
+                      <div className="col-sm-12 col-md-auto solutions-link-icon">
+                        {link.icon}
+                      </div>
+                      <div className="col-sm-12 col-md-6 d-flex align-items-center">
+                        {link.label}
+                      </div>
                     </div>
-                    <div className="col d-flex align-items-center">
-                      {link.label}
-                    </div>
-                  </div>
-                </NavLink>
+                  </NavLink>
+                </div>
               ))}
             </div>
           </Col>
           {/* Right Column for Content */}
-          <Col xs={12} md={9} className="content-container py-3 px-4">
+          <Col xs={12} md={9} className="content-container py-3 px-md-4">
             <Routes>
               {links.map((link) => (
                 <Route

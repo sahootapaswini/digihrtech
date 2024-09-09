@@ -1,0 +1,11 @@
+.ServiceSection .container {}
+
+.ServiceSection .container .serviceName:hover {
+    background-color: #576d6d;
+    background-color: #333333;
+    color: #fff !important;
+}
+
+.ServiceSection .container .serviceName:hover h3 {
+    color: #ffc107 !important;
+}
