@@ -133,6 +133,11 @@ const links: LinkProps[] = [
         path: "services/sap-talent-intelligence",
         icon: "",
       },
+      {
+        label: "Staff Augmentation",
+        path: "services/staff-augmentation",
+        icon: "",
+      },
     ],
   },
   {

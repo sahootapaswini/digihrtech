@@ -16,6 +16,7 @@ import SAPDataMigration from "./components/SAPDataMigration/SAPDataMigration";
 import SAPTraining from "./components/SAPTraining/SAPTraining";
 import HRProcessImplementation from "./components/HRProcessImplementation/HRProcessImplementation";
 import useScrollToTop from "../ReusableComponents/useScrollToTop";
+import StaffAugmentation from "../components/ServicesContent/StaffAugmentation";
 
 const links = [
   {
@@ -81,6 +82,11 @@ const links = [
     label: "Talent Intelligence Hub",
     path: "sap-talent-intelligence",
     componentName: <SapTalentIntelligenceHub />,
+  },
+  {
+    label: "Staff Augmentation",
+    path: "staff-augmentation",
+    componentName: <StaffAugmentation />,
   },
 ];
 
