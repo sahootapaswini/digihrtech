@@ -45,7 +45,7 @@ const serviceData = [
     description: `We offer a variety of value-added services under the umbrella of 
     Value Assurance to enhance your SAP SuccessFactors and payroll solution. 
     Our proactive team members will work alongside your current implementation team, 
-    guiding the deployment roadmap and helping to mitigate project risks..`,
+    guiding the deployment roadmap and helping to mitigate project risks.`,
 
   },
   {
@@ -53,7 +53,8 @@ const serviceData = [
     description: `Do you need support partners post Go-Live? <br />
     We have comprehensive set of predefined service packages
     (Standard, Bronze, Silver & Gold) Or you can build your own
-    support using our DHR AMS Estimator Tool.`,
+    support using our DHR AMS Estimator Tool. Also there is a separate support for payroll as 
+    differ from other areas of application support due to compliance and legal demands.`,
   },
 ];
 
@@ -65,10 +66,10 @@ const ServiceSection: React.FC = () => {
           <div className="col">
             <h2 className="text-center mb-4">Our Services</h2>
             <p className="font-weight-bold mb-5">
-              We offer nearly 15 different types of services across 12 HR
-              business areas (modules). You can select services based on your
-              specific needs, and our packages and solutions can be customized
-              to fit the requirements of your organization.
+            We provide about twenty-three(23) different services across six categories(Implemenation,Consulting,Application Management(AMS),
+            Value Assurance(VAS), Training & Resource Augmentaion ), covering all aspects of the Hire-To-Retire (H2R) business processes.
+            You can choose services that fit your needs, and we can tailor our packages and solutions to match your 
+            organization’s requirements.
             </p>
           </div>
         </div>
