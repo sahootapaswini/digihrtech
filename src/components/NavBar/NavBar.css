@@ -23,7 +23,7 @@
 }
 
 .nav-bar-container {
-  width: 250px;
+  width: 300px;
   height: 100px;
   overflow: hidden;
 }
@@ -32,7 +32,7 @@
   display: block;
   height: 100%;
   width: 100%;
-  background: var(--logo-large) center / cover no-repeat;
+  background: var(--logo-large) left / cover no-repeat;
 }
 
 @media (max-width: 768px) {
