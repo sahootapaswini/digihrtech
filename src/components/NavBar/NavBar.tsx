@@ -133,6 +133,11 @@ const links: LinkProps[] = [
         path: "services/sap-talent-intelligence",
         icon: "",
       },
+      {
+        label: "Staff Augmentation",
+        path: "services/staff-augmentation",
+        icon: "",
+      },
     ],
   },
   {
@@ -202,9 +207,12 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-dark p-md-4   `}>
+    <nav className={`navbar navbar-expand-lg navbar-dark p-md-2   `}>
       <div className="container">
-        <Link className="navbar-brand" to="/"></Link>
+        <div className="nav-bar-container">
+          <Link className="navbar-brand" to="/"></Link>
+        </div>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -263,7 +271,12 @@ const NavBar: React.FC = () => {
                 )}
               </li>
             ))}
-            <li className="nav-item mx-3">
+            <li className="nav-item contact-us-link">
+              <Link className="nav-link mx-2" to="/contact-us">
+                Contact Us
+              </Link>
+            </li>
+            <li className="nav-item mx-3 contact-us-button">
               <Link className="btn btn-primary" to="/contact-us">
                 Contact Us
               </Link>
