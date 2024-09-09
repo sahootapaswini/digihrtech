@@ -1,7 +1,7 @@
 /* Custom styles for the navbar */
 :root {
-  --logo-large: url('/assets/images/logo/dhr-logo5.png');
-  --logo-small: url('/assets/images/logo/dhr-logo5.png');
+  --logo-large: url('/assets/images/logo/dhr-logo-tech.png');
+  --logo-small: url('/assets/images/logo/dhr-logo-tech.png');
   --menu-icon: url('/assets/images/icons/dhr-menu-icon.webp');
 }
 
@@ -22,10 +22,16 @@
   width: 70px;
 }
 
-.navbar-brand {
-  display: inline-block;
+.nav-bar-container {
   width: 250px;
-  height: 80px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.navbar-brand {
+  display: block;
+  height: 100%;
+  width: 100%;
   background: var(--logo-large) center / cover no-repeat;
 }
 
@@ -33,12 +39,12 @@
   .navbar-brand {
     background: var(--logo-small) center / cover no-repeat;
     width: 200px;
-    height: 60px;
+    height: 80px;
   }
 }
 
 /* For mobile screens, dropdowns should toggle on click */
-@media (max-width: 767px) {
+@media (max-width: 990px) {
   .navbar-nav .nav-item {
     position: relative;
     border-bottom: 1px dotted #d36c1f;
@@ -46,21 +52,26 @@
 
   .navbar-nav .dropdown-menu {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
     width: 100%;
   }
 
   .navbar-nav .nav-item .dropdown-menu.show {
     display: block;
   }
+
+  .contact-us-button {
+    display: none;
+  }
 }
 
 /* Ensure dropdowns are shown on hover for larger screens */
-@media (min-width: 768px) {
+@media (min-width: 990px) {
   .nav-item.dropdown:hover .dropdown-menu {
     display: block;
+  }
+
+  .contact-us-link {
+    display: none;
   }
 }
 
@@ -77,7 +88,7 @@
 
 /* Active or clicked link color */
 .nav-link:focus {
-  color: #d36c1f !important;
+  color: #000 !important;
   /* Desired color */
 }
 
