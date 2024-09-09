@@ -127,7 +127,7 @@ const ServicesContent = () => {
             </div>
           </Col>
           {/* Right Column for Content */}
-          <Col xs={12} md={9} className="content-container py-3 px-4">
+          <Col xs={12} md={9} className="content-container py-3 px-md-4">
             <Routes>
               {links.map((link) => (
                 <Route

@@ -98,7 +98,7 @@ const HeroSection: React.FC = () => {
   ];
 
   return (
-    <section className="hero-section py-5">
+    <section className="hero-section py-4">
       <div className="container">
         <div className="row text-center">
           {columns.map((col, index) => (
