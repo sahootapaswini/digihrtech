@@ -1,0 +1,21 @@
+/* SapPayroll.css */
+
+.borderless-card {
+    border: none;
+}
+
+.borderless-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.borderless-list li {
+    padding: 0.15rem 0;
+    border-bottom: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}

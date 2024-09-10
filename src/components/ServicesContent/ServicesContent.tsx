@@ -16,7 +16,11 @@ import SAPDataMigration from "./components/SAPDataMigration/SAPDataMigration";
 import SAPTraining from "./components/SAPTraining/SAPTraining";
 import HRProcessImplementation from "./components/HRProcessImplementation/HRProcessImplementation";
 import useScrollToTop from "../ReusableComponents/useScrollToTop";
-import StaffAugmentation from "../components/ServicesContent/StaffAugmentation";
+import StaffAugmentation from "./components/StaffAugmentation/StaffAugmentation";
+import HealthCheck from "./components/HealthCheck/HealthCheck";
+import SolutionArchitectureAdvisory from "./components/SolutionArchitectureAdvisory/SolutionArchitectureAdvisory";
+import HrRoadmap from "./components/HrRoadmap/HrRoadmap";
+import SapErpHcmHybrid from "./components/SapErpHcmHybrid/SapErpHcmHybrid";
 
 const links = [
   {
@@ -32,6 +36,7 @@ const links = [
   {
     label: "SAP ERP HCM/ Hybrid",
     path: "sap-erp-hcm",
+    componentName: <SapErpHcmHybrid />,
   },
   {
     label: "HR Process Implementation",
@@ -41,10 +46,12 @@ const links = [
   {
     label: "HR Roadmap Transformation",
     path: "hr-roadmap-transformation",
+    componentName: <HrRoadmap />,
   },
   {
     label: "Solution Architecture Advisory",
     path: "solution-architecture",
+    componentName: <SolutionArchitectureAdvisory />,
   },
   {
     label: "Change Management",
@@ -76,7 +83,11 @@ const links = [
     path: "training",
     componentName: <SAPTraining />,
   },
-  { label: "Health Check", path: "hr-scopping", icon: <BsCash /> },
+  {
+    label: "Health Check",
+    path: "health-check",
+    componentName: <HealthCheck />,
+  },
 
   {
     label: "Talent Intelligence Hub",
@@ -98,7 +109,7 @@ const ServicesContent = () => {
         <Row className="justify-content-center bt-teal main-content-top">
           <Col md={10} className="bcpage-section">
             <BreadcrumbsContainer />
-            <h1 className="bg-teal text-white p-3">
+            <h1 className="bg-teal text-start text-white p-3">
               SAP SuccessFactors Implementation
             </h1>
             <p className="bg-lightgrey p-2">

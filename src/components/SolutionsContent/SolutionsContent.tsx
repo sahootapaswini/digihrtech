@@ -115,7 +115,7 @@ const SolutionsContent = () => {
         <Row className="justify-content-center bt-teal main-content-top">
           <Col md={10} className="bcpage-section">
             <BreadcrumbsContainer />
-            <h1 className="bg-teal text-white p-3">
+            <h1 className="bg-teal text-start text-white p-3">
               <span className="mx-2">Success Factor</span>
               {currentLink ? currentLink.label : ""}
             </h1>
