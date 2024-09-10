@@ -6,28 +6,23 @@ import "./ServiceSection.css";
 // Define the data structure
 const serviceData = [
   {
-    title: " Consulting Services",
-    description: `Our consulting services evaluate issues and challenges before implementing 
-    SAP SuccessFactors in your organization. Our goal is to facilitate a smoother and more 
-    successful implementation of your company's SAP HR information system and payroll software. 
-    In this phase, we also uncover broader opportunities to enhance your HR operating model. 
-    We offer a range of services, including HR Process Implementation, HR Technology Roadmap 
-    Transformation, Change Management, Test Management, and Health Checks.`,
+    title: " Consulting",
+    description: `Our consulting services address challenges before implementing SAP SuccessFactors 
+    and payroll systems, ensuring a smoother process. Our health checks throughout the project lifecycle 
+    ensure a robust ERP system`,
   },
   {
-    title: "Implementation Services",
+    title: "Implementation",
     description: `We are specializing in tailor the solutions to fit your business
     needs, from greenfield and brownfield implementations to
     operational enhancements and ongoing support. Our team of
     certified and experienced consultants is dedicated to your success
-    at every stage. Along with Sucessfactors & Payroll implementaion we do some specialized
-    services such as Integration, data migration,implemenation for business AI for HR and Talent
-    intelligent hub.`,
+    at every stage.`,
   },
   {
-    title: "Staff Augmentation",
+    title: "Resource Augmentation",
     description: `Are you in need of additional expertise to bolster your team's
-    capabilities? Look no further. Our Staff Augmentation Service
+    capabilities? Look no further. Our Resource/Staff Augmentation Service
     provides you with skilled & certified professionals who seamlessly
     integrate into your existing workforce to support your projects
     and initiatives.`,
@@ -42,34 +37,33 @@ const serviceData = [
   },
   {
     title: "Value Assurance Services(VAS)",
-    description: `We offer a variety of value-added services under the umbrella of 
-    Value Assurance to enhance your SAP SuccessFactors and payroll solution. 
-    Our proactive team members will work alongside your current implementation team, 
-    guiding the deployment roadmap and helping to mitigate project risks.`,
+    description: `These Special Premium services, included in our premium engagement contracts, 
+    ensure a secure ERP implementation with proactive support from our team, who will work 
+    alongside your current SI to guide the deployment, review the design as well as solution
+    and manage project risks`,
 
   },
   {
-    title: "Application Management Services (AMS)",
+    title: "Support",
     description: `Do you need support partners post Go-Live? <br />
     We have comprehensive set of predefined service packages
     (Standard, Bronze, Silver & Gold) Or you can build your own
-    support using our DHR AMS Estimator Tool. Also there is a separate support for payroll as 
-    differ from other areas of application support due to compliance and legal demands.`,
-  },
+    support using our DHR AMS Estimator Tool. Also there is a separate 
+    support for SAP payroll`,
+  }
 ];
 
 const ServiceSection: React.FC = () => {
   return (
     <div className="sectionWrapper bg-lightgrey ServiceSection">
       <div className="container py-5">
+        <h1>Award-winning SAP SuccessFactors Solution Provider</h1>
         <div className="row text-center">
           <div className="col">
-            <h2 className="text-center mb-4">Our Services</h2>
+            <h2 className="text-center mb-4">A highlight of our Services</h2>
             <p className="font-weight-bold mb-5">
-            We provide about twenty-three(23) different services across six categories(Implemenation,Consulting,Application Management(AMS),
-            Value Assurance(VAS), Training & Resource Augmentaion ), covering all aspects of the Hire-To-Retire (H2R) business processes.
-            You can choose services that fit your needs, and we can tailor our packages and solutions to match your 
-            organization’s requirements.
+            A Human Resource Technology organization, we are creating value as a full-services SAP SuccessFactors and payroll provider, offering 22 services in six categories: Implementation, Consulting, Support, 
+            Value Assurance, Training, and Staff Augmentation. We cover all Hire-to-Retire processes and can customize solutions to fit your needs.
             </p>
           </div>
         </div>
