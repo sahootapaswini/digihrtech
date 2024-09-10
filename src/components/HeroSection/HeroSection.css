@@ -40,6 +40,11 @@
     /* Push button to the bottom */
 }
 
+.heroContent:hover .btn-primary {
+    background-color: #008080 !important;
+    border-color: #008080 !important;
+}
+
 
 /* Ensure proper spacing in each column */
 @media (min-width: 992px) {

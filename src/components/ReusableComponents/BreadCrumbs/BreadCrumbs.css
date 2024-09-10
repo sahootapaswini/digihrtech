@@ -2,3 +2,8 @@
     font-weight: bold !important;
     color: #fff !important;
 }
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, ">>") !important;
+    color: #fff;
+}

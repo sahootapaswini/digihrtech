@@ -95,10 +95,10 @@ const ServicesContent = () => {
   return (
     <section className="services-list">
       <Container className="">
-        <Row className="justify-content-center bt-orange main-content-top">
+        <Row className="justify-content-center bt-teal main-content-top">
           <Col md={10} className="bcpage-section">
             <BreadcrumbsContainer />
-            <h1 className="bg-orange text-white p-3">
+            <h1 className="bg-teal text-white p-3">
               SAP SuccessFactors Implementation
             </h1>
             <p className="bg-lightgrey p-2">

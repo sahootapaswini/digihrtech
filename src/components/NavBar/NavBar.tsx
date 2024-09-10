@@ -14,11 +14,18 @@ import {
   BsSearch,
 } from "react-icons/bs";
 
+interface SubLink {
+  label: string;
+  path: string;
+  icon: React.ReactNode; // Using React.ReactNode for icon to support various types of icons
+  sublinks?: SubLink[]; // Array of sublinks if needed
+}
+
 interface LinkProps {
   label: string;
   link: string;
   path?: string;
-  sublinks?: { label: string; path: string; icon: any }[];
+  sublinks?: SubLink[]; // Array of sublinks if needed
 }
 
 const links: LinkProps[] = [
@@ -76,67 +83,138 @@ const links: LinkProps[] = [
     link: "/services",
     sublinks: [
       {
-        label: "SAP SuccessFactors Implementation",
-        path: "services/sap-successfactors",
+        label: "SAP HXM Implementation",
+        path: "services/sap-hxm-implementation",
         icon: "",
+        sublinks: [
+          {
+            label: "SAP SuccessFactors Implementation",
+            path: "services/sap-successfactors",
+            icon: "",
+          },
+          {
+            label: "SAP Payroll Cloud & On Premise Implementation",
+            path: "services/sap-payroll",
+            icon: "",
+          },
+          {
+            label: "SAP ERP HCM/ Hybrid",
+            path: "services/sap-erp-hcm",
+            icon: "",
+          },
+          {
+            label: "Integration Services",
+            path: "services/integration-services",
+            icon: "",
+          },
+          {
+            label: "Data Migration",
+            path: "services/data-migration",
+            icon: "",
+          },
+          {
+            label: "Talent Intelligence Hub",
+            path: "services/sap-talent-intelligence",
+            icon: "",
+          },
+        ],
       },
       {
-        label: "SAP Payroll Cloud & On Premise Implementation",
-        path: "services/sap-payroll",
+        label: "Consulting",
+        path: "services/consulting",
         icon: "",
+        sublinks: [
+          {
+            label: "HR Process Implementation",
+            path: "services/hr-process-implementation",
+            icon: "",
+          },
+          {
+            label: "HR Roadmap Transformation",
+            path: "services/hr-roadmap-transformation",
+            icon: "",
+          },
+          {
+            label: "Change Management",
+            path: "services/change-management",
+            icon: "",
+          },
+          {
+            label: "Test Management",
+            path: "services/test-management",
+            icon: "",
+          },
+          { label: "Health Check", path: "services/hr-scopping", icon: "" },
+        ],
       },
       {
-        label: "SAP ERP HCM/ Hybrid",
-        path: "services/sap-erp-hcm",
-        icon: "",
-      },
-      {
-        label: "HR Process Implementation",
-        path: "services/hr-process-implementation",
-        icon: "",
-      },
-      {
-        label: "HR Roadmap Transformation",
-        path: "services/hr-roadmap-transformation",
-        icon: "",
-      },
-      {
-        label: "Solution Architecture Advisory",
-        path: "services/solution-architecture",
-        icon: "",
-      },
-      {
-        label: "Change Management",
-        path: "services/change-management",
-        icon: "",
-      },
-      { label: "Test Management", path: "services/test-management", icon: "" },
-      {
-        label: "Integration Services",
-        path: "services/integration-services",
-        icon: "",
-      },
-      {
-        label: "Application Support",
-        path: "services/application-support",
-        icon: "",
-      },
-      {
-        label: "Data Migration",
-        path: "services/data-migration",
-        icon: "",
-      },
-      { label: "Training", path: "services/training", icon: "" },
-      { label: "Health Check", path: "services/hr-scopping", icon: "" },
-      {
-        label: "Talent Intelligence Hub",
-        path: "services/sap-talent-intelligence",
+        label: "Training",
+        path: "services/training",
         icon: "",
       },
       {
         label: "Staff Augmentation",
         path: "services/staff-augmentation",
         icon: "",
+      },
+      {
+        label: "Value Assurance Services",
+        path: "services/value-assurance",
+        icon: "",
+        sublinks: [
+          {
+            label: "Design Review",
+            path: "services/design-review",
+            icon: "",
+          },
+          {
+            label: "Solution Review",
+            path: "services/solution-architecture",
+            icon: "",
+          },
+          {
+            label: "Business Readyness Review",
+            path: "services/business-readyness",
+            icon: "",
+          },
+          {
+            label: "Cloud Planning Workshop",
+            path: "services/cloud-planning",
+            icon: "",
+          },
+          {
+            label: "Preparation & Governance",
+            path: "services/preparation-governance",
+            icon: "",
+          },
+          {
+            label: "Solution & Integration  Architecture Services ",
+            path: "services/preparation-governance",
+            icon: "",
+          },
+          {
+            label: "Subject Matter Expertise Advice & Guidance",
+            path: "services/preparation-governance",
+            icon: "",
+          },
+        ],
+      },
+      {
+        label: "Support Services",
+        path: "services/support-services",
+        icon: "",
+        sublinks: [
+          {
+            label: "Application Management Support(AMS)",
+            path: "services/application-support",
+            icon: "",
+          },
+          {
+            label: "Payroll Support",
+            path: "services/payroll-support",
+            icon: "",
+          },
+        ],
       },
     ],
   },
@@ -256,7 +334,7 @@ const NavBar: React.FC = () => {
                     {link.sublinks.map((sublink, subIndex) => (
                       <Link
                         key={subIndex}
-                        className="dropdown-item"
+                        className="dropdown-item nested-nav2"
                         to={sublink.path}>
                         {sublink.icon && (
                           <span className="sub-icon-orange px-2">
@@ -266,6 +344,28 @@ const NavBar: React.FC = () => {
                         <span className="align-items-center  ">
                           {sublink.label}
                         </span>
+                        {sublink.sublinks && (
+                          <div
+                            className={`dropdown-menu nested-dropdown${
+                              activeIndex === index ? " show" : ""
+                            }`}>
+                            {sublink.sublinks.map((sublink, subIndex) => (
+                              <Link
+                                key={subIndex}
+                                className="dropdown-item"
+                                to={sublink.path}>
+                                {sublink.icon && (
+                                  <span className="sub-icon-orange px-2">
+                                    {sublink.icon}
+                                  </span>
+                                )}
+                                <span className="align-items-center  ">
+                                  {sublink.label}
+                                </span>
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </Link>
                     ))}
                   </div>

@@ -61,3 +61,7 @@ h5 {
 .bt-orange {
     border-bottom: 2px dotted #d36c1f
 }
+
+.bg-light-orange {
+    background-color: #d36c1f63;
+}
