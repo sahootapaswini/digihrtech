@@ -5,7 +5,7 @@ import useScrollToTop from "../../../ReusableComponents/useScrollToTop";
 const SAPSuccessFactors = () => {
   useScrollToTop();
   return (
-    <div className="container mt-5">
+    <div className="container">
       {/* Header */}
       <header className="mb-4">
         <h1>SAP SuccessFactors Implementation Partner</h1>
@@ -44,10 +44,10 @@ const SAPSuccessFactors = () => {
         </p>
         <p>
           Whether implementing one module or the entire SuccessFactors suite,
-          having an experienced partner is crucial to a successful go-live.
-          DHR Technology has proven and well-tested implementation frameworks
-          that empower you to leverage SAP SuccessFactors technology and deliver
-          key business outcomes.
+          having an experienced partner is crucial to a successful go-live. DHR
+          Technology has proven and well-tested implementation frameworks that
+          empower you to leverage SAP SuccessFactors technology and deliver key
+          business outcomes.
         </p>
       </section>
 
@@ -108,8 +108,8 @@ const SAPSuccessFactors = () => {
           successfully implement the correct technologies at the right time.
         </p>
         <p>
-          DHR Technology has the experience to help you build a roadmap based
-          on your organization’s business processes and requirements.
+          DHR Technology has the experience to help you build a roadmap based on
+          your organization’s business processes and requirements.
         </p>
       </section>
 

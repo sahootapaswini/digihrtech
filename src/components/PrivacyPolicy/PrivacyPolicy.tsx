@@ -1,7 +1,8 @@
 import React from "react";
 import useScrollToTop from "../ReusableComponents/useScrollToTop";
 
-const PrivacyPolicy = () => {
+const PrivacyPolicy: React.FC = () => {
+  useScrollToTop();
   return (
     <div className="container mt-5">
       <div className="row justify-content-center">

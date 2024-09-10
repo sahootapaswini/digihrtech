@@ -23,10 +23,15 @@
     z-index: -1;
 }*/
 h1 {
-    background: #ca6803f0;
     padding: 10px;
-    color: #fff !important;
-    font-size: 30px !important;
+    color: #d36c1f !important;
+    font-size: 35px !important;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 25px !important;
 }
 
 h2,

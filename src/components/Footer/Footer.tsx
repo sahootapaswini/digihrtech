@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
       url: "/solutions/sap-successfactors",
     },
     { name: "S4 HANA/Employee Central Payroll", url: "/solutions/payroll" },
-    { name: "S4 HANA HCM/Hybrid", url: "#" },
+    { name: "S4 HANA HCM/Hybrid", url: "/services/sap-erp-hcm" },
     { name: "Reporting and Analytics", url: "/solutions/workforce-analytics" },
     { name: "Business AI For HR", url: "/solutions/business-ai-hr" },
   ];
@@ -39,8 +39,8 @@ const Footer: React.FC = () => {
       name: "Solution Architecture Advisory",
       url: "/services/solution-architecture",
     },
-    { name: "Health Check", url: "#" },
-    { name: "Support Services", url: "#" },
+    { name: "Health Check", url: "health-check" },
+    { name: "Support Services", url: "application-support" },
   ];
   const servicesLink2 = [
     { name: "Change Management", url: "/services/change-management" },

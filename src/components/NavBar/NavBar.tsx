@@ -144,7 +144,7 @@ const links: LinkProps[] = [
             path: "services/test-management",
             icon: "",
           },
-          { label: "Health Check", path: "services/hr-scopping", icon: "" },
+          { label: "Health Check", path: "services/health-check", icon: "" },
         ],
       },
       {
