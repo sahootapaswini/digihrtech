@@ -41,7 +41,6 @@ const serviceData = [
     ensure a secure ERP implementation with proactive support from our team, who will work 
     alongside your current SI to guide the deployment, review the design as well as solution
     and manage project risks`,
-
   },
   {
     title: "Support",
@@ -50,7 +49,7 @@ const serviceData = [
     (Standard, Bronze, Silver & Gold) Or you can build your own
     support using our DHR AMS Estimator Tool. Also there is a separate 
     support for SAP payroll`,
-  }
+  },
 ];
 
 const ServiceSection: React.FC = () => {
@@ -62,8 +61,12 @@ const ServiceSection: React.FC = () => {
           <div className="col">
             <h2 className="text-center mb-4">A highlight of our Services</h2>
             <p className="font-weight-bold mb-5">
-            A Human Resource Technology organization, we are creating value as a full-services SAP SuccessFactors and payroll provider, offering 22 services in six categories: Implementation, Consulting, Support, 
-            Value Assurance, Training, and Staff Augmentation. We cover all Hire-to-Retire processes and can customize solutions to fit your needs.
+              A Human Resource Technology organization, we are creating value as
+              a full-services SAP SuccessFactors and payroll provider, offering
+              22 services in six categories: Implementation, Consulting,
+              Support, Value Assurance, Training, and Staff Augmentation. We
+              cover all Hire-to-Retire processes and can customize solutions to
+              fit your needs.
             </p>
           </div>
         </div>
@@ -71,11 +74,9 @@ const ServiceSection: React.FC = () => {
           {serviceData.map((service, index) => (
             <div
               key={index}
-              className="col-md-6 mb-4 d-flex justify-content-center">
-              <div className="border border-warning rounded p-4 w-100 serviceName">
-                <h3 className="font-weight-bold text-center">
-                  {service.title}
-                </h3>
+              className="col-md-4 mb-4 d-flex justify-content-center">
+              <div className="p-4 w-100 serviceName">
+                <h3 className="font-weight-bold">{service.title}</h3>
                 <p
                   className="text-left"
                   dangerouslySetInnerHTML={{ __html: service.description }}></p>
