@@ -10,13 +10,8 @@ const serviceData = [
     description: `Our consulting services address challenges before implementing SAP SuccessFactors 
     and payroll systems, ensuring a smoother process. Our health checks throughout the project lifecycle 
     ensure a robust ERP system`,
-    title: " Consulting",
-    description: `Our consulting services address challenges before implementing SAP SuccessFactors 
-    and payroll systems, ensuring a smoother process. Our health checks throughout the project lifecycle 
-    ensure a robust ERP system`,
   },
   {
-    title: "Implementation",
     title: "Implementation",
     description: `We are specializing in tailor the solutions to fit your business
     needs, from greenfield and brownfield implementations to
@@ -48,7 +43,6 @@ const serviceData = [
     and manage project risks`,
   },
   {
-    title: "Support",
     title: "Support",
     description: `Do you need support partners post Go-Live? <br />
     We have comprehensive set of predefined service packages
