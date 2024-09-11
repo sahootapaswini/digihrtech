@@ -21,8 +21,9 @@ const SAPDataMigration = () => {
             DHR Technology’s expertise in selecting, preparing, extracting,
             and transforming data and permanently transferring it to the cloud
             is based on proven migration methods and tools, combined with our
-            experience in managing more than 1,200 successfully completed data
-            migration projects for diverse clients.
+            experience in managing data migration from SAP ERP To SuccessFactors Or 
+            SAP ERP To S4 HANA or SAP ERP to Employee central payroll successfully 
+            completed data migration projects for diverse clients.
           </p>
         </Col>
       </Row>

@@ -20,8 +20,8 @@ const HRProcessImplementation = () => {
             implementing the HR processes you need—on time and on budget.
           </p>
           <p>
-            DHR Technology has managed, implemented, and delivered more than
-            1,200 SAP SuccessFactors projects for clients, with proven results
+            Our Experts has managed, implemented, and delivered many
+            SAP SuccessFactors and payroll projects for clients, with proven results
             in leveraging technology for HR process improvement. With a wide
             range of SAP consulting services available, including HR strategy
             advising, implementation consulting, system integration, and
@@ -41,11 +41,10 @@ const HRProcessImplementation = () => {
                 <ListGroup.Item>
                   <h5>Proven Track Record</h5>
                   <p>
-                    Through our partnership with SAP, DHR Technology has
-                    completed more than 1,200 successful SAP projects and
-                    supported more than 150 clients. Our proven approaches and
-                    frameworks enable your employees to leverage SAP technology
-                    to improve performance and deliver key business outcomes.
+                  Our SAP HXM experts and founder bring over 20 years of experience working 
+                  with SAP and related technologies, having supported more than 50 clients. 
+                  Our established approaches and frameworks empower your employees to harness
+                  SAP technology effectively, enhancing performance and achieving crucial business outcomes.
                   </p>
                 </ListGroup.Item>
                 <ListGroup.Item>

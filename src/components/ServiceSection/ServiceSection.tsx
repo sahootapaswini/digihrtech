@@ -75,12 +75,12 @@ const ServiceSection: React.FC = () => {
             <div>
               <h2 className="text-center mb-4">A highlight of our Services</h2>
               <p className="font-weight-bold mb-5">
-                A Human Resource Technology organization, we are creating value
-                as a full-services SAP SuccessFactors and payroll provider,
-                offering 22 services in six categories: Implementation,
-                Consulting, Support, Value Assurance, Training, and Staff
-                Augmentation. We cover all Hire-to-Retire processes and can
-                customize solutions to fit your needs.
+              A leading Human Resource Technology Organization, We deliver comprehensive 
+              value as a HR Tech service provider of SAP SuccessFactors and payroll solutions. 
+              Our portfolio encompasses twenty-two(22) distinct services across six(6) categories: 
+              Implementation, Consulting, Support, Value Assurance, Training, and Staff Augmentation. 
+              We expertly handle all aspects of the Hire-to-Retire processes and offer tailored solutions/package 
+              to meet your specific requirements.
               </p>
             </div>
           </div>
