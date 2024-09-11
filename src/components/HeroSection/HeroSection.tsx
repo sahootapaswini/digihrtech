@@ -102,7 +102,9 @@ const HeroSection: React.FC = () => {
       <div className="container">
         <div className="row text-center  d-flex justify-content-center">
           {columns.map((col, index) => (
-            <div key={index} className="col-lg-4 mb-5 flex-column d-flex px-4">
+            <div
+              key={index}
+              className="col-lg-4 col-md-6 mb-5 flex-column d-flex px-4">
               <div className="heroContent">
                 <div className="icon-container mb-1 py-2">
                   <Image src={col.icon} alt={col.header} fluid />

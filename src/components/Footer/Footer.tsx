@@ -60,14 +60,14 @@ const Footer: React.FC = () => {
       url: "https://www.linkedin.com/company/digital-hr-technology",
       iconClass: "fab fa-linkedin",
     },
-    {
+    /*{
       name: "Twitter",
       url: "https://twitter.com/example",
       iconClass: "fab fa-twitter",
-    },
+    },*/
     {
       name: "Facebook",
-      url: "https://www.facebook.com/example",
+      url: "https://www.facebook.com/profile.php?id=61565632024409",
       iconClass: "fab fa-facebook-f",
     },
   ];
@@ -150,17 +150,20 @@ const Footer: React.FC = () => {
             <ul className="list-unstyled">
               <li>
                 <a href="mailto:info@example.com" className="text-white">
+                  <i className="bi bi-envelope"></i>
                   info@digihrtech.com
                 </a>
               </li>
               <li>
                 <a href="tel:+1234567890" className="text-white">
-                  Phone:+971 588278127
+                  <i className="fa fa-phone"></i>
+                  <span className="mx-2">Phone:+971 588278127</span>
                 </a>
               </li>
               <li>
                 <a href="tel:+1234567890" className="text-white">
-                  Landline:+971 26736594
+                  <i className="fas fa-phone "></i>
+                  <span className="mx-2"> Landline:+971 37821534</span>
                 </a>
               </li>
               <li>Corniche Tower A, Al Bateen,Abu Dhabi, UAE, 20028</li>
