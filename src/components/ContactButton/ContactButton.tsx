@@ -32,9 +32,17 @@ const ContactButton = () => {
         </Col>
       )}
       {showPopup && (
-        <Col md={4} className="p-3 contactPopup">
-          <Row className="mb-3">
-            <Col className="d-flex justify-content-end">
+        <Col md={4} className=" py-4 contactPopup">
+          <Row className="pb-3">
+            <Col md={8}>
+              <h3>Contact</h3>
+              <div>
+                <div>Got questions?</div>
+                <div>Get in touch with us!</div>
+              </div>
+            </Col>
+
+            <Col md={4} className="d-flex justify-content-end">
               <Button
                 variant="link"
                 className="close-button"
@@ -44,29 +52,30 @@ const ContactButton = () => {
             </Col>
           </Row>
           <Row className="pb-3">
-            <h4>Contact</h4>
-            <div>
-              Got questions?
-              <br />
-              Get in touch with us!
-            </div>
-          </Row>
-          <Row className="pb-3">
-            <Col md={2}>
-              <i className="fa fa-phone"></i>
+            <Col md={2} className="align-items-center d-flex">
+              <i className="fa fa-phone clr-orange"></i>
             </Col>
             <Col md={10}>
               <div>Call Us</div>
-              <div>6273627384835</div>
+              <div>+971 588278127</div>
             </Col>
           </Row>
-          <Row>
-            <Col md={2}>
-              <i className="fa fa-envelope"></i>
+          <Row className="pb-3">
+            <Col md={2} className="align-items-center d-flex">
+              <i className="fa fa-envelope clr-orange"></i>
             </Col>
             <Col md={10}>
               <div>Mail Us</div>
-              <div>fhdsjfdjsjgsjg</div>
+              <div>info@digihrtech.com</div>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={2} className="align-items-center d-flex">
+              <i className="fa fa-question-circle clr-orange"></i>
+            </Col>
+            <Col md={10}>
+              <div>Enquiry</div>
+              <div>Contact</div>
             </Col>
           </Row>
         </Col>

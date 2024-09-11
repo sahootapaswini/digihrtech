@@ -74,3 +74,8 @@ h5 {
 .bg-light-orange {
     background-color: #d36c1f63;
 }
+
+.clr-orange {
+    color: #d36c1f !important;
+    font-size: 25px;
+}

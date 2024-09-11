@@ -10,6 +10,7 @@ const serviceData = [
     description: `Our consulting services address challenges before implementing SAP SuccessFactors 
     and payroll systems, ensuring a smoother process. Our health checks throughout the project lifecycle 
     ensure a robust ERP system`,
+    icon: "/assets/images/consulting-icon.png",
   },
   {
     title: "Implementation",
@@ -18,6 +19,7 @@ const serviceData = [
     operational enhancements and ongoing support. Our team of
     certified and experienced consultants is dedicated to your success
     at every stage.`,
+    icon: "/assets/images/implement-icon.png",
   },
   {
     title: "Resource Augmentation",
@@ -26,6 +28,7 @@ const serviceData = [
     provides you with skilled & certified professionals who seamlessly
     integrate into your existing workforce to support your projects
     and initiatives.`,
+    icon: "/assets/images/augment-icon.png",
   },
   {
     title: "Training",
@@ -34,6 +37,7 @@ const serviceData = [
     looking to deepen your team's expertise, our tailored training
     programs ensure you maximize the benefits of this powerful HR
     solution..`,
+    icon: "/assets/images/training-icon.png",
   },
   {
     title: "Value Assurance Services(VAS)",
@@ -41,6 +45,7 @@ const serviceData = [
     ensure a secure ERP implementation with proactive support from our team, who will work 
     alongside your current SI to guide the deployment, review the design as well as solution
     and manage project risks`,
+    icon: "/assets/images/vas-icon.png",
   },
   {
     title: "Support",
@@ -49,6 +54,7 @@ const serviceData = [
     (Standard, Bronze, Silver & Gold) Or you can build your own
     support using our DHR AMS Estimator Tool. Also there is a separate 
     support for SAP payroll`,
+    icon: "/assets/images/support-icon.png",
   },
 ];
 
@@ -56,7 +62,7 @@ const ServiceSection: React.FC = () => {
   return (
     <div className="sectionWrapper bg-lightgrey ServiceSection">
       <div className="container py-5">
-        <h1>Award-winning SAP SuccessFactors Solution Provider</h1>
+        <h1>Your Trusted SAP SuccessFactors & Payroll Solution Provider </h1>
         <div className="row text-center">
           <div className="col">
             <h2 className="text-center mb-4">A highlight of our Services</h2>
@@ -76,7 +82,15 @@ const ServiceSection: React.FC = () => {
               key={index}
               className="col-md-4 mb-4 d-flex justify-content-center">
               <div className="p-4 w-100 serviceName">
-                <h3 className="font-weight-bold">{service.title}</h3>
+                <div className="row">
+                  <div className="col-9 d-flex align-items-center">
+                    <h3 className="font-weight-bold">{service.title}</h3>
+                  </div>
+                  <div className="col-3 service-icon">
+                    <img src={service.icon} alt="" />
+                  </div>
+                </div>
+
                 <p
                   className="text-left"
                   dangerouslySetInnerHTML={{ __html: service.description }}></p>

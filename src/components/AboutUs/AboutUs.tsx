@@ -33,8 +33,8 @@ const AboutUs: React.FC = () => {
         {/* Centering the content with a row */}
         <div className="row justify-content-center">
           {/* Setting the column width to 70% (approx. 8 out of 12) */}
-          <div className="col-12 col-md-10">
-            <section className="px-5">
+          <div className="col-md-10">
+            <section className="px-0">
               <h1 className="text-center pb-2">
                 Welcome to DHR Technology Consulting & Advisory
               </h1>
@@ -56,7 +56,7 @@ const AboutUs: React.FC = () => {
                 customers.
               </p>
             </section>
-            <section className="px-5">
+            <section className="px-0">
               <h2 className="text-center">Our Mission</h2>
               <p>
                 "We are one global team dedicated to guiding customers through
@@ -68,7 +68,7 @@ const AboutUs: React.FC = () => {
                 employees and customers in achieving their highest performance"
               </p>
             </section>
-            <section className="px-5">
+            <section className="px-0">
               <h2 className="text-center">What We Do</h2>
               <p>
                 We offer comprehensive SuccessFactors solution implementation

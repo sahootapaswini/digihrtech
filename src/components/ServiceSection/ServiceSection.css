@@ -3,6 +3,11 @@
 .ServiceSection .container .serviceName {
     background: #fff;
     border-radius: 2rem 5rem 2rem 2rem;
+    position: relative;
+}
+
+.ServiceSection .container .serviceName .service-icon img {
+    width: 80px;
 }
 
 .ServiceSection .container .serviceName:hover {
