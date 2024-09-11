@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import useScrollToTop from "../../../ReusableComponents/useScrollToTop";
 
 const PerformanceGoals = () => {
+  useScrollToTop();
   return (
     <Container>
       <Row className="mb-4">
         <Col>
-          <h1>Performance and Goals Management with SAP SuccessFactors</h1>
           <p>
             Employee evaluations are one of the most powerful tools for any
             HR/business leader to ensure an engaged, focused, and highly
@@ -68,26 +69,6 @@ const PerformanceGoals = () => {
               improve future performance.
             </li>
           </ul>
-        </Col>
-      </Row>
-
-      <Row className="mb-4">
-        <Col>
-          <Card>
-            <Card.Body>
-              <Card.Title>Customer Testimonial</Card.Title>
-              <Card.Text>
-                “Not only did we meet our strategic objectives for the project,
-                the organization really appreciated the ease and
-                user-friendliness of the system.”
-                <br />
-                <strong>
-                  Dinusha De Silva-Parker | Head of Global HR Organizational
-                  Development, Coloplast
-                </strong>
-              </Card.Text>
-            </Card.Body>
-          </Card>
         </Col>
       </Row>
 

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ContactForm.css"; // Custom CSS for additional styling if needed
+import useScrollToTop from "../ReusableComponents/useScrollToTop";
 
 const ContactForm: React.FC = () => {
+  useScrollToTop();
   // Form state management
   const [formData, setFormData] = useState({
     firstName: "",
@@ -30,15 +32,17 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section className="contact-form-section">
-      <div className="container">
+    <section className="contact-form-section bg-lightgrey">
+      <div className="container py-3">
         <div className="row justify-content-center">
-          <div className="col-10">
-            <h1 className="text-center mb-4">Get in Touch</h1>
+          <div className="col-md-10">
+            <h2 className="text-center mb-4">
+              Need assistance implementing SAP SuccessFactors & Payroll?
+            </h2>
             <p className="text-center mb-4">
-              Need assistance implementing SAP SuccessFactors? Whether you’re a
-              new user or are looking to build solutions from the ground up,
-              we’d love to help. Get in touch with one of our experts for more.
+              Whether you’re a new user or are looking to build solutions from
+              the ground up, we’d love to help. Get in touch with one of our
+              experts for more.
             </p>
             <form onSubmit={handleSubmit}>
               <div className="row">

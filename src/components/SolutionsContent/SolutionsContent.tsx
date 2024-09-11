@@ -1,12 +1,9 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
-  BsClockFill,
   BsFillPeopleFill,
-  BsFillCalendarFill,
-  BsWallet,
   BsCash,
   BsSearch,
   BsClipboard,
@@ -14,7 +11,6 @@ import {
   BsGraphUp,
   BsLightbulb,
   BsPieChart,
-  BsCurrencyDollar,
   BsPeople,
   BsClock,
 } from "react-icons/bs"; // Import other icons if needed
@@ -30,7 +26,13 @@ import Learning from "./components/Learning/Learning";
 import WorkforceAnalytics from "./components/WorkforceAnalytics/WorkforceAnalytics";
 import Compensation from "./components/Compensation/Compensation";
 import BusinessAIForHR from "./components/BusinessAIForHR/BusinessAIForHR";
-import { IconBase } from "react-icons";
+import BreadcrumbsContainer from "../ReusableComponents/BreadCrumbs/BreadCrumbs";
+import useScrollToTop from "../ReusableComponents/useScrollToTop";
+
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
 
 const links = [
   {
@@ -102,39 +104,53 @@ const links = [
 ];
 
 const SolutionsContent = () => {
+  useScrollToTop(); // Call the hook to enable scrolling to top
+  // Determine the current path and corresponding breadcrumb item
+  const currentPath = location.pathname.split("/").pop();
+  const currentLink = links.find((link) => link.path === currentPath);
+
   return (
     <section className="solutions-list">
       <Container className="">
-        <Row className="justify-content-left pt-5 bt-orange">
-          <Col md={8}>
-            <h1 className="bg-orange text-white p-3">
-              SAP SuccessFactors Compensation
+        <Row className="justify-content-center bt-teal main-content-top">
+          <Col md={10} className="bcpage-section">
+            <BreadcrumbsContainer />
+            <h1 className="bg-teal text-start text-white p-3">
+              <span className="mx-2">Success Factor</span>
+              {currentLink ? currentLink.label : ""}
             </h1>
             <p className="bg-lightgrey p-2">
-              Effective People can help you quickly and easily implement a
+              DHR Technology can help you quickly and easily implement a
               powerful pay-for-performance strategy.
             </p>
           </Col>
         </Row>
         <Row className="solutions">
           <Col xs={12} md={3} className="nav-container pt-2 px-0">
-            <div className="nav-wrapper">
+            <div className="nav-wrapper row">
               {links.map((link) => (
-                <Link key={link.path} to={link.path} className="nav-link p-3">
-                  <div className="row">
-                    <div className="col-auto solutions-link-icon">
-                      {link.icon}
+                <div className="col-6 col-md-12">
+                  <NavLink
+                    key={link.path}
+                    to={link.path}
+                    className={({ isActive }) =>
+                      isActive ? "nav-link p-3 active" : "nav-link p-3"
+                    }>
+                    <div className="row">
+                      <div className="col-sm-12 col-md-auto solutions-link-icon">
+                        {link.icon}
+                      </div>
+                      <div className="col-sm-12 col-md-6 d-flex align-items-center">
+                        {link.label}
+                      </div>
                     </div>
-                    <div className="col d-flex align-items-center">
-                      {link.label}
-                    </div>
-                  </div>
-                </Link>
+                  </NavLink>
+                </div>
               ))}
             </div>
           </Col>
           {/* Right Column for Content */}
-          <Col xs={12} md={9} className="content-container py-3 px-4">
+          <Col xs={12} md={9} className="content-container py-3 px-md-4">
             <Routes>
               {links.map((link) => (
                 <Route

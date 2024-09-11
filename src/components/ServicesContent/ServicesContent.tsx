@@ -1,76 +1,119 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BsCash, BsClockFill, BsPeople } from "react-icons/bs"; // Import other icons if needed
-import "./ServicesContent.module.css";
+import "./ServicesContent.css";
+import { BsCash } from "react-icons/bs";
 import SapSuccessfactor from "./components/SapSuccessfactor/SapSuccessfactor";
+import BreadcrumbsContainer from "../ReusableComponents/BreadCrumbs/BreadCrumbs";
+import SapPayroll from "./components/SapPayroll/SapPayroll";
+import SapTalentIntelligenceHub from "./components/SapTalentIntelligenceHub/SapTalentIntelligenceHub";
+import ChangeManagement from "./components/ChangeManagement/ChangeManagement";
+import TestManagement from "./components/TestManagement/TestManagement";
+import SapIntegration from "./components/SapIntegration/SapIntegration";
+import SAPSupportServices from "./components/SupportServices/SupportServices";
+import SAPDataMigration from "./components/SAPDataMigration/SAPDataMigration";
+import SAPTraining from "./components/SAPTraining/SAPTraining";
+import HRProcessImplementation from "./components/HRProcessImplementation/HRProcessImplementation";
+import useScrollToTop from "../ReusableComponents/useScrollToTop";
+import StaffAugmentation from "./components/StaffAugmentation/StaffAugmentation";
+import HealthCheck from "./components/HealthCheck/HealthCheck";
+import SolutionArchitectureAdvisory from "./components/SolutionArchitectureAdvisory/SolutionArchitectureAdvisory";
+import HrRoadmap from "./components/HrRoadmap/HrRoadmap";
+import SapErpHcmHybrid from "./components/SapErpHcmHybrid/SapErpHcmHybrid";
 
 const links = [
   {
-    icon: <BsPeople />,
     label: "SAP SuccessFactors Implementation",
     path: "sap-successfactors",
     componentName: <SapSuccessfactor />,
   },
   {
-    icon: <BsCash />,
     label: "SAP Payroll Cloud & On Premise Implementation",
-    path: "/sap-payroll",
+    path: "sap-payroll",
+    componentName: <SapPayroll />,
   },
-  { label: "SAP ERP HCM/ Hybrid", path: "/sap-erp-hcm", icon: <BsCash /> },
+  {
+    label: "SAP ERP HCM/ Hybrid",
+    path: "sap-erp-hcm",
+    componentName: <SapErpHcmHybrid />,
+  },
   {
     label: "HR Process Implementation",
-    path: "/hr-process-implementation",
-    icon: <BsCash />,
+    path: "hr-process-implementation",
+    componentName: <HRProcessImplementation />,
   },
   {
     label: "HR Roadmap Transformation",
-    path: "/hr-roadmap-transformation",
-    icon: <BsCash />,
+    path: "hr-roadmap-transformation",
+    componentName: <HrRoadmap />,
   },
   {
     label: "Solution Architecture Advisory",
-    path: "/solution-architecture",
-    icon: <BsCash />,
+    path: "solution-architecture",
+    componentName: <SolutionArchitectureAdvisory />,
   },
   {
     label: "Change Management",
-    path: "/change-management",
-    icon: <BsCash />,
+    path: "change-management",
+    componentName: <ChangeManagement />,
   },
-  { label: "Test Management", path: "/test-management", icon: <BsCash /> },
+  {
+    label: "Test Management",
+    path: "test-management",
+    componentName: <TestManagement />,
+  },
   {
     label: "Integration Services",
-    path: "/integration-services",
-    icon: <BsCash />,
+    path: "integration-services",
+    componentName: <SapIntegration />,
   },
   {
-    label: "Application Support",
-    path: "/application-support",
-    icon: <BsCash />,
+    label: "Application Management Support",
+    path: "application-support",
+    componentName: <SAPSupportServices />,
   },
-  { label: "Data Migration", path: "/data-migration", icon: <BsCash /> },
-  { label: "Training", path: "/training", icon: <BsCash /> },
-  { label: "HR Scopping", path: "/hr-scopping", icon: <BsCash /> },
   {
-    label: "SAP Talent Intelligence Hub",
-    path: "/sap-talent-intelligence",
-    icon: <BsCash />,
+    label: "Data Migration",
+    path: "data-migration",
+    componentName: <SAPDataMigration />,
+  },
+  {
+    label: "Training",
+    path: "training",
+    componentName: <SAPTraining />,
+  },
+  {
+    label: "Health Check",
+    path: "health-check",
+    componentName: <HealthCheck />,
+  },
+
+  {
+    label: "Talent Intelligence Hub",
+    path: "sap-talent-intelligence",
+    componentName: <SapTalentIntelligenceHub />,
+  },
+  {
+    label: "Staff Augmentation",
+    path: "staff-augmentation",
+    componentName: <StaffAugmentation />,
   },
 ];
 
 const ServicesContent = () => {
+  useScrollToTop();
   return (
-    <section className="solutions-list">
+    <section className="services-list">
       <Container className="">
-        <Row className="justify-content-left pt-5 bt-orange">
-          <Col md={8}>
-            <h1 className="bg-orange text-white p-3">
-              SAP SuccessFactors Compensation
+        <Row className="justify-content-center bt-teal main-content-top">
+          <Col md={10} className="bcpage-section">
+            <BreadcrumbsContainer />
+            <h1 className="bg-teal text-start text-white p-3">
+              SAP SuccessFactors Implementation
             </h1>
             <p className="bg-lightgrey p-2">
-              Effective People can help you quickly and easily implement a
+              DHR Technology can help you quickly and easily implement a
               powerful pay-for-performance strategy.
             </p>
           </Col>
@@ -79,21 +122,23 @@ const ServicesContent = () => {
           <Col xs={12} md={3} className="nav-container pt-2 px-0">
             <div className="nav-wrapper">
               {links.map((link) => (
-                <Link key={link.path} to={link.path} className="nav-link p-3">
+                <NavLink
+                  key={link.path}
+                  to={link.path}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link p-3 active" : "nav-link p-3"
+                  }>
                   <div className="row">
-                    <div className="col-auto solutions-link-icon">
-                      {link.icon}
-                    </div>
                     <div className="col d-flex align-items-center">
                       {link.label}
                     </div>
                   </div>
-                </Link>
+                </NavLink>
               ))}
             </div>
           </Col>
           {/* Right Column for Content */}
-          <Col xs={12} md={9} className="content-container py-3 px-4">
+          <Col xs={12} md={9} className="content-container py-3 px-md-4">
             <Routes>
               {links.map((link) => (
                 <Route

@@ -14,19 +14,21 @@ const paragraphs = [
 
 const SiteDescription: React.FC = () => {
   return (
-    <Carousel
-      controls
-      indicators
-      interval={1000}
-      className="carousel-container mx-auto d-flex align-items-center p-5">
-      {paragraphs.map((text, index) => (
-        <Carousel.Item key={index}>
-          <div className="d-flex justify-content-center align-items-center">
-            <h3 className="text-center text-white">{text}</h3>
-          </div>
-        </Carousel.Item>
-      ))}
-    </Carousel>
+    <div className="carousal-container-wrapper">
+      <Carousel
+        controls
+        indicators
+        interval={3000}
+        className="carousel-container d-flex align-items-center p-5">
+        {paragraphs.map((text, index) => (
+          <Carousel.Item key={index}>
+            <div className="d-flex justify-content-center align-items-center">
+              <h3 className="text-center text-white">{text}</h3>
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
   );
 };
 

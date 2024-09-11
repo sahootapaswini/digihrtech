@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import useScrollToTop from "../../../ReusableComponents/useScrollToTop";
 
 const Learning = () => {
+  useScrollToTop();
   return (
     <Container>
       <Row className="mb-4">
         <Col>
-          <h1>SAP SuccessFactors Learning Management System (LMS)</h1>
           <p>
             As the demand for new skills accelerates, organizations need a
             learning management system (LMS) that supports employee learning and
@@ -84,7 +85,7 @@ const Learning = () => {
             LMS as vSaaS, with an annual release schedule and some additional
             validation reporting features.
             <br />
-            Effective People has collaborated with diverse clients over the past
+            DHR Technology has collaborated with diverse clients over the past
             decade to support the implementation of their Validated Learning
             environment. This work includes integration with document-handling
             systems to ensure that learners can access the latest quality
@@ -110,23 +111,6 @@ const Learning = () => {
             observations with task checklists. Instructors can also manage their
             learning courses wherever they go.
           </p>
-        </Col>
-      </Row>
-
-      <Row className="mb-4">
-        <Col>
-          <Card>
-            <Card.Body>
-              <Card.Title>Customer Testimonial</Card.Title>
-              <Card.Text>
-                “Effective People’s off-site delivery model worked perfectly;
-                they supplied on-site expertise as required that delivered a
-                high-quality product that exceeded our expectations.”
-                <br />
-                <strong>Iain Witherington | Group VP of HR, Kerry Group</strong>
-              </Card.Text>
-            </Card.Body>
-          </Card>
         </Col>
       </Row>
 

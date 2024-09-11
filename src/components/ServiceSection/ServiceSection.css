@@ -1,0 +1,24 @@
+.ServiceSection .container {}
+
+.ServiceSection .container .serviceName {
+    background: #fff;
+    border-radius: 2rem 5rem 2rem 2rem;
+    position: relative;
+}
+
+.ServiceSection .container .serviceName .service-icon img {
+    width: 80px;
+}
+
+.ServiceSection .container .serviceName:hover {
+    background-color: #000;
+    color: #fff !important;
+}
+
+.ServiceSection .container .serviceName:hover h3 {
+    color: #fff !important;
+}
+
+.ServiceSection .transformation-icon {
+    border-radius: 4rem;
+}

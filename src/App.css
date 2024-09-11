@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../src/assets/images/dth-background2.jpeg");
+    background-image: url("/assets/images/dth-background2.jpeg");
     background-repeat: repeat-y;
     background-size: cover;
     background-position: center;
@@ -22,8 +22,18 @@
     filter: blur(2px);
     z-index: -1;
 }*/
+h1 {
+    padding: 10px;
+    color: #d36c1f !important;
+    font-size: 35px !important;
+    text-align: center;
 
-h1,
+}
+
+h2 {
+    font-size: 25px !important;
+}
+
 h2,
 h3,
 h4,
@@ -37,18 +47,35 @@ h5 {
 }
 
 .btn-primary:hover {
-    background-color: #d36c1f !important;
-    border-color: #d36c1f !important;
+    background-color: #008080 !important;
+    border-color: #008080 !important;
 }
 
 .bg-orange {
     background-color: #d36c1f;
 }
 
+.bg-teal {
+    background-color: #008080;
+}
+
 .bg-lightgrey {
-    background-color: #d5d9dbc9;
+    background-color: #e7eaed82;
+}
+
+.bg-lightpink {
+    background-color: #fef5f6;
 }
 
 .bt-orange {
-    border-bottom: 2px dotted #d36c1f
+    border: 1px dotted #d36c1f
+}
+
+.bg-light-orange {
+    background-color: #d36c1f63;
+}
+
+.clr-orange {
+    color: #d36c1f !important;
+    font-size: 25px;
 }

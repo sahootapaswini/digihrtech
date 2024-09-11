@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./WorkforceManagement.module.css";
+import useScrollToTop from "../../../ReusableComponents/useScrollToTop";
 const WorkforceManagement: React.FC = () => {
+  useScrollToTop();
   return (
     <main className="container content-section">
       <div className="row">
@@ -39,7 +41,7 @@ const WorkforceManagement: React.FC = () => {
           </p>
 
           <h2>
-            Effective People Solutions: Tailored Time Tracking with SAP
+            DHR Technology Solutions: Tailored Time Tracking with SAP
             SuccessFactors
           </h2>
           <p>
@@ -52,7 +54,7 @@ const WorkforceManagement: React.FC = () => {
           </p>
           <p>
             Preparing for this new mandate requires selecting an appropriate
-            time-tracking solution. Effective People has developed a solution,
+            time-tracking solution. DHR Technology has developed a solution,
             especially for SAP SuccessFactors customers, ensuring that your
             business complies with the latest EU regulations and does so with
             enhanced efficiency and accuracy.

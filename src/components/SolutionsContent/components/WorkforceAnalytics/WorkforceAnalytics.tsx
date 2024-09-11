@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import useScrollToTop from "../../../ReusableComponents/useScrollToTop";
 
 const WorkforceAnalytics = () => {
+  useScrollToTop();
   return (
     <Container>
       <Row className="mb-4">
         <Col>
-          <h1>SAP SuccessFactors Workforce Analytics</h1>
           <p>
             You don’t have to be a data scientist to benefit from people
             analytics! With SAP SuccessFactors Workforce Analytics, you’ll gain

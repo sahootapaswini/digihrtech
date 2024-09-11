@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import useScrollToTop from "../../../ReusableComponents/useScrollToTop";
 
 const Payroll = () => {
+  useScrollToTop();
   return (
     <Container>
       <Row className="mb-4">
         <Col>
-          <h1>SAP SuccessFactors EC Payroll</h1>
           <p>
             SAP SuccessFactors EC Payroll is a combination of proven
             technologies, latest innovations, and service delivery in a single
@@ -99,22 +100,6 @@ const Payroll = () => {
               needs.
             </li>
           </ul>
-        </Col>
-      </Row>
-
-      <Row className="mb-4">
-        <Col>
-          <Card>
-            <Card.Body>
-              <Card.Title>Effective People Solution</Card.Title>
-              <Card.Text>
-                Effective People offers a new SAP SuccessFactors EC Payroll
-                system for Denmark using the proven KMD Netpay solution to
-                fulfill the heightened requirements of customers and partners.
-              </Card.Text>
-              <Button variant="primary">Explore the solution</Button>
-            </Card.Body>
-          </Card>
         </Col>
       </Row>
     </Container>

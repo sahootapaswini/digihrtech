@@ -4,6 +4,7 @@ import "./BlogList.module.css";
 import Card from "../ReusableComponents/Card";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import WorkforceManagement from "./components/WorkforceManagement/WorkforceManagement";
+import useScrollToTop from "../ReusableComponents/useScrollToTop";
 // Define the type for the card data
 interface CardData {
   title: string;
@@ -13,48 +14,49 @@ interface CardData {
   componentName: any;
 }
 const BlogList: React.FC = () => {
+  useScrollToTop();
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const navigate = useNavigate();
   const cardData: CardData[] = [
     {
       title: "WORKFORCE",
       text: "Mastering EU Time Tracking Regulations with SAP SuccessFactors: A Guide for Employers",
-      imgSrc: "/src/assets/images/card.jpg",
+      imgSrc: "/assets/images/cards/card.jpg",
       link: "/blogs/workforce-management",
       componentName: <WorkforceManagement />,
     },
     {
       title: "WORKFORCE",
       text: "Mastering EU Time Tracking Regulations with SAP SuccessFactors: A Guide for Employers",
-      imgSrc: "/src/assets/images/card.jpg",
+      imgSrc: "/assets/images/cards/card.jpg",
       link: "/blogs/workforce-management",
       componentName: <WorkforceManagement />,
     },
     {
       title: "WORKFORCE",
       text: "Mastering EU Time Tracking Regulations with SAP SuccessFactors: A Guide for Employers",
-      imgSrc: "/src/assets/images/card.jpg",
+      imgSrc: "/assets/images/cards/card.jpg",
       link: "/blogs/workforce-management",
       componentName: <WorkforceManagement />,
     },
     {
       title: "WORKFORCE",
       text: "Mastering EU Time Tracking Regulations with SAP SuccessFactors: A Guide for Employers",
-      imgSrc: "/src/assets/images/card.jpg",
+      imgSrc: "/assets/images/cards/card.jpg",
       link: "/blogs/workforce-management",
       componentName: <WorkforceManagement />,
     },
     {
       title: "WORKFORCE",
       text: "Mastering EU Time Tracking Regulations with SAP SuccessFactors: A Guide for Employers",
-      imgSrc: "/src/assets/images/card.jpg",
+      imgSrc: "/assets/images/cards/card.jpg",
       link: "/blogs/workforce-management",
       componentName: <WorkforceManagement />,
     },
     {
       title: "WORKFORCE",
       text: "Mastering EU Time Tracking Regulations with SAP SuccessFactors: A Guide for Employers",
-      imgSrc: "/src/assets/images/card.jpg",
+      imgSrc: "/assets/images/cards/card.jpg",
       link: "/blogs/workforce-management",
       componentName: <WorkforceManagement />,
     },
@@ -78,10 +80,10 @@ const BlogList: React.FC = () => {
               </p>
             </div>
             <div className="row">
-              <div className="col-md-3">
-                <div className="row">
+              <div className="col-12">
+                <div className="card-container">
                   {cardData.map((card, index) => (
-                    <div className="mb-4 px-4 border-none" key={index}>
+                    <div className="col-md-4 mb-4 px-4 border-none" key={index}>
                       <Card
                         title={card.title}
                         text={card.text}
@@ -92,7 +94,9 @@ const BlogList: React.FC = () => {
                   ))}
                 </div>
               </div>
-              <div className="col-md-9">
+            </div>
+            <div className="row">
+              <div className="col-md-12">
                 <Routes>
                   {cardData.map((card) => (
                     <Route

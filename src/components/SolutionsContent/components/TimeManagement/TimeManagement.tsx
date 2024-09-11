@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import useScrollToTop from "../../../ReusableComponents/useScrollToTop";
 
 const TimeManagement = () => {
+  useScrollToTop();
   return (
     <Container>
       <Row className="mb-4">
         <Col>
-          <h1>Time Management Module</h1>
           <p>
             The Time Management module within SAP SuccessFactors is a
             cloud-based application that provides capabilities across three
@@ -46,25 +47,6 @@ const TimeManagement = () => {
             </li>
             <li>Reduces payroll errors and overtime costs.</li>
           </ul>
-        </Col>
-      </Row>
-
-      <Row className="mb-4">
-        <Col>
-          <Card>
-            <Card.Body>
-              <Card.Title>Customer Testimonial</Card.Title>
-              <Card.Text>
-                “Partnering with Effective People has been key for our HR
-                transformation. Their expertise and support have been very
-                valuable to us.”
-                <br />
-                <strong>
-                  Gustaf Rössner | Head of HR Digitalization at Coor
-                </strong>
-              </Card.Text>
-            </Card.Body>
-          </Card>
         </Col>
       </Row>
 

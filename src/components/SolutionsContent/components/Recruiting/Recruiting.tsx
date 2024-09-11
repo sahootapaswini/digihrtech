@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import useScrollToTop from "../../../ReusableComponents/useScrollToTop";
 
 const Recruiting = () => {
+  useScrollToTop();
   return (
     <Container>
       <Row className="mb-4">
         <Col>
-          <h1>Modern Recruitment with SAP SuccessFactors</h1>
           <p>
             The discipline of recruitment has changed significantly in the last
             couple of years as organizations look for better ways to secure top
@@ -111,27 +112,6 @@ const Recruiting = () => {
               process.
             </li>
           </ul>
-        </Col>
-      </Row>
-
-      <Row className="mb-4">
-        <Col>
-          <Card>
-            <Card.Body>
-              <Card.Title>Customer Testimonial</Card.Title>
-              <Card.Text>
-                “With the support of Effective People, we implemented SAP
-                SuccessFactors full suite within 21 months. Our entire HR setup
-                is now improved, with a strengthened focus on recruiting and
-                onboarding processes in particular.”
-                <br />
-                <strong>
-                  Pia Munk-Nielsen | HR System and Process Manager, Kemp &
-                  Lauritzen
-                </strong>
-              </Card.Text>
-            </Card.Body>
-          </Card>
         </Col>
       </Row>
 

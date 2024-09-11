@@ -1,0 +1,42 @@
+/* Set up the container for the slideshow */
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container for sliding testimonials */
+.testimonial-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    /* Smooth transition effect */
+    width: 100%;
+    /* Full width to contain all testimonials */
+    flex-direction: row;
+    /* Align testimonials in a row */
+}
+
+/* Style each testimonial */
+.testimonial {
+    flex: 0 0 100%;
+    /* Each testimonial takes up 100% of the wrapper width */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    /* Add padding for better readability */
+}
+
+/* Optional styling for text */
+.quote {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.company {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}

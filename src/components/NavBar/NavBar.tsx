@@ -4,21 +4,35 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 import {
   BsBarChart,
+  BsBook,
+  BsBriefcase,
   BsCash,
+  BsChatDots,
+  BsCheckCircle,
   BsClipboard,
   BsClock,
+  BsCpu,
+  BsGear,
   BsGraphUp,
   BsLightbulb,
   BsPeople,
+  BsPersonCheck,
   BsPieChart,
   BsSearch,
 } from "react-icons/bs";
+
+interface SubLink {
+  label: string;
+  path: string;
+  icon: React.ReactNode; // Using React.ReactNode for icon to support various types of icons
+  sublinks?: SubLink[]; // Array of sublinks if needed
+}
 
 interface LinkProps {
   label: string;
   link: string;
   path?: string;
-  sublinks?: { label: string; path: string; icon: any }[];
+  sublinks?: SubLink[]; // Array of sublinks if needed
 }
 
 const links: LinkProps[] = [
@@ -55,7 +69,7 @@ const links: LinkProps[] = [
       },
       { label: "Learning", path: "solutions/learning", icon: <BsLightbulb /> },
       {
-        label: "Workforce Analytics",
+        label: "Reporting And Analytics",
         path: "solutions/workforce-analytics",
         icon: <BsPieChart />,
       },
@@ -67,7 +81,7 @@ const links: LinkProps[] = [
       {
         label: "Business AI for HR",
         path: "solutions/business-ai-hr",
-        icon: <BsCash />,
+        icon: <BsCpu />,
       },
     ],
   },
@@ -76,54 +90,138 @@ const links: LinkProps[] = [
     link: "/services",
     sublinks: [
       {
-        label: "SAP SuccessFactors Implementation",
-        path: "/sap-successfactors",
-        icon: <BsCash />,
+        label: "SAP HXM Implementation",
+        path: "services/sap-hxm-implementation",
+        icon: <BsGear />,
+        sublinks: [
+          {
+            label: "SAP SuccessFactors Implementation",
+            path: "services/sap-successfactors",
+            icon: "",
+          },
+          {
+            label: "SAP Payroll Cloud & On Premise Implementation",
+            path: "services/sap-payroll",
+            icon: "",
+          },
+          {
+            label: "SAP ERP HCM/ Hybrid",
+            path: "services/sap-erp-hcm",
+            icon: "",
+          },
+          {
+            label: "Integration Services",
+            path: "services/integration-services",
+            icon: "",
+          },
+          {
+            label: "Data Migration",
+            path: "services/data-migration",
+            icon: "",
+          },
+          {
+            label: "Talent Intelligence Hub",
+            path: "services/sap-talent-intelligence",
+            icon: "",
+          },
+        ],
       },
       {
-        label: "SAP Payroll Cloud & On Premise Implementation",
-        path: "/sap-payroll",
-        icon: <BsCash />,
-      },
-      { label: "SAP ERP HCM/ Hybrid", path: "/sap-erp-hcm", icon: <BsCash /> },
-      {
-        label: "HR Process Implementation",
-        path: "/hr-process-implementation",
-        icon: <BsCash />,
-      },
-      {
-        label: "HR Roadmap Transformation",
-        path: "/hr-roadmap-transformation",
-        icon: <BsCash />,
-      },
-      {
-        label: "Solution Architecture Advisory",
-        path: "/solution-architecture",
-        icon: <BsCash />,
-      },
-      {
-        label: "Change Management",
-        path: "/change-management",
-        icon: <BsCash />,
-      },
-      { label: "Test Management", path: "/test-management", icon: <BsCash /> },
-      {
-        label: "Integration Services",
-        path: "/integration-services",
-        icon: <BsCash />,
+        label: "Consulting",
+        path: "services/consulting",
+        icon: <BsBriefcase />,
+        sublinks: [
+          {
+            label: "HR Process Implementation",
+            path: "services/hr-process-implementation",
+            icon: "",
+          },
+          {
+            label: "HR Roadmap Transformation",
+            path: "services/hr-roadmap-transformation",
+            icon: "",
+          },
+          {
+            label: "Change Management",
+            path: "services/change-management",
+            icon: "",
+          },
+          {
+            label: "Test Management",
+            path: "services/test-management",
+            icon: "",
+          },
+          { label: "Health Check", path: "services/health-check", icon: "" },
+        ],
       },
       {
-        label: "Application Support",
-        path: "/application-support",
-        icon: <BsCash />,
+        label: "Training",
+        path: "services/training",
+        icon: <BsBook />,
       },
-      { label: "Data Migration", path: "/data-migration", icon: <BsCash /> },
-      { label: "Training", path: "/training", icon: <BsCash /> },
-      { label: "HR Scopping", path: "/hr-scopping", icon: <BsCash /> },
       {
-        label: "SAP Talent Intelligence Hub",
-        path: "/sap-talent-intelligence",
-        icon: <BsCash />,
+        label: "Staff Augmentation",
+        path: "services/staff-augmentation",
+        icon: <BsPeople />,
+      },
+      {
+        label: "Value Assurance Services",
+        path: "services/value-assurance",
+        icon: <BsCheckCircle />,
+        sublinks: [
+          {
+            label: "Design Review",
+            path: "services/design-review",
+            icon: "",
+          },
+          {
+            label: "Solution Review",
+            path: "services/solution-architecture",
+            icon: "",
+          },
+          {
+            label: "Business Readyness Review",
+            path: "services/business-readyness",
+            icon: "",
+          },
+          {
+            label: "Cloud Planning Workshop",
+            path: "services/cloud-planning",
+            icon: "",
+          },
+          {
+            label: "Preparation & Governance",
+            path: "services/preparation-governance",
+            icon: "",
+          },
+          {
+            label: "Solution & Integration  Architecture Services ",
+            path: "services/preparation-governance",
+            icon: "",
+          },
+          {
+            label: "Subject Matter Expertise Advice & Guidance",
+            path: "services/preparation-governance",
+            icon: "",
+          },
+        ],
+      },
+      {
+        label: "Support Services",
+        path: "services/support-services",
+        icon: <BsChatDots />,
+        sublinks: [
+          {
+            label: "Application Management Support(AMS)",
+            path: "services/application-support",
+            icon: "",
+          },
+          {
+            label: "Payroll Support",
+            path: "services/payroll-support",
+            icon: "",
+          },
+        ],
       },
     ],
   },
@@ -132,51 +230,80 @@ const links: LinkProps[] = [
     link: "/products",
     sublinks: [
       {
-        label: "Lift and Shift Tool",
-        path: "/lift-and-shift",
-        icon: <BsCash />,
+        label: "DHR Easy Move",
+        path: "/dhr-easy-move",
+        icon: "",
       },
     ],
   },
+  /*This code is commented because Tools are going to be available only for admin in future .*/
+  /*{
+    label: "Tools",
+    link: "/tools",
+    sublinks: [
+      {
+        label: "DHR Estimator Implementation",
+        path: "/dhr-estimator-implementation",
+        icon: "",
+      },
+      {
+        label: "DHR Estimator Services",
+        path: "/dhr-estimator-services",
+        icon: "",
+      },
+      {
+        label: "DHR Estimator AMS",
+        path: "/dhr-estimator-ams",
+        icon: "",
+      },
+    ],
+  },*/
   { label: "About US", link: "/about-us", path: "/about-us" },
   {
     label: "Resources",
     link: "/Services",
     sublinks: [
-      { label: "Blogs", path: "/blogs", icon: <BsCash /> },
-      { label: "News", path: "/news", icon: <BsCash /> },
-      { label: "Events", path: "/events", icon: <BsCash /> },
+      { label: "Blogs", path: "/blogs", icon: "" },
+      { label: "How We Deliver", path: "/how-we-deliver", icon: "" },
+      /*{ label: "News", path: "/news", icon: "" },
+      { label: "Events", path: "/events", icon: "" },*/
     ],
   },
 ];
 
 const NavBar: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const [scrolled, setScrolled] = useState(false);
-
-  const handleScroll = () => {
-    if (window.scrollY > 0.1) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
+  const [activeNestedIndex, setActiveNestedIndex] = useState<number | null>(
+    null
+  );
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    const handleResize = () => setIsMobile(window.innerWidth < 992);
+
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
+  const handleClick = (index: number) => {
+    if (isMobile) {
+      setActiveIndex(activeIndex === index ? null : index);
+    }
+  };
+  const handleNestedClick = (index: number) => {
+    setActiveNestedIndex(activeNestedIndex === index ? null : index);
+  };
+
   return (
-    <nav
-      className={`navbar navbar-expand-lg navbar-dark p-4 ${
-        scrolled ? "scrolled" : ""
-      }`}>
+    <nav className={`navbar navbar-expand-lg navbar-dark p-md-2   `}>
       <div className="container">
-        <Link className="navbar-brand" to="/"></Link>
+        <div className="nav-bar-container">
+          <Link className="navbar-brand" to="/"></Link>
+        </div>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -195,8 +322,7 @@ const NavBar: React.FC = () => {
               <li
                 key={index}
                 className={`nav-item${link.sublinks ? " dropdown" : ""} mx-2`}
-                onMouseEnter={() => link.sublinks && setActiveIndex(index)}
-                onMouseLeave={() => link.sublinks && setActiveIndex(null)}>
+                onClick={() => link.sublinks && handleClick(index)}>
                 <Link
                   className={`nav-link${
                     link.sublinks ? " dropdown-toggle" : ""
@@ -220,21 +346,50 @@ const NavBar: React.FC = () => {
                     {link.sublinks.map((sublink, subIndex) => (
                       <Link
                         key={subIndex}
-                        className="dropdown-item"
+                        className="dropdown-item nested-nav2"
                         to={sublink.path}>
-                        <span className="sub-icon-orange px-2">
-                          {sublink.icon}
-                        </span>
+                        {sublink.icon && (
+                          <span className="sub-icon-orange px-2">
+                            {sublink.icon}
+                          </span>
+                        )}
                         <span className="align-items-center  ">
                           {sublink.label}
                         </span>
+                        {sublink.sublinks && (
+                          <div
+                            className={`dropdown-menu nested-dropdown${
+                              activeIndex === index ? " show" : ""
+                            }`}>
+                            {sublink.sublinks.map((sublink, subIndex) => (
+                              <Link
+                                key={subIndex}
+                                className="dropdown-item"
+                                to={sublink.path}>
+                                {sublink.icon && (
+                                  <span className="sub-icon-orange px-2">
+                                    {sublink.icon}
+                                  </span>
+                                )}
+                                <span className="align-items-center  ">
+                                  {sublink.label}
+                                </span>
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </Link>
                     ))}
                   </div>
                 )}
               </li>
             ))}
-            <li className="nav-item mx-3">
+            <li className="nav-item contact-us-link">
+              <Link className="nav-link mx-2" to="/contact-us">
+                Contact Us
+              </Link>
+            </li>
+            <li className="nav-item mx-3 contact-us-button">
               <Link className="btn btn-primary" to="/contact-us">
                 Contact Us
               </Link>

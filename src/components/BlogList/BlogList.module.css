@@ -1,5 +1,11 @@
 .BlogList {
     height: 95vh;
     min-height: 400px;
-    background-image: url("../../assets/images/dth-background.jpeg") no-repeat;
+    background-image: url("/assets/images/hero/dth-background.jpeg") no-repeat;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
 }

@@ -1,139 +1,122 @@
 import React from "react";
-import {
-  BsClock,
-  BsPeople,
-  BsCalendar,
-  BsWallet,
-  BsCash,
-  BsSearch,
-  BsClipboard,
-  BsBarChart,
-  BsGraphUp,
-  BsLightbulb,
-  BsPieChart,
-  BsCurrencyDollar,
-} from "react-icons/bs"; // Import other icons if needed
+import { Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./HeroSection.css"; // Custom CSS for additional styling if needed
 
 const HeroSection: React.FC = () => {
   const columns = [
     {
-      icon: <BsPeople />, // Use the icon component directly
-      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
+      icon: "/assets/images/icons/dhr-ec-icon.jpg", // Use the icon component directly
       header: "Employee Central",
       description:
         "Consolidate and standardize global HR processes. We have extensive experience helping companies implement the SAP SuccessFactors Employee Central module.",
       buttonText: "Find out more",
-      buttonLink: "#",
+      buttonLink: "solutions/employee-central",
     },
     {
-      icon: <BsCash />, // Example icon for the second column
-      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
+      icon: "/assets/images/icons/dhr-compensation-icon.png",
       header: "Compensation",
       description:
-        "Whether you’re just starting out with SuccessFactors or are starting from scratch, Effective People can help you quickly and easily implement a powerful pay-for-performance strategy.",
+        "Whether you’re just starting out with SuccessFactors or are starting from scratch, DHR Technology can help you quickly and easily implement a powerful pay-for-performance strategy.",
       buttonText: "Find out more",
-      buttonLink: "#",
+      buttonLink: "solutions/compensation",
     },
     {
-      icon: <BsClock />, // Example icon for the third column
-      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
+      icon: "/assets/images/icons/dhr-time-icon.png", // Example icon for the third column
       header: "Time Management",
       description:
-        "Effective People can help you implement SAP SuccessFactors’ time management module to track, approve and put in time off requests. Get error-free timesheets.",
+        "DHR Technology can help you implement SAP SuccessFactors’ time management module to track, approve and put in time off requests. Get error-free timesheets.",
       buttonText: "Find out more",
-      buttonLink: "#",
+      buttonLink: "solutions/time-management",
     },
     {
-      icon: <BsSearch />, // Example icon for the third column
-      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
+      icon: "/assets/images/icons/dhr-recruiting-icon.jpg", // Example icon for the third column
       header: "Recruiting",
       description:
-        "Hire the right people for your business when you partner with Effective People to help you implement the SAP SuccessFactors Recruiting module.",
+        "Hire the right people for your business when you partner with DHR Technology to help you implement the SAP SuccessFactors Recruiting module.",
       buttonText: "Find out more",
-      buttonLink: "#",
+      buttonLink: "solutions/recruiting",
     },
     {
-      icon: <BsClipboard />, // Example icon for the third column
-      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
+      icon: "/assets/images/icons/dhr-onboard-icon.jpg", // Example icon for the third column
       header: "Onboarding",
       description:
         "Onboard with ease by implementing SAP SuccessFactors Onboarding. We’ll help you get going.",
       buttonText: "Find out more",
-      buttonLink: "#",
+      buttonLink: "solutions/onboarding",
     },
     {
-      icon: <BsBarChart />, // Example icon for the third column
-      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
+      icon: "/assets/images/icons/dhr-performance-icon.jpg", // Example icon for the third column
       header: "Performance and Goals",
       description:
         "Create a successful business with the help of SAP SuccessFactors Performance and Goals Management—we’ll ensure your implementation happens quickly and smoothly!",
       buttonText: "Find out more",
-      buttonLink: "#",
+      buttonLink: "solutions/performance-goals",
     },
     {
-      icon: <BsGraphUp />, // Example icon for the third column
-      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
+      icon: "/assets/images/icons/dhr-suc-dev-icon.png", // Example icon for the third column
+
       header: "Succession and Development",
       description:
-        "Don’t let resignations or retirements slow your business growth. Partner with Effective People to ensure implementation with ease.",
+        "Don’t let resignations or retirements slow your business growth. Partner with DHR Technology to ensure implementation with ease.",
       buttonText: "Find out more",
-      buttonLink: "#",
+      buttonLink: "solutions/succession-development",
     },
     {
-      icon: <BsLightbulb />, // Example icon for the third column
-      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
+      icon: "/assets/images/icons/dhr-learn-icon2.png", // Example icon for the third column
       header: "Learning",
       description:
         "To stay competitive, you need an engaged and highly skilled workforce. With SAP SuccessFactors Learning Management System, you can track, train, and hone your employees’ skills within one unified, cloud-based system.",
       buttonText: "Find out more",
-      buttonLink: "#",
+      buttonLink: "solutions/learning",
     },
     {
-      icon: <BsPieChart />, // Example icon for the third column
-      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
-      header: "Workforce Analytics",
+      icon: "/assets/images/icons/dhr-report-icon.png", // Example icon for the third column
+      header: "Reporting and Analytics",
       description:
-        "Make better decisions with workforce analytics–we’ll help you get started!",
+        "Make better decisions with SAP Analytics Cloud and SuccessFactors People Analytics Reports –we’ll help you get started!",
       buttonText: "Find out more",
-      buttonLink: "#",
+      buttonLink: "solutions/workforce-analytics",
     },
     {
-      icon: <BsCurrencyDollar />, // Example icon for the third column
-      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
+      icon: "/assets/images/icons/dhr-payroll-icon.png", // Example icon for the third column
       header: "Payroll",
       description:
-        "Make better decisions with workforce analytics–we’ll help you get started!",
+        "Pay the employee with confidence in error free payroll.We have extensive experience helping companies implement Employee Central Payroll & S4 HANA Payroll",
       buttonText: "Find out more",
-      buttonLink: "#",
+      buttonLink: "solutions/payroll",
     },
     {
-      icon: <BsCurrencyDollar />, // Example icon for the third column
-      subheader: "SAP SUCCESSFACTORS IMPLEMENTATION",
+      icon: "/assets/images/icons/dhr-ai-icon.jpg", // Example icon for the third column
       header: "Business AI for HR",
       description:
-        "Make better decisions with workforce analytics–we’ll help you get started!",
+        "Make work easier with SAP Business AI. It helps employees,manager,recruiter & HR  do their jobs better",
       buttonText: "Find out more",
-      buttonLink: "#",
+      buttonLink: "solutions/business-ai-hr",
     },
   ];
 
   return (
-    <section className="hero-section py-5">
+    <section className="hero-section py-4">
       <div className="container">
-        <div className="row text-center">
+        <div className="row text-center  d-flex justify-content-center">
           {columns.map((col, index) => (
-            <div key={index} className="col-lg-4 mb-5 flex-column d-flex px-4">
+            <div
+              key={index}
+              className="col-lg-4 col-md-6 mb-5 flex-column d-flex px-4">
               <div className="heroContent">
-                <div className="icon-container mb-1">{col.icon}</div>
-                <h2 className="subheader mb-2">{col.subheader}</h2>
-                <h1 className="header mb-4">{col.header}</h1>
+                <div className="icon-container mb-1 py-2">
+                  <Image src={col.icon} alt={col.header} fluid />
+                </div>
+                <h3 className="header mb-4">{col.header}</h3>
                 <p className="description mb-4 px-2">{col.description}</p>
                 <div className="button-container mt-auto mb-3">
-                  <a href={col.buttonLink} className="btn btn-primary">
+                  <Link
+                    to={col.buttonLink}
+                    className="text-white btn btn-primary">
                     {col.buttonText}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
