@@ -18,3 +18,7 @@
 .ServiceSection .container .serviceName:hover h3 {
     color: #fff !important;
 }
+
+.ServiceSection .transformation-icon {
+    border-radius: 4rem;
+}

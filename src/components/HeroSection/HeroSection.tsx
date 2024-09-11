@@ -100,7 +100,7 @@ const HeroSection: React.FC = () => {
   return (
     <section className="hero-section py-4">
       <div className="container">
-        <div className="row text-center">
+        <div className="row text-center  d-flex justify-content-center">
           {columns.map((col, index) => (
             <div key={index} className="col-lg-4 mb-5 flex-column d-flex px-4">
               <div className="heroContent">

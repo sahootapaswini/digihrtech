@@ -34,7 +34,7 @@ const ContactButton = () => {
       {showPopup && (
         <Col md={4} className=" py-4 contactPopup">
           <Row className="pb-3">
-            <Col md={8}>
+            <Col md={10}>
               <h3>Contact</h3>
               <div>
                 <div>Got questions?</div>
@@ -42,12 +42,9 @@ const ContactButton = () => {
               </div>
             </Col>
 
-            <Col md={4} className="d-flex justify-content-end">
-              <Button
-                variant="link"
-                className="close-button"
-                onClick={handleClosePopup}>
-                <i className="fa fa-times"></i>
+            <Col md={2} className="d-flex justify-content-end">
+              <Button variant="link" onClick={handleClosePopup}>
+                <i className="fa fa-times close-button"></i>
               </Button>
             </Col>
           </Row>
@@ -74,8 +71,11 @@ const ContactButton = () => {
               <i className="fa fa-question-circle clr-orange"></i>
             </Col>
             <Col md={10}>
-              <div>Enquiry</div>
-              <div>Contact</div>
+              <div>
+                <a href="/contact-us" className="text-decoration-none">
+                  Enquiry
+                </a>
+              </div>
             </Col>
           </Row>
         </Col>

@@ -4,12 +4,19 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 import {
   BsBarChart,
+  BsBook,
+  BsBriefcase,
   BsCash,
+  BsChatDots,
+  BsCheckCircle,
   BsClipboard,
   BsClock,
+  BsCpu,
+  BsGear,
   BsGraphUp,
   BsLightbulb,
   BsPeople,
+  BsPersonCheck,
   BsPieChart,
   BsSearch,
 } from "react-icons/bs";
@@ -74,7 +81,7 @@ const links: LinkProps[] = [
       {
         label: "Business AI for HR",
         path: "solutions/business-ai-hr",
-        icon: <BsCash />,
+        icon: <BsCpu />,
       },
     ],
   },
@@ -85,7 +92,7 @@ const links: LinkProps[] = [
       {
         label: "SAP HXM Implementation",
         path: "services/sap-hxm-implementation",
-        icon: "",
+        icon: <BsGear />,
         sublinks: [
           {
             label: "SAP SuccessFactors Implementation",
@@ -122,7 +129,7 @@ const links: LinkProps[] = [
       {
         label: "Consulting",
         path: "services/consulting",
-        icon: "",
+        icon: <BsBriefcase />,
         sublinks: [
           {
             label: "HR Process Implementation",
@@ -150,17 +157,17 @@ const links: LinkProps[] = [
       {
         label: "Training",
         path: "services/training",
-        icon: "",
+        icon: <BsBook />,
       },
       {
         label: "Staff Augmentation",
         path: "services/staff-augmentation",
-        icon: "",
+        icon: <BsPeople />,
       },
       {
         label: "Value Assurance Services",
         path: "services/value-assurance",
-        icon: "",
+        icon: <BsCheckCircle />,
         sublinks: [
           {
             label: "Design Review",
@@ -202,7 +209,7 @@ const links: LinkProps[] = [
       {
         label: "Support Services",
         path: "services/support-services",
-        icon: "",
+        icon: <BsChatDots />,
         sublinks: [
           {
             label: "Application Management Support(AMS)",
@@ -266,7 +273,9 @@ const links: LinkProps[] = [
 
 const NavBar: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
+  const [activeNestedIndex, setActiveNestedIndex] = useState<number | null>(
+    null
+  );
   const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
 
   useEffect(() => {
@@ -283,6 +292,9 @@ const NavBar: React.FC = () => {
     if (isMobile) {
       setActiveIndex(activeIndex === index ? null : index);
     }
+  };
+  const handleNestedClick = (index: number) => {
+    setActiveNestedIndex(activeNestedIndex === index ? null : index);
   };
 
   return (
