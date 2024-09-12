@@ -87,19 +87,6 @@ const SAPSuccessFactors = () => {
       </section>
 
       {/* SAP Licenses Section */}
-      <section className="mb-5">
-        <h2>SAP Licences</h2>
-        <p>
-          DHR Technology is a truly international company, capable of global
-          service delivery. We’ve been at the forefront of SAP SuccessFactors
-          for almost 20 years, working closely together with our customers to
-          implement SAP SuccessFactors on a global scale. We have SAP licence
-          reseller agreements in the United States, Canada, Germany, the United
-          Kingdom and Ireland, Netherlands, Denmark, and Sweden. Contact us to
-          learn how we can support your digital transformation.
-        </p>
-      </section>
-
       {/* Roadmap Services Section */}
       <section className="mb-5">
         <h2>Roadmap Services</h2>

@@ -30,8 +30,8 @@ const SapErpHcmHybrid = () => {
                 solution.
               </Card.Text>
               <Card.Text>
-                DHR Technology and SAP’s relationship extends over 20 years and
-                this combined experience and commitment to global HR and Payroll
+                DHR Technology experts who all have worked pereviously with big consulting firms for over 
+                20 years and this combined experience and commitment to global HR and Payroll
                 rollouts brings significant benefits. DHR Technology has an
                 experienced team of SAP trained and certified professionals,
                 with an average of over 12 years SAP experience, who are able to
@@ -45,8 +45,11 @@ const SapErpHcmHybrid = () => {
               <ul className="borderless-list">
                 <li>Human Capital Management and Payroll</li>
                 <li>
-                  ‘Fast start’ HR & Self Services (accredited Rapid Deployment
-                  Solution)
+                  SAP Model Company Implemenation across SuccessFactors Suites.
+                </li>
+
+                <li>
+                Rapid Deployment Solution(RDS) Implemenation for Payroll Control Center(PCC).
                 </li>
                 <li>
                   Business execution (aligning business goals to people goals

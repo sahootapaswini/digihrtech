@@ -70,6 +70,11 @@ const Footer: React.FC = () => {
       url: "https://www.facebook.com/profile.php?id=61565632024409",
       iconClass: "fab fa-facebook-f",
     },
+    {
+      name: "WhatsApp",
+      url: "https://wa.me/971588278127",
+      iconClass: "fab fa-whatsapp",
+    },
   ];
 
   return (
@@ -166,16 +171,6 @@ const Footer: React.FC = () => {
                   <span className="mx-2"> Landline:+971 37821534</span>
                 </a>
               </li>
-              <li>Corniche Tower A, Al Bateen,Abu Dhabi, UAE, 20028</li>
-              <li>
-                <a
-                  href="https://maps.google.com/?q=Corniche,+Tower+A,+Abu+Dhabi,+UAE"
-                  className="text-white"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  View on Google Maps
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -195,6 +190,62 @@ const Footer: React.FC = () => {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+        <div className="row px-5 py-3">
+          <div className="col-md-4 px-2">
+            <a
+              href="https://maps.google.com/?q=Corniche,+Tower+A,+Abu+Dhabi,+UAE"
+              className="text-white"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img
+                className="img-fluid"
+                src="/assets/images/locations/footer-3.jpeg"
+                alt=""
+              />
+            </a>
+            <div className="row">
+              <div className="col-lg-6 col-md-10">
+                Corniche Tower A, Al Bateen,Abu Dhabi, UAE, 20028
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 px-2">
+            <a
+              href="https://maps.google.com/?q=Corniche,+Tower+A,+Abu+Dhabi,+UAE"
+              className="text-white"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img
+                className="img-fluid"
+                src="/assets/images/locations/footer-4.jpeg"
+                alt=""
+              />
+            </a>
+            <div className="row">
+              <div className="col-lg-6 col-md-10">
+                Corniche Tower A, Al Bateen,Abu Dhabi, UAE, 20028
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 px-2">
+            <a
+              href="https://maps.google.com/?q=Corniche,+Tower+A,+Abu+Dhabi,+UAE"
+              className="text-white"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img
+                className="img-fluid"
+                src="/assets/images/locations/footer-5.jpeg"
+                alt=""
+              />
+            </a>
+            <div className="row">
+              <div className="col-lg-6 col-md-10 ">
+                Corniche Tower A, Al Bateen,Abu Dhabi, UAE, 20028
+              </div>
+            </div>
           </div>
         </div>
         {/* Footer Copyright Section */}

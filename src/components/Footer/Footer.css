@@ -43,3 +43,8 @@
 .bbwhite {
     border-bottom: 2px solid #fff;
 }
+
+.footer img {
+    border-radius: 50%;
+    height: 100px;
+}
