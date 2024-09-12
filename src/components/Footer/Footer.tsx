@@ -168,7 +168,7 @@ const Footer: React.FC = () => {
               <li>
                 <a href="tel:+1234567890" className="text-white">
                   <i className="fas fa-phone "></i>
-                  <span className="mx-2"> Landline:+971 37821534</span>
+                  <span className="mx-2">Landline:+971 37821534</span>
                 </a>
               </li>
             </ul>
@@ -207,7 +207,7 @@ const Footer: React.FC = () => {
             </a>
             <div className="row">
               <div className="col-lg-6 col-md-10">
-                Corniche Tower A, Al Bateen,Abu Dhabi, UAE, 20028
+                Corniche Tower A, Al Bateen, Abu Dhabi, UAE, 20028
               </div>
             </div>
           </div>
@@ -225,7 +225,7 @@ const Footer: React.FC = () => {
             </a>
             <div className="row">
               <div className="col-lg-6 col-md-10">
-                Corniche Tower A, Al Bateen,Abu Dhabi, UAE, 20028
+                SDA Tower 23,Panathur Road, Bangalore, 560103
               </div>
             </div>
           </div>
@@ -243,7 +243,7 @@ const Footer: React.FC = () => {
             </a>
             <div className="row">
               <div className="col-lg-6 col-md-10 ">
-                Corniche Tower A, Al Bateen,Abu Dhabi, UAE, 20028
+                Shaheed Nagar, Bhubaneswar,751001
               </div>
             </div>
           </div>
