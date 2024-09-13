@@ -21,6 +21,7 @@ import HealthCheck from "./components/HealthCheck/HealthCheck";
 import SolutionArchitectureAdvisory from "./components/SolutionArchitectureAdvisory/SolutionArchitectureAdvisory";
 import HrRoadmap from "./components/HrRoadmap/HrRoadmap";
 import SapErpHcmHybrid from "./components/SapErpHcmHybrid/SapErpHcmHybrid";
+import PayrollSupport from "./components/PayrollSupport/PayrollSupport";
 
 const links = [
   {
@@ -95,9 +96,9 @@ const links = [
     componentName: <SapTalentIntelligenceHub />,
   },
   {
-    label: "Staff Augmentation",
-    path: "staff-augmentation",
-    componentName: <StaffAugmentation />,
+    label: "Payroll Support",
+    path: "payroll-support",
+    componentName: <PayrollSupport />,
   },
 ];
 

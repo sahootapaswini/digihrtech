@@ -3,10 +3,12 @@ import emailjs from "@emailjs/browser";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ContactForm.css"; // Custom CSS for additional styling if needed
 import useScrollToTop from "../ReusableComponents/useScrollToTop";
+import { Modal, Button } from "react-bootstrap"; // Import Modal and Button from React Bootstrap
 
 const ContactForm: React.FC = () => {
   useScrollToTop();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showModal, setShowModal] = useState(false); // State for modal visibility
   const [stateMessage, setStateMessage] = useState<string | null>(null);
   const [isPrivacyPolicyChecked, setIsPrivacyPolicyChecked] = useState(false);
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
@@ -36,6 +38,7 @@ const ContactForm: React.FC = () => {
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setIsPrivacyPolicyChecked(e.target.checked);
   };
+
   // Handle preferred services checkbox change
   const handleServiceCheckboxChange = (
     e: React.ChangeEvent<HTMLInputElement>
@@ -47,9 +50,19 @@ const ContactForm: React.FC = () => {
         : [...prevServices, service]
     );
   };
+
   // Handle form submission
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Check if privacy policy is accepted
+    if (!isPrivacyPolicyChecked) {
+      setStateMessage(
+        "You must agree to the privacy policy before submitting."
+      );
+      return;
+    }
+
     setIsSubmitting(true);
 
     const serviceID = "service_ias1vwr";
@@ -58,11 +71,8 @@ const ContactForm: React.FC = () => {
 
     emailjs.sendForm(serviceID, templateID, e.currentTarget, publicKey).then(
       (result) => {
-        setStateMessage("Message sent!");
         setIsSubmitting(false);
-        setTimeout(() => {
-          setStateMessage(null);
-        }, 5000); // hide message after 5 seconds
+        setShowModal(true); // Show modal on success
 
         // Reset form fields
         if (formRef.current) {
@@ -105,7 +115,7 @@ const ContactForm: React.FC = () => {
             <form onSubmit={sendEmail} ref={formRef}>
               <div className="row">
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="firstName" className="form-label">
+                  <label htmlFor="firstName" className="form-label required">
                     First Name
                   </label>
                   <input
@@ -119,7 +129,7 @@ const ContactForm: React.FC = () => {
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="lastName" className="form-label">
+                  <label htmlFor="lastName" className="form-label required">
                     Last Name
                   </label>
                   <input
@@ -133,7 +143,7 @@ const ContactForm: React.FC = () => {
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="company" className="form-label">
+                  <label htmlFor="company" className="form-label required">
                     Company
                   </label>
                   <input
@@ -143,10 +153,13 @@ const ContactForm: React.FC = () => {
                     className="form-control"
                     value={formData.company}
                     onChange={handleChange}
+                    required
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="businessEmail" className="form-label">
+                  <label
+                    htmlFor="businessEmail"
+                    className="form-label required">
                     Business Email
                   </label>
                   <input
@@ -173,7 +186,7 @@ const ContactForm: React.FC = () => {
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="country" className="form-label">
+                  <label htmlFor="country" className="form-label required">
                     Country
                   </label>
                   <input
@@ -183,6 +196,7 @@ const ContactForm: React.FC = () => {
                     className="form-control"
                     value={formData.country}
                     onChange={handleChange}
+                    required
                   />
                 </div>
                 <div className="col-12 mb-3">
@@ -196,7 +210,7 @@ const ContactForm: React.FC = () => {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    required></textarea>
+                  />
                 </div>
                 {/* Preferred Services Section */}
                 <div className="col-12 mb-3">
@@ -288,7 +302,9 @@ const ContactForm: React.FC = () => {
                       onChange={handleCheckboxChange}
                       required
                     />
-                    <label htmlFor="privacyPolicy" className="form-check-label">
+                    <label
+                      htmlFor="privacyPolicy"
+                      className="form-check-label required">
                       I agree to the{" "}
                       <a
                         href="/privacy-policy"
@@ -317,6 +333,19 @@ const ContactForm: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Modal for success message */}
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Body className="text-center p-4">
+          <p className="mb-3">
+            Thank you for contacting. We will get back to you as soon as
+            possible.
+          </p>
+          <Button className="bg-orange" onClick={() => setShowModal(false)}>
+            Close
+          </Button>
+        </Modal.Body>
+      </Modal>
     </section>
   );
 };

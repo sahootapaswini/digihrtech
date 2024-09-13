@@ -14,3 +14,13 @@
 textarea.form-control {
     resize: none;
 }
+
+.required::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
+.modal-dialog {
+    top: 25%;
+}
