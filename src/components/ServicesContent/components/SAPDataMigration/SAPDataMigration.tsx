@@ -32,7 +32,12 @@ const SAPDataMigration = () => {
         <Col md={12}>
           <Card className="mb-4">
             <Card.Body>
-              <Card.Title>Our Data Migration Approach</Card.Title>
+              <Card.Title><h2>Our Data Migration Approach</h2></Card.Title>
+              <p>To ensure the best outcomes for your organization, it is critical that 
+                there is a clear and reliable plan to safely manage your data migration. 
+                DHR Technology’s approach can be grouped into three sequential components:
+              </p>
+              <div className="d-flex justify-content-center pb-3"><img src="/public/assets/images/datamigration-approach.png" alt="To be updated" /></div>
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   <h5>Phase 1: Prepare & Explore</h5>

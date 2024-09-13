@@ -155,13 +155,13 @@ const Footer: React.FC = () => {
             <ul className="list-unstyled">
               <li>
                 <a href="mailto:info@example.com" className="text-white">
-                  <i className="bi bi-envelope"></i>
-                  info@digihrtech.com
+                  <i className="fa fa-envelope"></i>
+                  <span className="mx-2">info@digihrtech.com</span>
                 </a>
               </li>
               <li>
                 <a href="tel:+1234567890" className="text-white">
-                  <i className="fa fa-phone"></i>
+                  <i className="fa fa-mobile"></i>
                   <span className="mx-2">Phone:+971 588278127</span>
                 </a>
               </li>
@@ -207,7 +207,8 @@ const Footer: React.FC = () => {
             </a>
             <div className="row">
               <div className="col-lg-6 col-md-10">
-                Corniche Tower A, Al Bateen, Abu Dhabi, UAE, 20028
+                Corniche Tower A,  Al Beeshan Street,  Al Bateen,  Abu Dhabi, 20028,     
+                United Arab Emirates
               </div>
             </div>
           </div>
@@ -225,7 +226,7 @@ const Footer: React.FC = () => {
             </a>
             <div className="row">
               <div className="col-lg-6 col-md-10">
-                SDA Tower 23,Panathur Road, Bangalore, 560103
+              SDA, Tower 25, Panathur Main Road, Off, Outer Ring Rd, Bengaluru, 560087, Karnataka, India
               </div>
             </div>
           </div>
@@ -243,7 +244,7 @@ const Footer: React.FC = () => {
             </a>
             <div className="row">
               <div className="col-lg-6 col-md-10 ">
-                Shaheed Nagar, Bhubaneswar,751001
+              Metro Tower, Jan Path, Saheed Nagar, Bhubaneswar,751007,Odisha,  India
               </div>
             </div>
           </div>
