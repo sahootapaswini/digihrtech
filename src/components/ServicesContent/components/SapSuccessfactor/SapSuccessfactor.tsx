@@ -7,8 +7,8 @@ const SAPSuccessFactors = () => {
   return (
     <div className="container">
       {/* Header */}
-      <header className="mb-4">
-        <h1>SAP SuccessFactors Implementation Partner</h1>
+      <header className="mb-5">
+        <h2>SAP SuccessFactors Implementation Partner</h2>
         <p className="lead">
           As a leading global provider of SAP SuccessFactors, HR advisory, and
           workforce management solutions, DHR Technology helps organizations
@@ -22,12 +22,12 @@ const SAPSuccessFactors = () => {
       <section className="mb-5">
         <h2>Your Trusted SuccessFactors Partner</h2>
         <p>
-          We’ve completed more than 1,200 SAP SuccessFactors projects in more
-          than 100 countries worldwide throughout the past 20 years. Our 250
+          We’ve diverse experience in implement of SAP SuccessFactors projects in more
+          than 100 countries worldwide throughout the past 20 years. Our
           consultants cover all major industries and provide continued
-          operational support and maintenance for more than 150 companies. We’re
+          operational support and maintenance for many fortune 500 companies. We’re
           in the SAP Hall of Fame and have been awarded Expert status in SAP’s
-          Competency Framework. Together with our customers, we’ve won 13 SAP
+          Competency Framework. Together with our customers, we’ve won many SAP
           Quality Awards and received the SAP Partner Excellence Award for
           outstanding service across the entire SAP portfolio.
         </p>
