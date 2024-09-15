@@ -24,7 +24,7 @@ const PayrollSupport: React.FC = () => {
         <p>We can also offer tailored HR payroll support for customers.</p>
       </div>
       <div className="row d-flex justify-content-center mt-5">
-        <div className="col-md-9">
+        <div className="col-md-10">
           <img
             className="img-fluid"
             src="/assets/images/payroll-support-img.png"

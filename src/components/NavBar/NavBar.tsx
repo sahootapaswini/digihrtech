@@ -132,12 +132,12 @@ const links: LinkProps[] = [
         icon: <BsBriefcase />,
         sublinks: [
           {
-            label: "HR Process Implementation",
+            label: "HR Process Design",
             path: "services/hr-process-implementation",
             icon: "",
           },
           {
-            label: "HR Roadmap Transformation",
+            label: "HR Tech Roadmap Transformation",
             path: "services/hr-roadmap-transformation",
             icon: "",
           },

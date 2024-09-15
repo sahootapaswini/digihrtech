@@ -45,7 +45,7 @@ const links = [
     componentName: <HRProcessImplementation />,
   },
   {
-    label: "HR Roadmap Transformation",
+    label: "HR Tech Roadmap Transformation",
     path: "hr-roadmap-transformation",
     componentName: <HrRoadmap />,
   },
@@ -89,7 +89,11 @@ const links = [
     path: "health-check",
     componentName: <HealthCheck />,
   },
-
+  {
+    label: "Staff-Augmentation",
+    path: "staff-augmentation",
+    componentName: <StaffAugmentation />,
+  },
   {
     label: "Talent Intelligence Hub",
     path: "sap-talent-intelligence",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, ListGroup, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, ListGroup, Button, CardBody } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import useScrollToTop from "../../../ReusableComponents/useScrollToTop";
 
@@ -9,7 +9,7 @@ const SAPTraining = () => {
     <Container>
       <Row className="my-3">
         <Col md={12}>
-          <h1>Admin Training for SAP SuccessFactors</h1>
+          <h1>Training for SAP SuccessFactors And Payroll </h1>
           <p>
             Managing SAP SuccessFactors requires a comprehensive approach to
             ensure the seamless operation of all system components. Given the
@@ -21,11 +21,23 @@ const SAPTraining = () => {
             DHR Technology provides admin training tailored to improve your HR
             admins’ technical knowledge. Our training sessions are interactive
             and practical, focusing on real-world applications to ensure your
-            team can confidently apply their new skills.
+            team can confidently apply their new skills. We also provide End-User-Trainings for 
+            HR business users on various HR business processes for all SuccessFactors Modules and SAP payroll.
           </p>
         </Col>
       </Row>
-
+      <Row>
+<Col md={12}>
+          <Card className="mb-4">
+            <Card.Body>
+              <Card.Title>Our Training Approach</Card.Title>
+              <ListGroup variant="flush">
+              <div className="d-flex justify-content-center pb-3"><img src="/public/assets/images/training-approach.png" alt="To be updated" /></div>
+                </ListGroup>
+                </Card.Body>
+                </Card>
+                </Col>
+</Row>
       <Row>
         <Col md={12}>
           <Card className="mb-4">
