@@ -90,7 +90,7 @@ const AboutUs: React.FC = () => {
             <h2 className="text-center py-3">Our Values</h2>
             <div className="row card-deck">
               {cardData.map((card, index) => (
-                <div key={index} className="col-md-3 mb-4">
+                <div key={index} className="col-lg-3 col-md-6 mb-4">
                   <div className="card border-0">
                     <img
                       src={card.image}
