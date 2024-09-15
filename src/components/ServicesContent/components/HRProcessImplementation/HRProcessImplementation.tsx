@@ -9,7 +9,7 @@ const HRProcessImplementation = () => {
     <Container>
       <Row className="my-3">
         <Col md={12}>
-          <h1>HR Process Implementation</h1>
+          <h1>HR Business Process Design</h1>
           <p>
             To remain competitive, companies need to introduce HR solutions that
             make the best use of technology to support employees and their

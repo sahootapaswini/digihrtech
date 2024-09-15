@@ -45,7 +45,7 @@ const links = [
     componentName: <HRProcessImplementation />,
   },
   {
-    label: "HR Roadmap Transformation",
+    label: "HR Tech Roadmap Transformation",
     path: "hr-roadmap-transformation",
     componentName: <HrRoadmap />,
   },
