@@ -41,9 +41,9 @@ const TestManagement = () => {
               <Card.Title>The Five-Step Process</Card.Title>
               <ListGroup variant="flush">
                 <ListGroup.Item>
-                  <strong>DHR Technology Test Process:</strong> Prepare -
-                  Explore - Realize - Deploy - Run
-                </ListGroup.Item>
+        
+      </ListGroup.Item>
+
                 <ListGroup.Item>
                   <strong>Phases 0 and 1: Prepare</strong> - Before testing
                   activities begin, the QA team analyzes the current landscape

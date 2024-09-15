@@ -22,6 +22,7 @@ import SolutionArchitectureAdvisory from "./components/SolutionArchitectureAdvis
 import HrRoadmap from "./components/HrRoadmap/HrRoadmap";
 import SapErpHcmHybrid from "./components/SapErpHcmHybrid/SapErpHcmHybrid";
 import PayrollSupport from "./components/PayrollSupport/PayrollSupport";
+import ValueAssurance from "./components/ValueAssurance/ValueAssurance";
 
 const links = [
   {
@@ -103,6 +104,11 @@ const links = [
     label: "Payroll Support",
     path: "payroll-support",
     componentName: <PayrollSupport />,
+  },
+  {
+    label: "Value Assurance Services",
+    path: "value-assurance",
+    componentName: <ValueAssurance />,
   },
 ];
 
