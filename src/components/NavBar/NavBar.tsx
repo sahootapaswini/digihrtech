@@ -154,13 +154,32 @@ const links: LinkProps[] = [
           { label: "Health Check", path: "services/health-check", icon: "" },
         ],
       },
+
+      {
+        label: "Support Services",
+        path: "services/support-services",
+        icon: <BsChatDots />,
+        sublinks: [
+          {
+            label: "Application Management Support(AMS)",
+            path: "services/application-support",
+            icon: "",
+          },
+          {
+            label: "Payroll Support",
+            path: "services/payroll-support",
+            icon: "",
+          },
+        ],
+      },
+
       {
         label: "Training",
         path: "services/training",
         icon: <BsBook />,
       },
       {
-        label: "Staff Augmentation",
+        label: "Resource Augmentation",
         path: "services/staff-augmentation",
         icon: <BsPeople />,
       },
@@ -168,7 +187,7 @@ const links: LinkProps[] = [
         label: "Value Assurance Services",
         path: "services/value-assurance",
         icon: <BsCheckCircle />,
-        sublinks: [
+    /*   sublinks: [
           {
             label: "Design Review",
             path: "services/design-review",
@@ -204,26 +223,11 @@ const links: LinkProps[] = [
             path: "services/preparation-governance",
             icon: "",
           },
+
         ],
+        */
       },
-      {
-        label: "Support Services",
-        path: "services/support-services",
-        icon: <BsChatDots />,
-        sublinks: [
-          {
-            label: "Application Management Support(AMS)",
-            path: "services/application-support",
-            icon: "",
-          },
-          {
-            label: "Payroll Support",
-            path: "services/payroll-support",
-            icon: "",
-          },
-        ],
-      },
-    ],
+      ],
   },
   {
     label: "Products",
