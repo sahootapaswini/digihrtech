@@ -1,0 +1,24 @@
+.StaffAugmentation {
+    /* Add your component styles here */
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 30px;
+    /* Space for the checkmark */
+}
+
+.custom-list li::before {
+    content: '✔';
+    /* Checkmark character */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: green;
+    /* Change the color as needed */
+}
