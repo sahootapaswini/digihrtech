@@ -3,7 +3,6 @@ import { Routes, Route, NavLink } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ServicesContent.css";
-import { BsCash } from "react-icons/bs";
 import SapSuccessfactor from "./components/SapSuccessfactor/SapSuccessfactor";
 import BreadcrumbsContainer from "../ReusableComponents/BreadCrumbs/BreadCrumbs";
 import SapPayroll from "./components/SapPayroll/SapPayroll";
@@ -81,19 +80,9 @@ const links = [
     componentName: <SAPDataMigration />,
   },
   {
-    label: "Training",
-    path: "training",
-    componentName: <SAPTraining />,
-  },
-  {
     label: "Health Check",
     path: "health-check",
     componentName: <HealthCheck />,
-  },
-  {
-    label: "Staff-Augmentation",
-    path: "staff-augmentation",
-    componentName: <StaffAugmentation />,
   },
   {
     label: "Talent Intelligence Hub",
@@ -104,6 +93,32 @@ const links = [
     label: "Payroll Support",
     path: "payroll-support",
     componentName: <PayrollSupport />,
+  },
+
+  {
+    label: "Sap HXM Implementation  ",
+    path: "sap-hxm-implementation",
+    componentName: <PayrollSupport />,
+  },
+  {
+    label: "Consulting",
+    path: "consulting",
+    componentName: <PayrollSupport />,
+  },
+  {
+    label: "Support Services",
+    path: "support-services",
+    componentName: <SAPTraining />,
+  },
+  {
+    label: "Training",
+    path: "training",
+    componentName: <SAPTraining />,
+  },
+  {
+    label: "Staff-Augmentation",
+    path: "staff-augmentation",
+    componentName: <StaffAugmentation />,
   },
   {
     label: "Value Assurance Services",
