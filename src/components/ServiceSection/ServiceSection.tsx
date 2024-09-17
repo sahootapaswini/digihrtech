@@ -11,6 +11,7 @@ const serviceData = [
     and payroll systems, ensuring a smoother process. Our health checks throughout the project lifecycle 
     ensure a robust ERP system`,
     icon: "/assets/images/consulting-icon.png",
+    buttonLink: "services/hr-process-implementation",
   },
   {
     title: "Implementation",
@@ -20,6 +21,7 @@ const serviceData = [
     certified and experienced consultants is dedicated to your success
     at every stage.`,
     icon: "/assets/images/implement-icon.png",
+    buttonLink: "services/sap-successfactors",
   },
   {
     title: "Resource Augmentation",
@@ -29,6 +31,7 @@ const serviceData = [
     integrate into your existing workforce to support your projects
     and initiatives.`,
     icon: "/assets/images/augment-icon.png",
+    buttonLink: "services/staff-augmentation",
   },
   {
     title: "Training",
@@ -38,6 +41,7 @@ const serviceData = [
     programs ensure you maximize the benefits of this powerful HR
     solution..`,
     icon: "/assets/images/training-icon.png",
+    buttonLink: "services/training",
   },
   {
     title: "Value Assurance Services(VAS)",
@@ -46,6 +50,7 @@ const serviceData = [
     alongside your current SI to guide the deployment, review the design as well as solution
     and manage project risks`,
     icon: "/assets/images/vas-icon.png",
+    buttonLink: "services/value-assurance",
   },
   {
     title: "Support",
@@ -55,6 +60,7 @@ const serviceData = [
     support using our DHR AMS Estimator Tool. Also there is a separate 
     support for SAP payroll`,
     icon: "/assets/images/support-icon.png",
+    buttonLink: "services/application-support",
   },
 ];
 
@@ -103,6 +109,7 @@ const ServiceSection: React.FC = () => {
                 <p
                   className="text-left"
                   dangerouslySetInnerHTML={{ __html: service.description }}></p>
+                  <a className="orange text-decoration-none fw-bold" href={service.buttonLink}>Find out more</a>
               </div>
             </div>
           ))}

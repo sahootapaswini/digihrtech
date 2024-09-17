@@ -363,7 +363,7 @@ const NavBar: React.FC = () => {
                         {sublink.sublinks && (
                           <div
                             className={`dropdown-menu nested-dropdown${
-                              activeIndex === index ? " show" : ""
+                                activeNestedIndex === index ? " show" : ""
                             }`}>
                             {sublink.sublinks.map((sublink, subIndex) => (
                               <Link
