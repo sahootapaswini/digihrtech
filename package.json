@@ -44,7 +44,7 @@
     "concurrently": "^9.0.0",
     "plop": "^4.0.1",
     "typescript": "^4.9.3",
-    "vite": "^4.1.0"
+    "vite": "^4.5.5"
   },
   "homepage": "https://digihrtech.com"
 }
