@@ -9,7 +9,7 @@ const SAPSupportServices = () => {
     <Container>
       <Row className="my-3">
         <Col md={12}>
-          <h1>Support for SAP Total Workforce Solution</h1>
+          <h1>Application Management Services(AMS) For SAP Total Workforce Solution</h1>
           <p>
             Many organizations invest heavily in developing enterprise software
             solutions to automate their processes, but they often fail to fully
@@ -43,25 +43,37 @@ const SAPSupportServices = () => {
               </Card.Title>
               <ListGroup variant="flush">
                 <ListGroup.Item>
-                  <h3>Why To Choose us</h3>
+                  <h5>Why To Choose us</h5>
                   <p>
                     DHR Technology collaborates with organizations of all sizes,
                     industries, and geographic locations. To meet the diverse
                     needs of our clients, we offer a variety of service types,
-                    including: Flexible: Gavdi Application Value supports
-                    organizations ranging from small and medium-sized businesses
+                    including: Flexible: DHR Technology AMS Supports team provide 
+                    application support for organizations ranging from small and medium-sized businesses
                     to large multinational corporations. Compliant: Our service
                     adheres to standardized, ITIL-compliant practices, ensuring
                     smooth integration with your internal systems. Standardized:
                     Service delivery is structured around three clearly defined
-                    service contracts: Standard, Enterprise, and Preferred.
+                    service packages: Bronze, Silver, and Gold. Also we understnd that
+                    predefined support packages/duration mayn't satisfy your need, 
+                    hence we are proud to introduce our AMS Service
+                  estimator to provide tailor AMS support packages based on your need.
                   </p>
                 </ListGroup.Item>
+                </ListGroup>
+              <ListGroup variant="flush">
                 <ListGroup.Item>
-                  <h3>Services Packages Available</h3>
+                  <h5>Support Model</h5>
+                  <p>
+                  <div className="d-flex justify-content-center pb-3"><img src="/public/assets/images/AMS-support-model.png" alt="To be updated" /></div>
+                  </p>
+                </ListGroup.Item>
+                
+                <ListGroup.Item>
+                  <h5>Services Packages Available</h5>
                   <Row>
                     <Col>
-                      <h5>Standard</h5>
+                      <h5>Bronze</h5>
                       <p>
                         A cost-effective support offering targeting smaller
                         customers with a simple installation. Covers fewer
@@ -70,7 +82,7 @@ const SAPSupportServices = () => {
                       </p>
                     </Col>
                     <Col>
-                      <h5>Enterprise</h5>
+                      <h5>Silver</h5>
                       <p>
                         A cost-effective support offering designed for customers
                         with a more complex installation than Standard. Covers
@@ -79,7 +91,7 @@ const SAPSupportServices = () => {
                       </p>
                     </Col>
                     <Col>
-                      <h5>Preferred</h5>
+                      <h5>Gold</h5>
                       <p>
                         A comprehensive support offering for larger customers
                         with a complex installation. Covers multiple
@@ -90,7 +102,7 @@ const SAPSupportServices = () => {
                   </Row>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <h3>Payroll Support</h3>
+                  <h5>Payroll Support</h5>
                   <p>
                     The SAP SuccessFactors EC Payroll solution streamlines
                     global payroll processes, ensuring employees are paid
@@ -100,7 +112,7 @@ const SAPSupportServices = () => {
                     other systems, and SAP's updates and innovations. Unlike
                     general application support, SAP payroll support must
                     address compliance and legal requirements specific to
-                    various countries and industries. With over twenty years of
+                    various countries and industries. With over twenty(20) years of
                     experience and a global client base, we are expertise to
                     navigate these unique demands, as well as handle repairs,
                     maintenance, and enhancements.Additionally, we offer
