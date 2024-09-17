@@ -1,0 +1,13 @@
+/* BlogList.module.css */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* Adjust gap as needed */
+}
+
+.card-container .card {
+    flex: 1 1 calc(25% - 1rem);
+    /* Adjust width and gap */
+    box-sizing: border-box;
+}
