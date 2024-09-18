@@ -37,7 +37,9 @@ const BlogList: React.FC = () => {
         <div className="jumbotron jumbotron-fluid bg-light">
           <div className="container">
             <div className="row py-5">
-              <h1 className="display-5">Digital HR Blogs</h1>
+              <h1 className="display-5">
+                SAP Payroll Deployment options for customer
+              </h1>
               <p className="lead">
                 Read about technical know-how, industry insights, and the latest
                 buzz about all things SAP SuccessFactors.Stay updated with
@@ -45,7 +47,7 @@ const BlogList: React.FC = () => {
                 world of SAP SuccessFactors.
               </p>
             </div>
-            <div className="row">
+            {/* <div className="row">
               <div className="col">
                 <div className="card-container">
                   {cardData.map((card, index) => (
@@ -60,7 +62,7 @@ const BlogList: React.FC = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="row">
               <div className="col-md-12">
                 <Routes>

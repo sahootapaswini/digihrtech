@@ -1,16 +1,13 @@
 import React from "react";
-import styles from "./Blog1.module.css";
+import "./Blog1.css";
 const Blog1: React.FC = () => {
   return (
     <div className="container pb-5">
       <div className="row d-flex justify-content-center">
         <div className="col-md-10">
-          <h2 className="pb-3 ">
+          <h3 className="pb-3 ">
             SAP’s Payroll Offerings <br />
-            <span className="text-dark">
-              Only SAP offers so many proven options for delivering payroll
-            </span>
-          </h2>
+          </h3>
           <div className="row d-flex justify-content-center">
             <div className="col-md-3">
               <div className="row">
@@ -32,7 +29,7 @@ const Blog1: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-6">
               <img
                 className="img-fluid"
                 src="/assets/images/blog1.png"
@@ -46,8 +43,12 @@ const Blog1: React.FC = () => {
                   <img src="" alt="" />
                   <ul>
                     <li>Deployed On-Premise</li>
-                    <li>58 SAP-provided countries</li>
-                    <li>41 partner-supplied countries</li>
+                    <li>50 SAP-provided countries</li>
+                    <li>Managed by customer or partners</li>
+                    <li>
+                      New Countries are getting added on every semi-annual
+                      release
+                    </li>
                   </ul>
                 </div>
                 <div className="col-12">
@@ -62,11 +63,11 @@ const Blog1: React.FC = () => {
           </div>
           <div className="row">
             <h3>SAP is Uniquely Positioned with Payroll</h3>
-            <div className="container mt-5">
+            <div className="container mt-2">
               <div className="table-responsive">
                 <table className="table table-striped table-bordered">
                   <thead>
-                    <tr>
+                    <tr className="bg-orange">
                       <th>SAP Payroll</th>
                       <th>Employee Central Payroll</th>
                       <th>BPO partner-delivered</th>
