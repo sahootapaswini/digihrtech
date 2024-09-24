@@ -64,6 +64,22 @@
   .contact-us-button {
     display: none;
   }
+
+  .navbar .nested-nav2 {
+    position: relative;
+  }
+
+  .navbar .nested-dropdown {
+    display: none !important;
+    position: absolute;
+
+  }
+
+  .navbar .nested-nav2 .nested-dropdown.show {
+    display: block !important;
+    left: 0;
+    top: 100%;
+  }
 }
 
 /* Ensure dropdowns are shown on hover for larger screens */
@@ -74,6 +90,22 @@
 
   .contact-us-link {
     display: none;
+  }
+
+  .navbar .nested-nav2 {
+    position: relative;
+  }
+
+  .navbar .nested-dropdown {
+    display: none !important;
+    position: absolute;
+
+  }
+
+  .navbar .nested-nav2:hover .nested-dropdown {
+    display: block !important;
+    left: 100%;
+    top: 0;
   }
 }
 
@@ -114,20 +146,4 @@
   width: 1.2rem;
   height: 1.2rem;
   color: #fff;
-}
-
-.navbar .nested-nav2 {
-  position: relative;
-}
-
-.navbar .nested-dropdown {
-  display: none !important;
-  position: absolute;
-
-}
-
-.navbar .nested-nav2:hover .nested-dropdown {
-  display: block !important;
-  left: 100%;
-  top: 0;
 }

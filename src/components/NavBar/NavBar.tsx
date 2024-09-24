@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
@@ -187,7 +187,7 @@ const links: LinkProps[] = [
         label: "Value Assurance Services",
         path: "services/value-assurance",
         icon: <BsCheckCircle />,
-    /*   sublinks: [
+        /*   sublinks: [
           {
             label: "Design Review",
             path: "services/design-review",
@@ -227,7 +227,7 @@ const links: LinkProps[] = [
         ],
         */
       },
-      ],
+    ],
   },
   {
     label: "Products",
@@ -298,7 +298,12 @@ const NavBar: React.FC = () => {
     }
   };
   const handleNestedClick = (index: number) => {
-    setActiveNestedIndex(activeNestedIndex === index ? null : index);
+    if (isMobile) {
+      setActiveNestedIndex(activeNestedIndex === index ? null : index);
+    }
+  };
+  const handleSublinkClick = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent the click from bubbling up
   };
 
   return (
@@ -350,8 +355,14 @@ const NavBar: React.FC = () => {
                     {link.sublinks.map((sublink, subIndex) => (
                       <Link
                         key={subIndex}
-                        className="dropdown-item nested-nav2"
-                        to={sublink.path}>
+                        className={`dropdown-item nested-nav2${
+                          sublink.sublinks ? " dropdown-toggle" : ""
+                        }`}
+                        to={sublink.path}
+                        onClick={(e) => {
+                          handleSublinkClick(e);
+                          sublink.sublinks && handleNestedClick(subIndex);
+                        }}>
                         {sublink.icon && (
                           <span className="sub-icon-orange px-2">
                             {sublink.icon}
@@ -363,7 +374,7 @@ const NavBar: React.FC = () => {
                         {sublink.sublinks && (
                           <div
                             className={`dropdown-menu nested-dropdown${
-                                activeNestedIndex === index ? " show" : ""
+                              activeNestedIndex === subIndex ? " show" : ""
                             }`}>
                             {sublink.sublinks.map((sublink, subIndex) => (
                               <Link
