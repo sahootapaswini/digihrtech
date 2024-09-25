@@ -16,7 +16,6 @@ import {
   BsGraphUp,
   BsLightbulb,
   BsPeople,
-  BsPersonCheck,
   BsPieChart,
   BsSearch,
 } from "react-icons/bs";
@@ -24,7 +23,7 @@ import {
 interface SubLink {
   label: string;
   path: string;
-  icon: React.ReactNode; // Using React.ReactNode for icon to support various types of icons
+  icon: React.ReactNode; // Supports various types of icons
   sublinks?: SubLink[]; // Array of sublinks if needed
 }
 
@@ -91,7 +90,7 @@ const links: LinkProps[] = [
     sublinks: [
       {
         label: "SAP HXM Implementation",
-        path: "services/sap-hxm-implementation",
+        path: "#",
         icon: <BsGear />,
         sublinks: [
           {
@@ -128,7 +127,7 @@ const links: LinkProps[] = [
       },
       {
         label: "Consulting",
-        path: "services/consulting",
+        path: "#",
         icon: <BsBriefcase />,
         sublinks: [
           {
@@ -154,10 +153,9 @@ const links: LinkProps[] = [
           { label: "Health Check", path: "services/health-check", icon: "" },
         ],
       },
-
       {
         label: "Support Services",
-        path: "services/support-services",
+        path: "#",
         icon: <BsChatDots />,
         sublinks: [
           {
@@ -172,7 +170,6 @@ const links: LinkProps[] = [
           },
         ],
       },
-
       {
         label: "Training",
         path: "services/training",
@@ -187,45 +184,6 @@ const links: LinkProps[] = [
         label: "Value Assurance Services",
         path: "services/value-assurance",
         icon: <BsCheckCircle />,
-        /*   sublinks: [
-          {
-            label: "Design Review",
-            path: "services/design-review",
-            icon: "",
-          },
-          {
-            label: "Solution Review",
-            path: "services/solution-architecture",
-            icon: "",
-          },
-          {
-            label: "Business Readyness Review",
-            path: "services/business-readyness",
-            icon: "",
-          },
-          {
-            label: "Cloud Planning Workshop",
-            path: "services/cloud-planning",
-            icon: "",
-          },
-          {
-            label: "Preparation & Governance",
-            path: "services/preparation-governance",
-            icon: "",
-          },
-          {
-            label: "Solution & Integration  Architecture Services ",
-            path: "services/preparation-governance",
-            icon: "",
-          },
-          {
-            label: "Subject Matter Expertise Advice & Guidance",
-            path: "services/preparation-governance",
-            icon: "",
-          },
-
-        ],
-        */
       },
     ],
   },
@@ -297,17 +255,16 @@ const NavBar: React.FC = () => {
       setActiveIndex(activeIndex === index ? null : index);
     }
   };
-  const handleNestedClick = (index: number) => {
+
+  const handleNestedClick = (e: React.MouseEvent, index: number) => {
+    e.stopPropagation();
     if (isMobile) {
       setActiveNestedIndex(activeNestedIndex === index ? null : index);
     }
   };
-  const handleSublinkClick = (e: React.MouseEvent) => {
-    e.stopPropagation(); // Prevent the click from bubbling up
-  };
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-dark p-md-2   `}>
+    <nav className={`navbar navbar-expand-lg navbar-dark p-md-2`}>
       <div className="container">
         <div className="nav-bar-container">
           <Link className="navbar-brand" to="/"></Link>
@@ -323,6 +280,7 @@ const NavBar: React.FC = () => {
           aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div
           className="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent">
@@ -347,6 +305,7 @@ const NavBar: React.FC = () => {
                   }>
                   {link.label}
                 </Link>
+
                 {link.sublinks && (
                   <div
                     className={`dropdown-menu${
@@ -360,37 +319,39 @@ const NavBar: React.FC = () => {
                         }`}
                         to={sublink.path}
                         onClick={(e) => {
-                          handleSublinkClick(e);
-                          sublink.sublinks && handleNestedClick(subIndex);
+                          if (sublink.sublinks) handleNestedClick(e, subIndex);
                         }}>
                         {sublink.icon && (
                           <span className="sub-icon-orange px-2">
                             {sublink.icon}
                           </span>
                         )}
-                        <span className="align-items-center  ">
+                        <span className="align-items-center">
                           {sublink.label}
                         </span>
+
                         {sublink.sublinks && (
                           <div
                             className={`dropdown-menu nested-dropdown${
                               activeNestedIndex === subIndex ? " show" : ""
                             }`}>
-                            {sublink.sublinks.map((sublink, subIndex) => (
-                              <Link
-                                key={subIndex}
-                                className="dropdown-item"
-                                to={sublink.path}>
-                                {sublink.icon && (
-                                  <span className="sub-icon-orange px-2">
-                                    {sublink.icon}
+                            {sublink.sublinks.map(
+                              (nestedSublink, nestedIndex) => (
+                                <Link
+                                  key={nestedIndex}
+                                  className="dropdown-item"
+                                  to={nestedSublink.path}>
+                                  {nestedSublink.icon && (
+                                    <span className="sub-icon-orange px-2">
+                                      {nestedSublink.icon}
+                                    </span>
+                                  )}
+                                  <span className="align-items-center">
+                                    {nestedSublink.label}
                                   </span>
-                                )}
-                                <span className="align-items-center  ">
-                                  {sublink.label}
-                                </span>
-                              </Link>
-                            ))}
+                                </Link>
+                              )
+                            )}
                           </div>
                         )}
                       </Link>
